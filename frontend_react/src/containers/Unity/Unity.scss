@@ -1,0 +1,172 @@
+.app__unity-bg {
+    display: block;
+    overflow: hidden;
+    position: relative;
+
+    background-color: var(--black-color);
+
+    >span {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: #07042699;
+        // background: linear-gradient(to top, var(--bg-darkmode-color), #0a0013AA);
+    }
+}
+
+.app__unity-video {
+    position: absolute;
+    left: 0;
+    top: 1%;
+    width: 100%;
+    height: 99%;
+    object-fit: cover;
+
+    filter: blur(4px);
+    -o-filter: blur(4px);
+}
+
+.app__unity {
+    width: 100%;
+    max-width: var(--box-width);
+    margin: auto;
+    z-index: 2;
+}
+
+.app__unity-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    padding: 3rem 0;
+
+    >div {
+        >p {
+            max-width: 37rem;
+        }
+    }
+
+    h2 {
+        color: var(--white-color);
+    }
+
+    img {
+        width: 36%;
+        padding-right: 2rem;
+    }
+
+    p {
+        color: var(--gray-color);
+    }
+
+    span {
+        align-items: center;
+        margin: 1.75rem 0;
+    }
+
+    @media screen and (max-width: 705px) {
+        img {
+            display: none;
+        }
+
+        p {
+            max-width: 95%;
+        }
+
+        span {
+            margin: 2rem 0;
+        }
+    }
+}
+
+.app__unity-slider {
+    // overflow: scroll;
+    line-height: 0;
+    padding-bottom: 1.5rem;
+    align-items: stretch;
+
+    section {
+        position: relative;
+        margin-left: 1.25rem;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+
+            opacity: 0;
+            border-radius: 12px;
+            background-color: var(--black-color);
+        }
+
+        &:hover::after {
+            opacity: 0.35;
+        }
+
+        &:hover {
+            cursor: pointer;
+
+            svg {
+                opacity: 1;
+                top: calc(50% - 30px);
+            }
+        }
+    }
+
+    img {
+        border-radius: 12px;
+        width: 380px;
+    }
+
+    @media screen and (max-width: 769px) {
+        img {
+            width: 340px;
+        }
+    }
+
+    li:nth-child(1) {
+        svg {
+            opacity: 1;
+            top: calc(50% - 30px);
+        }
+
+        ::after {
+            opacity: 0.4;
+        }
+    }
+}
+
+.app__unity-playbutton {
+    position: absolute;
+    top: 50%;
+    left: calc(50% - 30px);
+
+    width: 60px;
+    height: 60px;
+    opacity: 0;
+    z-index: 20;
+
+    color: var(--white-color);
+    filter: drop-shadow(0 0 24px #08002288);
+    transition: all 0.2s;
+}
+
+.app__unity-teacher {
+    width: fit-content;
+    padding: 0.75em 1em;
+    margin-left: 1.25em;
+    border-radius: 8px;
+
+    color: var(--primary-darkmode-color);
+    box-shadow: inset 0 0 0 2px var(--primary-darkmode-color);
+
+    p {
+        color: var(--primary-darkmode-color);
+    }
+}

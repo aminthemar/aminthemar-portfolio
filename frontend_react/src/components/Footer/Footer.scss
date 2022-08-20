@@ -1,0 +1,31 @@
+.app__Footer {
+    background-color: var(--black-color);
+    text-align: center;
+
+    p,
+    svg {
+        color: var(--white-color);
+    }
+
+    section {
+        justify-content: space-between;
+        padding: 0.625rem 2rem;
+
+        @media screen and (max-width: 599px) {
+            flex-direction: column-reverse;
+            // padding: 0.75rem 2rem;
+            gap: 2rem;
+        }
+    }
+}
+
+.app__Footer-username {
+    // color: linear-gradient(45deg, #bcffc7 0%, #f8ffc8 100%);
+    background: var(--white-color);
+    padding: 0.375rem 0.75rem;
+    border-radius: 100px;
+
+    @media screen and (max-width: 599px) {
+        display: none;
+    }
+}

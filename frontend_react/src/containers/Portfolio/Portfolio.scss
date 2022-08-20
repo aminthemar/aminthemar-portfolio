@@ -1,0 +1,290 @@
+.app__portfolio {
+    display: flex;
+    justify-content: space-between;
+
+    >span {
+        width: 21%;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        z-index: 1;
+
+        .p-text {
+            padding: 0.75rem 0 1.75rem 0;
+        }
+
+        @media screen and (min-width: 769px) {
+            &::before {
+                content: "";
+                position: absolute;
+                width: 200%;
+                height: 100%;
+                top: -13.5rem;
+                right: 3rem;
+
+                background: url("../../assets/dome.svg") no-repeat;
+                background-size: contain;
+                z-index: -1;
+            }
+        }
+
+    }
+
+    >section {
+        width: 74%;
+    }
+
+    @media screen and (max-width: 1024px) {
+        flex-direction: column;
+        gap: 3rem;
+
+        span,
+        section {
+            width: 100%;
+        }
+    }
+}
+
+.app__portfolio-tools {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+    height: 26rem;
+
+    text-align: center;
+    justify-content: center;
+    align-items: stretch;
+
+    a {
+        padding: 1.375rem 1.375rem 1.125rem 1.375rem;
+        border-radius: 12px;
+        background-color: var(--bg-lightmode-color);
+        flex-direction: column;
+        transition: all 0.2s;
+
+        p {
+            margin-top: 1rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        img {
+            width: calc(20% + 2rem);
+        }
+
+        &:hover {
+            background-color: var(--white-color);
+            box-shadow: inset 0 0 0 2px var(--bg-lightmode-color);
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        height: fit-content;
+        grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
+    }
+
+    // @media screen and (max-width: 1024px) {
+    //     height: fit-content;
+    //     grid-template-columns: repeat(6, minmax(0, 1fr));
+    // }
+
+    // @media screen and (max-width: 769px) {
+    //     height: fit-content;
+    //     grid-template-columns: repeat(4, minmax(0, 1fr));
+    // }
+
+    // @media screen and (max-width: 599px) {
+    //     grid-template-columns: repeat(3, minmax(0, 1fr));
+    // }
+
+    // @media screen and (max-width: 379px) {
+    //     grid-template-columns: repeat(2, minmax(0, 1fr));
+    // }
+}
+
+.app__portfolio-works {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0.75rem;
+
+    transform-origin: top;
+    height: 32rem;
+    margin-top: 1rem;
+
+    figure {
+        overflow: hidden;
+        position: relative;
+        border-radius: 12px;
+    }
+
+    >:nth-child(1) {
+        grid-area: 1 / 1 / 5 / 3;
+    }
+
+    >:nth-child(2) {
+        grid-area: 1 / 5 / 3 / 7;
+    }
+
+    >:nth-child(3) {
+        grid-area: 1 / 3 / 3 / 5;
+    }
+
+    >:nth-child(4) {
+        grid-area: 3 / 3 / 5 / 7;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        object-fit: cover;
+    }
+
+    @media screen and (max-width: 699px) {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+
+        height: 45em;
+
+        >:nth-child(1) {
+            grid-area: 1 / 1 / 5 / 3;
+        }
+
+        >:nth-child(2) {
+            grid-area: 3 / 3 / 5 / 5;
+
+        }
+
+        >:nth-child(3) {
+            grid-area: 1 / 3 / 3 / 5;
+        }
+
+        >:nth-child(4) {
+            grid-area: 5 / 1 / 7 / 5;
+        }
+    }
+
+    @media screen and (max-width: 429px) {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+
+        height: 80em;
+        margin-top: 1.5rem;
+
+        >:nth-child(1) {
+            grid-area: 3 / 1 / 8 / 2;
+        }
+
+        >:nth-child(2) {
+            grid-area: 10 / 1 / 13 / 2;
+
+        }
+
+        >:nth-child(3) {
+            grid-area: 8 / 1 / 10 / 2;
+        }
+
+        >:nth-child(4) {
+            grid-area: 1 / 1 / 3 / 2;
+        }
+    }
+}
+
+.app__portfolio-card {
+    span {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 95%;
+        padding-bottom: 0.5em;
+        text-align: center;
+
+        z-index: -1;
+        border-radius: 8px;
+        background-color: var(--black-color);
+        transition: all 0.2s ease-in-out;
+
+        a {
+            * {
+                margin: 0.2rem auto;
+            }
+
+            svg {
+                width: 30px;
+                height: 30px;
+                color: var(--primary-darkmode-color);
+            }
+
+            .p-title {
+                color: var(--white-color);
+            }
+
+            :nth-child(3) {
+                color: var(--gray-color);
+                padding-bottom: 0.75rem;
+            }
+        }
+    }
+
+    &:hover {
+        span {
+            z-index: 5;
+            height: 100%;
+        }
+    }
+}
+
+.app__portfolio-button {
+    width: fit-content;
+    padding: 0.5em 1em 0.6em;
+    margin-left: 1.5em;
+    border-radius: 8px;
+
+    color: var(--primary-darkmode-color);
+    box-shadow: inset 0 0 0 2px var(--primary-darkmode-color);
+}
+
+.app__portfolio-categories {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    ul {
+        gap: 0.75rem;
+        cursor: pointer;
+
+        p {
+            line-height: normal;
+            padding: 0.5rem 1.2rem 0.6rem 1.2rem;
+            border-radius: 8px;
+        }
+    }
+}
+
+.app__portfolio-category-active {
+    position: relative;
+    font-weight: var(--font-regular);
+    color: var(--primary-lightmode-color);
+    box-shadow: inset 0 0 0 2px var(--primary-lightmode-color);
+
+    svg {
+        position: absolute;
+        background-color: #fff;
+        top: -0.25rem;
+        right: -0.35rem;
+        width: 1rem;
+        height: 1rem;
+    }
+}
+
+.app__portfolio-category-deactive {
+    color: var(--grey-color);
+    box-shadow: inset 0 0 0 1px var(--gray-color);
+
+    svg {
+        display: none;
+    }
+}

@@ -1,0 +1,116 @@
+.edu__item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+
+    position: relative;
+    padding: 0 1.5rem 3.5rem 0;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 8px;
+        height: 8px;
+
+        border-radius: 100px;
+        background-color: var(--primary-lightmode-color);
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 18px;
+        height: 0;
+        width: 2px;
+        right: 3px;
+
+        background-color: var(--primary-lightmode-color);
+        border-radius: 100px;
+        transition: height ease-out 0.3s;
+    }
+
+    span {
+        margin-bottom: 2em;
+        width: 96%;
+    }
+
+    section {
+        width: 98%;
+        display: flex;
+    }
+
+    @media screen and (min-width: 699px) {
+        justify-content: center;
+        padding: 0 0 2.5rem 0;
+
+        &::before {
+            right: calc(50% - 4px);
+        }
+
+        &::after {
+            right: calc(50% - 1px);
+        }
+
+        span {
+            margin: 0 1.5rem;
+            width: 27rem;
+        }
+
+        section {
+            margin: 0 1.5rem;
+            width: 27rem;
+        }
+    }
+
+    @media screen and (min-width: 769px) {
+        padding-bottom: 3.5rem;
+    }
+
+    @media screen and (min-width: 2000px) {
+        padding-bottom: 5rem;
+
+        span {
+            margin: 0 1.75rem;
+        }
+
+        section {
+            margin: 0 1.75rem;
+        }
+    }
+
+    &.line-draw-down::after {
+        height: calc(100% - 28px);
+    }
+}
+
+.app__edu-external {
+    width: fit-content;
+    padding: 0.75rem 1rem;
+    margin-top: 1.5rem;
+    border-radius: 8px;
+    gap: 0.5rem;
+
+    color: var(--primary-lightmode-color);
+    background-color: #ededff;
+
+    p {
+        color: var(--primary-lightmode-color);
+    }
+}
+
+.app__edu-grade {
+    padding: 0.75rem 0;
+    gap: 1.5rem;
+}
+
+.app__edu-card {
+    position: relative;
+
+    img {
+        width: 100%;
+        border-radius: 12px;
+    }
+}

@@ -1,0 +1,48 @@
+.primary_button {
+    background-color: var(--primary-darkmode-color);
+    border-radius: 8px;
+
+    padding: 1.25em 0;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+    svg {
+        width: 19px;
+        height: 19px;
+        margin-top: 1px;
+    }
+
+    * {
+        color: var(--black-color);
+    }
+
+    // .ripple {
+    //     content: "";
+    //     position: absolute;
+    //     display: block;
+
+    //     background-color: var(--white-color);
+    //     border-radius: 100%;
+
+    //     animation: 0.4s rippleEffect;
+    // }
+
+    // @keyframes rippleEffect {
+    //     from {
+    //         width: 0;
+    //         height: 0;
+    //         opacity: 0.5;
+    //     }
+
+    //     to {
+    //         width: 20em;
+    //         height: 20em;
+    //         opacity: 0;
+    //     }
+    // }
+
+    @media screen and (max-width: 769px) {
+        border-radius: 8px;
+    }
+}

@@ -1,0 +1,6 @@
+export { default as Navbar } from './Navbar/Navbar'
+export { default as SectionTitle } from './SectionTitle/SectionTitle'
+export { default as EduItem } from './EduItem/EduItem'
+export { default as PrimaryButton } from './PrimaryButton/PrimaryButton'
+export { default as SecondaryButton } from './SecondaryButton/SecondaryButton'
+export { default as Footer } from './Footer/Footer'

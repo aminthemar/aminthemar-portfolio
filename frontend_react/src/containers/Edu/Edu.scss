@@ -1,0 +1,88 @@
+.app__edu-bg {
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--bg-lightmode-color);
+
+    padding-top: 2rem;
+}
+
+.app__edu-link_icon {
+    position: relative;
+    padding: 0.25rem 1.25rem 0 0;
+    z-index: 2;
+
+    @media screen and (max-width: 699px) {
+        justify-content: flex-start;
+        padding: 0.5rem 0 0 0;
+    }
+}
+
+.app__edu {
+    position: relative;
+
+    >span {
+        content: "";
+        position: absolute;
+        margin: 0 1.25rem;
+        background: linear-gradient(transparent, var(--bg-lightmode-color)), url("../../assets/edu/pillar.svg");
+        background-repeat: repeat-y;
+
+        top: calc(16rem + 10vw);
+        width: calc(22rem + 10vw);
+        height: 95%;
+        background-size: contain;
+
+        img {
+            position: absolute;
+            top: calc(-15rem - 10vw);
+        }
+
+        @media screen and (max-width: 599px) {
+            display: none;
+        }
+    }
+}
+
+.app__edu-timeline {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 0.3rem 0;
+
+    transition: all 0.3s ease-out;
+
+    @media screen and (min-width: 699px) {
+        :nth-child(odd) {
+            .edu__item {
+                flex-direction: row-reverse;
+
+                // span {
+                // .p-text {
+                //     padding-left: 0.5rem;
+                // }
+                // }
+            }
+        }
+
+        :nth-child(even) {
+            .edu__item {
+                flex-direction: row;
+
+                // section {
+                //     margin-top: calc(-10% + 4.125rem);
+
+                //     @media screen and (min-width: 2000px) {
+                //         margin-top: 0;
+                //     }
+                // }
+
+                span {
+                    * {
+                        text-align: left;
+                        justify-content: flex-end;
+                    }
+                }
+            }
+        }
+    }
+}

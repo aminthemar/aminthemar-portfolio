@@ -1,0 +1,88 @@
+@font-face {
+  font-family: 'Vazir';
+  src: url('fonts/Vazir-Light-FD-WOL-UI.eot');
+  /* IE9 Compat Modes */
+  src: url('fonts/Vazir-Light-FD-WOL-UI.woff') format('woff'),
+    /* Pretty Modern Browsers */
+    url('fonts/Vazir-Light-FD-WOL-UI.ttf') format('truetype');
+  /* Safari, Android, iOS */
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Vazir';
+  src: url('fonts/Vazir-Regular-FD-WOL-UI.eot');
+  src: url('fonts/Vazir-Regular-FD-WOL-UI.woff') format('woff'),
+    url('fonts/Vazir-Regular-FD-WOL-UI.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Vazir';
+  src: url('fonts/Vazir-Medium-FD-WOL-UI.eot');
+  src: url('fonts/Vazir-Medium-FD-WOL-UI.woff') format('woff'),
+    url('fonts/Vazir-Medium-FD-WOL-UI.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Vazir';
+  src: url('fonts/Vazir-Bold-FD-WOL-UI.eot');
+  src: url('fonts/Vazir-Bold-FD-WOL-UI.woff') format('woff'),
+    url('fonts/Vazir-Bold-FD-WOL-UI.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  /* -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+}
+
+:root {
+  --font-base: "Vazir";
+  --font-light: 200;
+  /* --font-semiregular: 400; */
+  --font-regular: 400;
+  --font-bold: 800;
+
+  --primary-darkmode-color: #36ffae;
+  --primary-lightmode-color: #746Cfe;
+  /* --secondary-color: #ae8cfa; */
+  --error-color: #ed618b;
+
+  --black-color: #0e0b1a;
+  --border-color: #ebedf3;
+  --gray-color: #cccfd6;
+  --grey-color: #676b78;
+  --white-color: #ffffff;
+
+  --bg-darkmode-color: #201859;
+  --bg-lightmode-color: #f4f5fa;
+
+  --box-width: 1300px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+input {
+  font-family: inherit;
+}
