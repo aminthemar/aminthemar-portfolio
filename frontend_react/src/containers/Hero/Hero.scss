@@ -34,8 +34,8 @@
         position: absolute;
         z-index: -1;
         top: -80%;
-        left: -190%;
-        transform: rotateZ(-8deg) scale(1.1);
+        left: -195%;
+        transform: rotateZ(-6deg) scale(1.14);
 
         // filter: drop-shadow(-0.7rem 0.7rem 0.7rem #000000bb);
     }
@@ -54,7 +54,6 @@
         >span {
             top: -65%;
             left: -170%;
-            transform: rotateZ(-6deg) scale(1.2);
         }
     }
 }
@@ -62,7 +61,7 @@
 .app__hero-h1 {
     line-height: 145%;
     max-width: 52rem;
-    font-size: 6.5vw;
+    font-size: 6.4vw;
     font-weight: var(--font-bold);
     color: var(--white-color);
 
@@ -139,8 +138,8 @@
 }
 
 .app__hero-location {
-    margin: 1.125rem 0;
-    gap: 1.125rem;
+    margin: 1rem 0;
+    gap: 1rem;
     flex-wrap: wrap;
 
     color: var(--grey-color);

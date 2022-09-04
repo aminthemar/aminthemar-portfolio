@@ -5,7 +5,7 @@ import { BsArrowLeft, BsFillCheckCircleFill } from 'react-icons/bs'
 import { ImEye } from 'react-icons/im'
 
 import './Portfolio.scss'
-import { images, works_data, tools_data } from '../../constants'
+import { images, pworks_data, tools_data } from '../../constants'
 import { SectionTitle } from '../../components'
 import { AppWrap } from '../../wrapper'
 
@@ -30,7 +30,7 @@ const Portfolio = () => {
         ActivateCategory(new_category_idx);
         setLoading(true);
 
-        tools_data.getTools(6, categories[new_category_idx])
+        tools_data.getnToolsbyCategory(6, categories[new_category_idx])
             .then(data => {
                 setToolsItems(data.content);
             })
@@ -38,7 +38,7 @@ const Portfolio = () => {
                 console.error(err);
             });
 
-        works_data.getWorksPreview(4, categories[new_category_idx])
+        pworks_data.getnPWorksbyCategory(4, categories[new_category_idx])
             .then(data => {
                 setPortfolioItems(data.content);
                 setLoading(false);
@@ -60,12 +60,12 @@ const Portfolio = () => {
                     <div className='app__flex app__portfolio-categories'>
                         <ul className='app__flex-start' ref={itemRef}>
                             {categories.map((category_item, index) => (
-                                <li onClick={() => getLocalData(index)} className='p-text' key={`category-${index}`}>
+                                <li onClick={() => getLocalData(index)} className='p-text p-link' key={`category-${index}`}>
                                     <p className='app__portfolio-category-deactive'><BsFillCheckCircleFill />{category_item}</p>
                                 </li>
                             ))}
                         </ul>
-                        <a href="https://www.aparat.com/playlist/1214480"
+                        <a href="/works"
                             rel="next"
                             className='app__flex-start link_icon link_icon-primary'>
                             <p className='p-text p-link'>مشاهده همه</p>
@@ -74,7 +74,7 @@ const Portfolio = () => {
                     </div>
 
                     {loading
-                        ? <motion.img
+                        ? <img
                             src={images.loading}
                             className='app__flex app__loading' />
                         : <motion.ul
@@ -84,9 +84,9 @@ const Portfolio = () => {
                             transition={{ duration: 0.4 }}
                             className='app__portfolio-works'>
                             {portfolioItems.map((port_item, index) => (
-                                <figure className='app__portfolio-card' key={`work-${index}`}>
+                                <li className='app__cardcover' key={`work-${index}`}>
                                     <span className='app__flex'>
-                                        <a href={port_item['websiteurl']} target="_blank" rel="noreferrer">
+                                        <a href={`/works/${port_item['id']}`} target="_blank" rel="noreferrer">
                                             <ImEye />
                                             <p className='p-title'>{port_item['title']}</p>
                                             <p className='p-text'>{port_item['company']}</p>
@@ -95,7 +95,7 @@ const Portfolio = () => {
                                     </span>
 
                                     <img src={port_item['logo']} alt={`work-${index}`} />
-                                </figure>
+                                </li>
                             ))}
                         </motion.ul>
                     }

@@ -78,7 +78,7 @@ const data = {
     ]
 }
 
-const getTools = (n_tools, category) => {
+const getnToolsbyCategory = (n_tools, category) => {
     return (new Promise((resolve) => {
         setTimeout(() => {
             var temp_data = {
@@ -98,4 +98,4 @@ const getTools = (n_tools, category) => {
     }));
 }
 
-export default { getTools }
+export default { getnToolsbyCategory }

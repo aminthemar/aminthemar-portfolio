@@ -1,90 +1,102 @@
-import { images } from "../../constants";
+import { images_works } from "../../constants";
 
 const data = {
     name: 'works',
-    content: [
-        {
-            "title": "بازی بادکنک‌ها",
-            "company": "مرکز تخصصی آپا دانشگاه قم",
-            "websiteurl": "#",
-            "logo": images.codeport_1,
-            "category": "برنامه‌نویسی",
+    content: {
+        "balloons": {
+            "id": "balloons",
+            "title": "بادکنک‌ها",
+            "company": "مرکز تخصصی آپا",
+            "logo": images_works.balloons_logo,
+            "category": "بازی",
         },
-        {
-            "title": "بازی کوش",
+        "koosh": {
+            "id": "koosh",
+            "title": "کوش",
             "company": "استودیو چوب‌خط",
-            "websiteurl": "#",
-            "logo": images.codeport_4,
-            "category": "برنامه‌نویسی",
+            "logo": images_works.koosh_logo,
+            "category": "بازی",
         },
-        {
-            "title": "بازی راز امنیت",
-            "company": "مرکز تخصصی آپا دانشگاه قم",
-            "websiteurl": "#",
-            "logo": images.codeport_2,
-            "category": "برنامه‌نویسی",
+        "security": {
+            "id": "security",
+            "title": "راز امنیت",
+            "company": "مرکز تخصصی آپا",
+            "logo": images_works.security_logo,
+            "category": "بازی",
         },
-        {
-            "title": "بازی اورنگ",
+        "urang": {
+            "id": "urang",
+            "title": "اورنگ",
             "company": "مسابقه‌ی کژوال کمپ",
-            "websiteurl": "#",
-            "logo": images.codeport_3,
-            "category": "برنامه‌نویسی",
+            "logo": images_works.urang_logo,
+            "category": "بازی",
         },
-        {
+        "#": {
+            "id": "#",
             "title": "طراحی کاراکتر",
             "company": "محمد نظری",
-            "websiteurl": "#",
-            "logo": images.designport_2,
-            "category": "طراحی",
+            "logo": images_works.balloons_logo,
+            "category": "پوستر",
         },
-        {
-            "title": "لوگوی برگ",
+        "#": {
+            "id": "#",
+            "title": "برگ",
             "company": "برگ مارکت",
-            "websiteurl": "#",
-            "logo": images.designport_4,
-            "category": "طراحی",
+            "logo": images_works.balloons_logo,
+            "category": "لوگو",
         },
-        {
-            "title": "لوگوی اکسیس",
+        "#": {
+            "id": "#",
+            "title": "اکسیس",
             "company": "فروشگاه اکسیس",
-            "websiteurl": "#",
-            "logo": images.designport_1,
-            "category": "طراحی",
+            "logo": images_works.balloons_logo,
+            "category": "لوگو",
         },
-        {
-            "title": "طراحی برند راف",
-            "company": "دکوراسیون داخلی راف دکو",
-            "websiteurl": "#",
-            "logo": images.designport_3,
-            "category": "طراحی",
+        "#": {
+            "id": "#",
+            "title": "برند راف",
+            "company": "دکوراسیون داخلی راف",
+            "logo": images_works.balloons_logo,
+            "category": "لوگو",
         },
-    ]
+    }
 }
 
-const getWorksPreview = (n_works, category) => {
+const getWorksbyCategory = (category) => {
     return (new Promise((resolve) => {
         setTimeout(() => {
             var temp_data = {
-                name: 'pworks',
+                name: 'works',
                 content: []
             }
 
-            let index = 0;
-            while (temp_data.content.length < n_works && index < data.content.length) {
-                if (data.content[index]['category'] == category) {
+            var obj = Object.values(data.content);
+            for (var key in obj) {
+                if (obj[key]['category'] === category) {
                     var temp_dict = {};
-                    temp_dict['title'] = data.content[index]['title'];
-                    temp_dict['company'] = data.content[index]['company'];
-                    temp_dict['websiteurl'] = data.content[index]['websiteurl'];
-                    temp_dict['logo'] = data.content[index]['logo'];
+                    temp_dict['id'] = obj[key]['id'];
+                    temp_dict['title'] = obj[key]['title'];
+                    temp_dict['company'] = obj[key]['company'];
+                    temp_dict['logo'] = obj[key]['logo'];
                     temp_data.content.push(temp_dict);
                 }
-                index++;
             }
             resolve(temp_data);
         }, 100);
     }));
 }
 
-export default { getWorksPreview }
+const getWorkbyId = (id) => {
+    return (new Promise((resolve) => {
+        setTimeout(() => {
+            var temp_data = {
+                name: 'work',
+                content: {}
+            }
+            temp_data.content = data.content[id];
+            resolve(temp_data);
+        }, 100);
+    }));
+}
+
+export default { getWorksbyCategory, getWorkbyId }

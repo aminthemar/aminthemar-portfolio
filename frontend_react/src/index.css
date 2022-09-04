@@ -66,9 +66,9 @@ body {
   --white-color: #ffffff;
 
   --bg-darkmode-color: #201859;
-  --bg-lightmode-color: #f4f5fa;
+  --bg-lightmode-color: #f5f7fa;
 
-  --box-width: 1300px;
+  --box-width: 1280px;
 }
 
 * {

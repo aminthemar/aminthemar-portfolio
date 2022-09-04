@@ -26,7 +26,7 @@
 .app__contacts-persia {
     position: absolute;
     width: 100%;
-    height: 46%;
+    height: 42.5%;
     top: 0;
     right: 0;
 
@@ -34,7 +34,7 @@
     // background: var(--black-color);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: auto 140%;
+    background-size: auto 150%;
 
     @media screen and (max-width: 699px) {
         background: var(--black-color) url('../../assets/contacts/persia-2.jpg');
@@ -53,14 +53,14 @@
 
 .app__contacts-stats {
     gap: 10%;
-    padding: 0.5rem 0 6rem 0;
+    padding: 0 0 5.5rem 0;
 
     li {
         align-items: flex-start;
 
         svg {
             color: var(--primary-darkmode-color);
-            height: 3.25rem;
+            height: 3.375rem;
             width: auto;
             margin: -0.125rem 0 0 1.5rem;
         }
@@ -68,7 +68,7 @@
         h1 {
             color: var(--white-color);
             font-size: 4rem;
-            line-height: 3.25rem;
+            line-height: 3.5rem;
         }
 
         p {
@@ -79,13 +79,13 @@
     @media screen and (max-width: 699px) {
         flex-direction: column;
         align-items: flex-start;
-        gap: 6rem;
-        padding: 2rem calc(50% - 94px) 6rem 0;
+        gap: 5rem;
+        padding: 1rem calc(50% - 5.75rem) 5rem 0;
     }
 }
 
 .app__contacts-form {
-    width: 1020px;
+    width: 1000px;
     border-radius: 12px;
     background-color: var(--white-color);
     // box-shadow: 0 8px 24px #330ba008;

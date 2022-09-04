@@ -26,7 +26,7 @@ const Hero = () => {
           ><img src={images.parche} alt="persian calligraphy" /></motion.span>
 
           <motion.h1
-            initial={{ y: 60, opacity: 0 }}
+            initial={{ y: 80, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.4, delay: 0.5, ease: "easeInOut" }}
             className='app__hero-h1'>
@@ -37,7 +37,7 @@ const Hero = () => {
           </motion.h1>
 
           <motion.div
-            initial={{ y: 60, opacity: 0 }}
+            initial={{ y: 80, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.4, delay: 0.6, ease: "easeInOut" }}
             className='app__hero-profile'>
@@ -75,7 +75,7 @@ const Hero = () => {
           </motion.div>
 
           <motion.div
-            initial={{ y: 60, opacity: 0 }}
+            initial={{ y: 80, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.4, delay: 0.7, ease: "easeInOut" }}
             className='app__flex-start app__hero-buttons-parent'>

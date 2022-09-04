@@ -1,0 +1,160 @@
+.app__works {
+    width: 100%;
+    overflow: hidden;
+}
+
+.app__works-head {
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: url('../../assets/works/nasir.jpg') center top repeat-x;
+    background-color: var(--black-color);
+    background-size: contain;
+
+    height: 26rem;
+    gap: 25%;
+    padding: 2rem 1rem;
+    margin-bottom: -3.5rem;
+    z-index: 1;
+
+    @media screen and (max-width: 329px) {
+        height: 22rem;
+        gap: 16%;
+    }
+
+    img {
+        width: 140px;
+        height: auto;
+        margin-bottom: 0.25rem;
+    }
+
+    h1 {
+        text-align: center;
+        color: var(--white-color);
+        filter: drop-shadow(0 0 8px #000);
+    }
+
+    ul {
+        gap: 1rem;
+        cursor: pointer;
+
+        p {
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 5rem;
+                height: 110%;
+                right: calc(50% - 2.5rem);
+                background: url('../../assets/works/section-blob.svg') center top no-repeat;
+            }
+        }
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 220px;
+        height: 100%;
+        top: 0;
+        right: calc(50% - 110px);
+        z-index: -1;
+        background: linear-gradient(#0e0c19 75%, transparent 100%);
+        // background-color: var(--black-color);
+    }
+}
+
+.app__works-categoryBox {
+    position: relative;
+    max-width: 100%;
+
+    @media screen and (max-width: 389px) {
+        &::before {
+            content: "";
+            position: absolute;
+            width: 7%;
+            height: calc(100% + 4px);
+            top: -2px;
+            right: -1rem;
+            background: linear-gradient(-90deg, var(--black-color), transparent);
+            z-index: 1;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 7%;
+            height: calc(100% + 4px);
+            top: -2px;
+            left: -1rem;
+            background: linear-gradient(90deg, var(--black-color), transparent);
+        }
+    }
+}
+
+.app__works-category-deactive {
+    color: var(--primary-darkmode-color);
+    box-shadow: inset 0 0 0 2px var(--primary-darkmode-color);
+    padding: 0.6rem 1.25rem;
+    border-radius: 8px;
+
+    &::after {
+        animation: blobOut 0.15s ease-out forwards;
+
+        @keyframes blobOut {
+            from {
+                bottom: calc(-100% - 1.375rem);
+            }
+
+            to {
+                bottom: calc(-100% - 2.375rem);
+            }
+        }
+    }
+}
+
+.app__works-category-active {
+    color: var(--black-color);
+    background-color: var(--white-color);
+    padding: 0.5rem 1.25rem;
+    border-radius: 8px;
+
+    &::after {
+        animation: blobIn 0.25s ease-in-out forwards;
+
+        @keyframes blobIn {
+            from {
+                bottom: calc(-100% - 2.375rem);
+            }
+
+            to {
+                bottom: calc(-100% - 1.375rem);
+            }
+        }
+    }
+}
+
+.app__works-portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    gap: 1rem;
+    // grid-row-gap: 2rem;
+
+    margin-top: 2rem;
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+    }
+
+    .app__flex-start {
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    @media screen and (max-width: 450px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

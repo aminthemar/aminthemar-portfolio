@@ -1,5 +1,4 @@
 import botejeqe from '../assets/botejeqe-paisley.svg'
-import colorBorder from '../assets/colorBorder.png'
 import loading from '../assets/loading.svg'
 import irakbar from '../assets/ir-akbar.png'
 
@@ -28,33 +27,32 @@ import unity_5 from '../assets/unity/unity-5.png'
 import unity_6 from '../assets/unity/unity-6.png'
 import unity_7 from '../assets/unity/unity-7.png'
 
-import codeport_1 from '../assets/code-port/codeport_balloons.jpg'
-import codeport_2 from '../assets/code-port/security-poster.jpg'
-import codeport_3 from '../assets/code-port/ur-poster.jpg'
-import codeport_4 from '../assets/code-port/koosh-icon.jpg'
-import designport_1 from '../assets/design-port/dormPoster.jpg'
-import designport_2 from '../assets/design-port/mn76.jpg'
-import designport_3 from '../assets/design-port/dominoteb.jpg'
-import designport_4 from '../assets/design-port/barglogo.jpg'
+import codeport_1 from '../assets/projects-preview/codeport_balloons.jpg'
+import codeport_2 from '../assets/projects-preview/security-poster.jpg'
+import codeport_3 from '../assets/projects-preview/ur-poster.jpg'
+import codeport_4 from '../assets/projects-preview/koosh-icon.jpg'
+import designport_1 from '../assets/projects-preview/dormPoster.jpg'
+import designport_2 from '../assets/projects-preview/mn76.jpg'
+import designport_3 from '../assets/projects-preview/dominoteb.jpg'
+import designport_4 from '../assets/projects-preview/barglogo.jpg'
 
-import codetool_1 from '../assets/code-port/tools/code-tool-1.png'
-import codetool_2 from '../assets/code-port/tools/code-tool-2.png'
-import codetool_3 from '../assets/code-port/tools/code-tool-3.png'
-import codetool_4 from '../assets/code-port/tools/code-tool-4.png'
-import codetool_5 from '../assets/code-port/tools/code-tool-5.png'
-import codetool_6 from '../assets/code-port/tools/code-tool-6.png'
-import designtool_1 from '../assets/design-port/tools/code-tool-7.png'
-import designtool_2 from '../assets/design-port/tools/code-tool-8.png'
-import designtool_3 from '../assets/design-port/tools/code-tool-9.png'
-import designtool_4 from '../assets/design-port/tools/code-tool-10.png'
-import designtool_5 from '../assets/design-port/tools/code-tool-11.png'
-import designtool_6 from '../assets/design-port/tools/code-tool-12.png'
+import codetool_1 from '../assets/projects-preview/tools/code-tool-1.png'
+import codetool_2 from '../assets/projects-preview/tools/code-tool-2.png'
+import codetool_3 from '../assets/projects-preview/tools/code-tool-3.png'
+import codetool_4 from '../assets/projects-preview/tools/code-tool-4.png'
+import codetool_5 from '../assets/projects-preview/tools/code-tool-5.png'
+import codetool_6 from '../assets/projects-preview/tools/code-tool-6.png'
+import designtool_1 from '../assets/projects-preview/tools/code-tool-7.png'
+import designtool_2 from '../assets/projects-preview/tools/code-tool-8.png'
+import designtool_3 from '../assets/projects-preview/tools/code-tool-9.png'
+import designtool_4 from '../assets/projects-preview/tools/code-tool-10.png'
+import designtool_5 from '../assets/projects-preview/tools/code-tool-11.png'
+import designtool_6 from '../assets/projects-preview/tools/code-tool-12.png'
 
 export default {
     loading,
     irakbar,
     botejeqe,
-    colorBorder,
     selfie_1,
     parche,
     job_icon_1,

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { MdMenu, MdOutlineClear, MdHome } from 'react-icons/md';
 import { RiLinkedinBoxFill, RiTelegramFill, RiMailFill, RiWhatsappFill } from 'react-icons/ri';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -11,46 +11,83 @@ const variants = {
   closed: { opacity: 0, x: "-100%" },
 }
 
-const Navbar = () => {
+const Navbar = ({ options = false }) => {
 
   const [styleClass, setStyleClass] = useState('-dark');
+  const [toggle, setToggle] = useState(false);
+  const navElements = useRef([]);
+  const [currentNav, setCurrentNav] = useState(-1);
+  const navRef = useRef(null);
+
+  useEffect(() => {
+    if (!options) {
+      navElements.current[0] = document.getElementById("contacts");
+      return;
+    }
+
+    const ids = ['jobs', 'edu', 'program', 'contacts'];
+    for (let index = 0; index < ids.length; index++) {
+      navElements.current[index] = document.getElementById(ids[index]);
+    }
+    setCurrentNav(navElements.current.length - 1);
+  }, []);
 
   useEffect(() => {
     const updateHiding = () => {
-      if (window.pageYOffset < 1400) {
+      if (window.pageYOffset < navElements.current[0].offsetTop) {
         setStyleClass('-dark');
       } else {
         setStyleClass('-light');
       }
     }
 
-    updateHiding();
+    const updateNavHighlights = () => {
+      for (let index = 0; index < navElements.current.length; index++) {
+        if ((navElements.current[index].offsetTop - 200 < window.pageYOffset) && (navElements.current[index].offsetHeight + navElements.current[index].offsetTop - 200 > window.pageYOffset)) {
+          if (index != currentNav) {
+            navRef.current.childNodes[index].className = "p-text p-link app__navbar-navitem-active";
+            navRef.current.childNodes[currentNav].className = "p-text p-link";
+            setCurrentNav(index);
+          }
+          return;
+        }
+      }
+
+      navRef.current.childNodes[currentNav].className = "p-text p-link";
+      setCurrentNav(navElements.current.length - 1);
+    }
+
     window.addEventListener("scroll", updateHiding);
-    return () => window.removeEventListener("scroll", updateHiding);
+    if (options) window.addEventListener("scroll", updateNavHighlights);
 
-  }, []);
+    return () => {
+      window.removeEventListener("scroll", updateHiding);
+      if (options) window.removeEventListener("scroll", updateNavHighlights);
+    }
+  }, [currentNav]);
 
-  const [toggle, setToggle] = useState(false);
 
   return (
     <div className={'app__navbar-box' + styleClass}>
       <nav className='app__navbar'>
 
-        <a href="" className='app__navbar-home app__flex-start squishy'>
+        <a href="/" className='app__navbar-home app__flex-start squishy'>
           <MdHome alt="خانه" />
           <p>خانه</p>
         </a>
 
-        <ul className='app__navbar-links'>
-          {[['jobs', 'سوابق'],
-          ['edu', 'آموزشی'],
-          ['program', 'پروژه‌های من'],
-          ['contacts', 'تماس‌ها'],].map((item) => (
-            <li className='app__flex p-text p-link' key={`link-${item[0]}`}>
-              <a href={`#${item[0]}`}>{item[1]}</a>
-            </li>
-          ))}
-        </ul>
+        {options &&
+          <ul ref={navRef} className='app__flex app__navbar-links'>
+            {[['jobs', 'سوابق'],
+            ['edu', 'آموزشی'],
+            ['program', 'پروژه‌های من'],
+            ['contacts', 'تماس‌ها'],].map((item) => (
+              <li className='p-text p-link' key={`link-${item[0]}`}>
+                <a href={`#${item[0]}`}>{item[1]}</a>
+              </li>
+            ))}
+          </ul>
+        }
 
         <div className='app__navbar-menu'>
           <span className={'app__navbar-burger app__navbar-burger' + styleClass + ' squishy'}
@@ -76,17 +113,31 @@ const Navbar = () => {
                   onClick={() => setToggle(false)}
                 >
                   <MdOutlineClear />
-                  <ul>
-                    {[['', 'خانه'],
-                    ['jobs', 'سوابق'],
-                    ['edu', 'آموزشی'],
-                    ['program', 'پروژه‌های من'],
-                    ['contacts', 'تماس‌ها'],].map((item) => (
-                      <li key={`link-${item[0]}`}>
-                        <a href={`#${item[0]}`}>{item[1]}</a>
+
+                  {options
+                    ? <ul>
+                      {[['', 'خانه'],
+                      ['jobs', 'سوابق'],
+                      ['edu', 'آموزشی'],
+                      ['program', 'پروژه‌های من'],
+                      ['contacts', 'تماس‌ها'],].map((item) => (
+                        <li key={`link-${item[0]}`}>
+                          <a href={`#${item[0]}`}>{item[1]}</a>
+                        </li>
+                      ))}
+                    </ul>
+                    : <ul>
+                      <li key='link-home'>
+                        <a href='/'>خانه</a>
                       </li>
-                    ))}
-                  </ul>
+                      <li key='link-works'>
+                        <a href='/works'>پروژه‌های من</a>
+                      </li>
+                      <li key='link-fonts'>
+                        <a href='https://rastikerdar.github.io/vazirmatn/'>فونت وزیر</a>
+                      </li>
+                    </ul>}
+
                   <div className='app__flex app__navbar-social'>
                     <a href="mailto:aminthemar@hotmail.com" target="_blank" rel="external"><RiMailFill /></a>
                     <a href="https://www.linkedin.com/in/aminthemar" target="_blank" rel="external"><RiLinkedinBoxFill /></a>

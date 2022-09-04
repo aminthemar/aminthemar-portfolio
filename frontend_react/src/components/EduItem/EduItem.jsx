@@ -41,7 +41,7 @@ const EduItem = ({ edu_data }) => {
                     </div>
                 </a>
             </span>
-            <section className='app__edu-card lifty'>
+            <section className='app__edu-card'>
                 <img src={edu_data.logo} alt={edu_data.place} />
                 <p className='p-text app__yeartag'>{edu_data.yearend} - {edu_data.yearstart}</p>
                 {/* <div className='app__edu-external'>

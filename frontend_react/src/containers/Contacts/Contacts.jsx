@@ -75,8 +75,8 @@ const Contacts = () => {
 
             <div className='app__container section_pad'>
                 <ul className='app__contacts-stats app__flex'>
-                    {[['2+', 'سال تجربه‌ی کار', <MdAccessTimeFilled />],
-                    ['15', 'پروژه‌ی موفق', <MdThumbUpAlt />],
+                    {[['15', 'پروژه‌ی موفق', <MdThumbUpAlt />],
+                    ['2+', 'سال تجربه‌ی کار', <MdAccessTimeFilled />],
                     ['3', 'بازی منتشر', <MdGames />],
                     ].map((stat_item, index) => (
                         <motion.li
