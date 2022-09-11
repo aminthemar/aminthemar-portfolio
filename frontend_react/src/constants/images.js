@@ -3,13 +3,12 @@ import loading from '../assets/loading.svg'
 import irakbar from '../assets/ir-akbar.png'
 
 import selfie_1 from '../assets/hero/selfie-1.jpg'
-import parche from '../assets/hero/hero-parche.png'
+import parche from '../assets/hero/hero-parche.webp'
 
 import job_icon_1 from '../assets/job-icons/job-1.png'
 import job_icon_2 from '../assets/job-icons/job-2.png'
 import job_icon_3 from '../assets/job-icons/job-3.png'
 import job_icon_4 from '../assets/job-icons/job-4.png'
-import job_laurier from '../assets/job-icons/laurier-gris.svg'
 import mandala from '../assets/job-icons/mandala.svg'
 
 import edu_1 from '../assets/edu/edu-8roodi.jpg'
@@ -59,7 +58,6 @@ export default {
     job_icon_2,
     job_icon_3,
     job_icon_4,
-    job_laurier,
     edu_1,
     edu_2,
     edu_3,
