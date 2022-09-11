@@ -1,9 +1,10 @@
 .app__edu-bg {
     width: 100%;
     overflow: hidden;
-    background-color: var(--bg-lightmode-color);
+    // background-color: var(--bg-lightmode-color);
 
     padding-top: 2rem;
+    margin-bottom: -2rem;
 }
 
 .app__edu-link_icon {
@@ -24,17 +25,17 @@
         content: "";
         position: absolute;
         margin: 0 0.5rem;
-        background: linear-gradient(transparent, var(--bg-lightmode-color)), url("../../assets/edu/pillar.svg");
+        background: url("../../assets/edu/pillar.svg");
         background-repeat: repeat-y;
 
-        top: calc(16rem + 10vw);
-        width: calc(22rem + 10vw);
+        top: calc(15rem + 10vw);
+        width: calc(20rem + 10vw);
         height: 95%;
         background-size: contain;
 
         img {
             position: absolute;
-            top: calc(-15rem - 10vw);
+            top: calc(-14rem - 10vw);
         }
 
         @media screen and (max-width: 599px) {

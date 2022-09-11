@@ -55,20 +55,20 @@ body {
   --font-bold: 800;
 
   --primary-darkmode-color: #36ffae;
-  --primary-lightmode-color: #746Cfe;
+  --primary-lightmode-color: #6c64ff;
   /* --secondary-color: #ae8cfa; */
   --error-color: #ed618b;
 
   --black-color: #0e0b1a;
-  --border-color: #ebedf3;
-  --gray-color: #cccfd6;
-  --grey-color: #676b78;
+  --border-color: #e8e9eb;
+  --gray-color: #bdc2ce;
+  --grey-color: #3a4157;
   --white-color: #ffffff;
 
-  --bg-darkmode-color: #201859;
-  --bg-lightmode-color: #f5f7fa;
+  --bg-darkmode-color: #2a2268;
+  --bg-lightmode-color: #f4f5f8;
 
-  --box-width: 1280px;
+  --box-width: 1260px;
 }
 
 * {

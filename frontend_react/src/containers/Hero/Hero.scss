@@ -142,10 +142,10 @@
     gap: 1rem;
     flex-wrap: wrap;
 
-    color: var(--grey-color);
+    // color: var(--grey-color);
 
-    p {
-        color: var(--grey-color);
+    * {
+        color: var(--gray-color);
     }
 
     div {

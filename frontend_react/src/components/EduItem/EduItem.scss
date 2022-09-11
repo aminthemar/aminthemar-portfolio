@@ -93,11 +93,21 @@
     border-radius: 8px;
     gap: 0.5rem;
 
-    color: var(--primary-lightmode-color);
-    background-color: #ededff;
+    background-color: #f2f2ff;
+    // box-shadow: inset 0 0 0 1px var(--border-color);
+    transition: all 0.1s ease-in-out;
 
-    p {
+    * {
         color: var(--primary-lightmode-color);
+    }
+
+    &:hover {
+        background-color: var(--primary-lightmode-color);
+        // box-shadow: unset;
+
+        * {
+            color: var(--white-color);
+        }
     }
 }
 

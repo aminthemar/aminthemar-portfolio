@@ -154,10 +154,11 @@ img {
 
 .p-text {
   font-size: 1.125rem;
-  line-height: 1.6;
+  line-height: 1.65;
   color: var(--grey-color);
 
-  max-width: 29rem;
+  max-width: 38rem;
+  white-space: pre-wrap;
 
   @media screen and (max-width: 2000px) {
     font-size: 0.9375rem;
