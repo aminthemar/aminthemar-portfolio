@@ -83,10 +83,10 @@ const Works = () => {
                         <ul className='app__works-portfolio'>
                             {portfolioItems.map((port_item, index) => (
                                 <motion.li
-                                    initial={{ opacity: 0.2, y: 60 }}
+                                    initial={{ opacity: 0.2, y: 100 }}
                                     whileInView={{ opacity: 1, y: 0 }}
                                     viewport={{ once: true, amount: 0.2 }}
-                                    transition={{ duration: 0.3, delay: (index % 2) / 10 }}
+                                    transition={{ duration: 0.4, delay: (index % 2) / 10 }}
                                     key={`work-${index}`}>
                                     <div className='app__cardcover'>
                                         <span className='app__flex'>
