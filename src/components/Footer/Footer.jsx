@@ -9,7 +9,7 @@ const Footer = () => {
     <div className='app__Footer'>
       <section className='app__flex app__container'>
         <a href="https://rastikerdar.github.io/vazirmatn/"
-          target="_blank" rel="external"
+          target="_blank" rel="noreferrer"
           className='app__flex-start link_icon'>
           <FaCopyright />
           <p className='p-small p-link'>فونت فارسی وزیر</p>

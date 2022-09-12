@@ -25,7 +25,7 @@ const Portfolio = () => {
     }
 
     function getLocalData(new_category_idx) {
-        if (activeCategory == new_category_idx) return;
+        if (activeCategory === new_category_idx) return;
 
         ActivateCategory(new_category_idx);
         setLoading(true);
@@ -110,7 +110,7 @@ const Portfolio = () => {
                         {toolsItems.map((tool_item, index) => (
                             <a className='app__flex'
                                 href={tool_item['websiteurl']}
-                                key={`tool-${index}`} target="_blank" rel="external">
+                                key={`tool-${index}`} target="_blank" rel="noreferrer">
                                 <img src={tool_item['logo']} alt={`tool-${index}`} />
                                 <p className='p-small'>{tool_item['title']}</p>
                             </a>

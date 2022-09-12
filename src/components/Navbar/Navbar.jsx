@@ -6,10 +6,10 @@ import { motion, AnimatePresence } from 'framer-motion';
 // import { images } from '../../constants';
 import './Navbar.scss';
 
-const variants = {
-  open: { opacity: 1, x: 0 },
-  closed: { opacity: 0, x: "-100%" },
-}
+// const variants = {
+//   open: { opacity: 1, x: 0 },
+//   closed: { opacity: 0, x: "-100%" },
+// }
 
 const Navbar = ({ options = false }) => {
 
@@ -23,14 +23,14 @@ const Navbar = ({ options = false }) => {
     if (!options) {
       navElements.current[0] = document.getElementById("contacts");
       return;
-    }
+    } console.log("h")
 
     const ids = ['jobs', 'edu', 'program', 'contacts'];
     for (let index = 0; index < ids.length; index++) {
       navElements.current[index] = document.getElementById(ids[index]);
     }
     setCurrentNav(navElements.current.length - 1);
-  }, []);
+  }, [options]);
 
   useEffect(() => {
     const updateHiding = () => {
@@ -44,7 +44,7 @@ const Navbar = ({ options = false }) => {
     const updateNavHighlights = () => {
       for (let index = 0; index < navElements.current.length; index++) {
         if ((navElements.current[index].offsetTop - 200 < window.pageYOffset) && (navElements.current[index].offsetHeight + navElements.current[index].offsetTop - 200 > window.pageYOffset)) {
-          if (index != currentNav) {
+          if (index !== currentNav) {
             navRef.current.childNodes[index].className = "p-text p-link app__navbar-navitem-active";
             navRef.current.childNodes[currentNav].className = "p-text p-link";
             setCurrentNav(index);
@@ -139,10 +139,10 @@ const Navbar = ({ options = false }) => {
                     </ul>}
 
                   <div className='app__flex app__navbar-social'>
-                    <a href="mailto:aminthemar@hotmail.com" target="_blank" rel="external"><RiMailFill /></a>
-                    <a href="https://www.linkedin.com/in/aminthemar" target="_blank" rel="external"><RiLinkedinBoxFill /></a>
-                    <a href="https://wa.me/qr/L4I2UEGCSLS4N1" target="_blank" rel="external"><RiWhatsappFill /></a>
-                    <a href="https://t.me/aminthemar" target="_blank" rel="external"><RiTelegramFill /></a>
+                    <a href="mailto:aminthemar@hotmail.com" target="_blank" rel="noreferrer"><RiMailFill /></a>
+                    <a href="https://www.linkedin.com/in/aminthemar" target="_blank" rel="noreferrer"><RiLinkedinBoxFill /></a>
+                    <a href="https://wa.me/qr/L4I2UEGCSLS4N1" target="_blank" rel="noreferrer"><RiWhatsappFill /></a>
+                    <a href="https://t.me/aminthemar" target="_blank" rel="noreferrer"><RiTelegramFill /></a>
                   </div>
                 </motion.section>
               </>

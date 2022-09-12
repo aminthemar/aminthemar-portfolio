@@ -34,7 +34,7 @@ const EduItem = ({ edu_data }) => {
                 </div>
                 <p className='p-text'>{edu_data.description}</p>
                 <a href={edu_data.websiteurl} key={`edu-${edu_data.websiteurl}`}
-                    target="_blank" rel="external" className='app__flex-start'>
+                    target="_blank" rel="noreferrer" className='app__flex-start'>
                     <div className='app__edu-external app__flex'>
                         <p className='p-text p-link'>{edu_data.place}</p>
                         <AiOutlineLink />

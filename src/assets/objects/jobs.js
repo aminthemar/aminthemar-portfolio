@@ -45,7 +45,7 @@ const getJobsData = (n_jobs) => {
                 name: 'jobs',
                 content: data.content.slice(0, n_jobs)
             }
-            resolve(data);
+            resolve(temp_data);
         }, 100);
     }));
 }

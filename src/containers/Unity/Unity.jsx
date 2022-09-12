@@ -79,7 +79,7 @@ const Unity = () => {
               <span className='app__flex-start'>
 
                 <a href="https://www.aparat.com/AminTheMar"
-                  target="_blank" rel="external"
+                  target="_blank" rel="noreferrer"
                   className='app__flex-start app__unity-teacher button_icon squishy'>
                   <BsFillPersonFill />
                   <p className='p-text p-link'>مدرس . محمدامین رشید</p>

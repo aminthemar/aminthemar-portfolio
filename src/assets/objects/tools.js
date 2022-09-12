@@ -88,7 +88,7 @@ const getnToolsbyCategory = (n_tools, category) => {
 
             let index = 0;
             while (temp_data.content.length < n_tools && index < data.content.length) {
-                if (data.content[index]['category'] == category) {
+                if (data.content[index]['category'] === category) {
                     temp_data.content.push(data.content[index]);
                 }
                 index++;

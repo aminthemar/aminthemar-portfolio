@@ -60,7 +60,7 @@ const Project = () => {
                                 viewport={{ once: true, amount: 0.2 }}
                                 transition={{ duration: 0.4 }}
                                 className='app__project-logo'>
-                                <img src={work["logo"]} />
+                                <img src={work["logo"]} alt='project-logo' />
 
                                 {(work["websiteurl"].length > 2) &&
                                     <a href={work["websiteurl"]}
@@ -101,7 +101,7 @@ const Project = () => {
                             </div>
 
                             <div className='app__project-logo'>
-                                <img src={work["logo"]} />
+                                <img src={work["logo"]} alt='project-logo' />
 
                                 {(work["websiteurl"].length > 2) &&
                                     <a href={work["websiteurl"]}

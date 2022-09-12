@@ -46,7 +46,7 @@ const Jobs = () => {
                                 key={`job-${index}`}
                             >
                                 <a href={`${job_item.websiteurl}`}
-                                    target="_blank" rel="external">
+                                    target="_blank" rel="noreferrer">
                                     <span className='app__flex'>
                                         <div className='app__jobs-span'></div>
                                         <img src={job_item.logo} alt={`job-${index}`} />
