@@ -23,7 +23,7 @@ const Navbar = ({ options = false }) => {
     if (!options) {
       navElements.current[0] = document.getElementById("contacts");
       return;
-    } console.log("h")
+    }
 
     const ids = ['jobs', 'edu', 'program', 'contacts'];
     for (let index = 0; index < ids.length; index++) {
@@ -134,7 +134,7 @@ const Navbar = ({ options = false }) => {
                         <a href='/works'>پروژه‌های من</a>
                       </li>
                       <li key='link-fonts'>
-                        <a href='https://rastikerdar.github.io/vazirmatn/'>فونت وزیر</a>
+                        <a href='https://rastikerdar.github.io/vazirmatn/'>فونت وزیرمتن</a>
                       </li>
                     </ul>}
 

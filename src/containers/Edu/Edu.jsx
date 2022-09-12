@@ -1,4 +1,4 @@
-import { React, useRef, useState } from 'react'
+import { React, useRef, useState, useEffect } from 'react'
 import { MdKeyboardArrowDown, MdKeyboardArrowUp } from 'react-icons/md'
 import { motion } from 'framer-motion';
 

@@ -12,7 +12,7 @@ const Footer = () => {
           target="_blank" rel="noreferrer"
           className='app__flex-start link_icon'>
           <FaCopyright />
-          <p className='p-small p-link'>فونت فارسی وزیر</p>
+          <p className='p-small p-link'>فونت فارسی وزیرمتن</p>
         </a>
         <p className='p-small'>از شما متشکرم که پیشینه‌ی من را مشاهده کردید.</p>
         <div className='p-small app__Footer-username'>aminthemar@</div>
