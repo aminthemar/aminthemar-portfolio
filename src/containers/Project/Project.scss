@@ -19,11 +19,37 @@
             height: 22rem;
         }
     }
+
+    &::after {
+        content: 'آ';
+        position: absolute;
+        overflow: hidden;
+        left: calc(50% - 45rem);
+        top: 0;
+        height: 20.5rem;
+        z-index: 0;
+
+        line-height: 125%;
+        font-size: 40rem;
+        font-weight: var(--font-regular);
+        font-family: Courier;
+        color: var(--bg-darkmode-color);
+        // opacity: 0.5;
+
+        @media screen and (max-width: 799px) {
+            height: 28rem;
+        }
+
+        @media screen and (min-width: 2000px) {
+            height: 22rem;
+        }
+    }
 }
 
 .app__project {
     gap: 3rem;
     align-items: stretch;
+    z-index: 1;
 
     section {
         width: calc(15% + 15rem);
