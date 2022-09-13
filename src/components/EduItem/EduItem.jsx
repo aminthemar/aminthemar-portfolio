@@ -20,8 +20,8 @@ const EduItem = ({ edu_data }) => {
             viewport={{ once: true, amount: 0.7 }}
             transition={{ duration: 0.3 }}
             variants={{
-                visible: { opacity: 1, y: 0 },
-                hidden: { opacity: 0.2, y: 30 }
+                visible: { y: 0 },
+                hidden: { y: 30 }
             }}
             onAnimationComplete={onComplete}
             ref={edu_item}

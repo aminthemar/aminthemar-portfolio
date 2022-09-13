@@ -1,8 +1,8 @@
 .App {
   direction: rtl;
   text-align: right;
-  font-family: var(--font-base), 'Segoe UI', Courier, sans-serif;
-  font-weight: var(--font-light);
+  font-family: var(--font-base), 'Roboto', 'Segoe UI', sans-serif;
+  font-weight: var(--font-regular);
 
   background-color: var(--white-color);
   color: var(--black-color);
@@ -156,6 +156,7 @@ img {
   font-size: 1.125rem;
   line-height: 1.65;
   color: var(--grey-color);
+  font-weight: var(--font-light);
 
   max-width: 38rem;
   white-space: pre-wrap;
@@ -178,13 +179,11 @@ img {
 }
 
 .p-link {
-  font-weight: var(--font-regular);
   line-height: normal;
 }
 
 .p-title {
   font-size: 1.5rem;
-  font-weight: var(--font-regular);
   line-height: 1.5;
   color: var(--black-color);
 

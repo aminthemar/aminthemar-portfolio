@@ -55,8 +55,8 @@ const Project = () => {
                     <>
                         <section>
                             <motion.div
-                                initial={{ opacity: 0.2, y: 100 }}
-                                whileInView={{ opacity: 1, y: 0 }}
+                                initial={{ y: 60 }}
+                                whileInView={{ y: 0 }}
                                 viewport={{ once: true, amount: 0.2 }}
                                 transition={{ duration: 0.4 }}
                                 className='app__project-logo'>

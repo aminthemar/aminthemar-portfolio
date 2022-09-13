@@ -6,12 +6,14 @@ import { SectionTitle } from '../../components'
 import { AppWrap } from '../../wrapper'
 import { images, jobs_data } from '../../constants';
 
+const job_count = 4;
+
 const Jobs = () => {
     const [job_items, setJobs] = useState([]);
     const [loading, setLoading] = useState(true);
 
     const getLocalData = () => {
-        jobs_data.getJobsData(4)
+        jobs_data.getJobsData(job_count)
             .then(data => {
                 setJobs(data.content);
                 setLoading(false);
@@ -39,8 +41,8 @@ const Jobs = () => {
                     : <ul className='app__jobs'>
                         {job_items.map((job_item, index) => (
                             <motion.li
-                                initial={{ y: 60, opacity: 0.2 }}
-                                whileInView={{ y: 0, opacity: 1 }}
+                                initial={{ y: 60 }}
+                                whileInView={{ y: 0 }}
                                 viewport={{ once: true, amount: 0.7 }}
                                 transition={{ duration: 0.3, delay: (index / 10), ease: 'easeOut' }}
                                 key={`job-${index}`}

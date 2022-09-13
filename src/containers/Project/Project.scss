@@ -158,6 +158,10 @@
         position: unset;
         background-color: unset;
         border-radius: 0;
+
+        &::before {
+            display: none;
+        }
     }
 }
 
@@ -288,7 +292,7 @@
 }
 
 .app__project-screenshots {
-    border-radius: 8px;
+    border-radius: 0 8px 8px 0;
     margin-top: 0.5rem;
     overflow: hidden;
 
