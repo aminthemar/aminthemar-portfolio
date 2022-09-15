@@ -15,6 +15,8 @@ const data = {
             "date": "",
             "websiteurl": "#",
             "aparatID": "#",
+            "color": "#1d92f6",
+
         },
         "koosh": {
             "id": "koosh",
@@ -28,6 +30,7 @@ const data = {
             "date": "تیر 1396",
             "websiteurl": "https://drive.google.com/drive/folders/1xdQGL9vWCwdeXc4x0c4zL7KZ3uISFVWO",
             "aparatID": "#",
+            "color": "#1d92f6",
         },
         "security": {
             "id": "security",
@@ -40,6 +43,7 @@ const data = {
             "date": "",
             "websiteurl": "#",
             "aparatID": "#",
+            "color": "#1d92f6",
         },
         "urang": {
             "id": "urang",
@@ -52,6 +56,7 @@ const data = {
             "date": "",
             "websiteurl": "#",
             "aparatID": "#",
+            "color": "#1d92f6",
         },
         "#": {
             "id": "#",
@@ -64,6 +69,7 @@ const data = {
             "date": "",
             "websiteurl": "#",
             "aparatID": "#",
+            "color": "#1d92f6",
         },
         "#": {
             "id": "#",
@@ -76,6 +82,7 @@ const data = {
             "date": "",
             "websiteurl": "#",
             "aparatID": "#",
+            "color": "#1d92f6",
         },
         "#": {
             "id": "#",
@@ -88,6 +95,7 @@ const data = {
             "date": "",
             "websiteurl": "#",
             "aparatID": "#",
+            "color": "#1d92f6",
         },
         "#": {
             "id": "#",
@@ -100,6 +108,7 @@ const data = {
             "date": "",
             "websiteurl": "#",
             "aparatID": "#",
+            "color": "#1d92f6",
         },
     }
 }

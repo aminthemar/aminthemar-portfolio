@@ -60,26 +60,31 @@ const Project = () => {
                                 viewport={{ once: true, amount: 0.2 }}
                                 transition={{ duration: 0.4 }}
                                 className='app__project-logo'>
-                                <img src={work["logo"]} alt='project-logo' />
+                                <img src={work["logo"]} alt='project-logo'
+                                    style={{ backgroundColor: work["color"] }}
+                                />
 
-                                {(work["websiteurl"].length > 2) &&
-                                    <a href={work["websiteurl"]}
-                                        rel="external"
-                                        className='app__flex link_icon-primary squishy'>
-                                        <p className='p-text p-link'>نسخه‌ی لایو</p>
-                                        <ImEye />
+                                <div className='app__flex-end'>
+                                    {(work["websiteurl"].length > 2) &&
+                                        <a href={work["websiteurl"]}
+                                            rel="external"
+                                            className='app__flex link_icon-primary squishy'>
+                                            <p className='p-text p-link'>نسخه‌ی لایو</p>
+                                            <ImEye />
+                                        </a>
+                                    }
+
+                                    <a href="/works"
+                                        rel="next"
+                                        className='app__flex'>
+                                        <div className='app__flex-start link_icon app__project-back'>
+                                            <BsArrowRight />
+                                            <p className='p-text p-link'>بازگشت</p>
+                                        </div>
+                                        <p className='p-text'>{work["date"]}</p>
                                     </a>
-                                }
+                                </div>
 
-                                <a href="/works"
-                                    rel="next"
-                                    className='app__flex'>
-                                    <div className='app__flex-start link_icon app__project-back'>
-                                        <BsArrowRight />
-                                        <p className='p-text p-link'>بازگشت</p>
-                                    </div>
-                                    <p className='p-text'>{work["date"]}</p>
-                                </a>
                             </motion.div>
                         </section>
                         <span>
@@ -101,26 +106,31 @@ const Project = () => {
                             </div>
 
                             <div className='app__project-logo'>
-                                <img src={work["logo"]} alt='project-logo' />
+                                <img src={work["logo"]} alt='project-logo'
+                                    style={{ backgroundColor: work["color"] }}
+                                />
 
-                                {(work["websiteurl"].length > 2) &&
-                                    <a href={work["websiteurl"]}
-                                        rel="external"
-                                        className='app__flex link_icon-primary squishy'>
-                                        <p className='p-text p-link'>نسخه‌ی لایو</p>
-                                        <ImEye />
+                                <div className='app__flex-end'>
+                                    {(work["websiteurl"].length > 2) &&
+                                        <a href={work["websiteurl"]}
+                                            rel="external"
+                                            className='app__flex link_icon-primary squishy'>
+                                            <p className='p-text p-link'>نسخه‌ی لایو</p>
+                                            <ImEye />
+                                        </a>
+                                    }
+
+                                    <a href="/works"
+                                        rel="next"
+                                        className='app__flex'>
+                                        <div className='app__flex-start link_icon app__project-back'>
+                                            <BsArrowRight />
+                                            <p className='p-text p-link'>بازگشت</p>
+                                        </div>
+                                        <p className='p-text'>{work["date"]}</p>
                                     </a>
-                                }
+                                </div>
 
-                                <a href="/works"
-                                    rel="next"
-                                    className='app__flex'>
-                                    <div className='app__flex-start link_icon app__project-back'>
-                                        <BsArrowRight />
-                                        <p className='p-text p-link'>بازگشت</p>
-                                    </div>
-                                    <p className='p-text'>{work["date"]}</p>
-                                </a>
                             </div>
 
                             <div className='app__project-contentbox'>

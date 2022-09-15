@@ -22,13 +22,13 @@ const Hero = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ duration: 1, ease: 'easeInOut' }}
+            transition={{ duration: 1, delay: 0.75, ease: 'easeInOut' }}
           ><img src={images.parche} alt="persian calligraphy" /></motion.span>
 
           <motion.h1
             initial={{ y: 80, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.4, delay: 0.5, ease: "easeInOut" }}
+            transition={{ duration: 0.4, delay: 0.2, ease: "easeInOut" }}
             className='app__hero-h1'>
             {/* در همه چیزی هنر و عِیب هست <br /> عیب مَبین تا هنر آری به دست */}
             {/* من به صفت چون مَه گردون شوَم<br />نشکنم، اَر بشکنم افزون شوَم */}
@@ -39,7 +39,7 @@ const Hero = () => {
           <motion.div
             initial={{ y: 80, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.4, delay: 0.6, ease: "easeInOut" }}
+            transition={{ duration: 0.4, delay: 0.3, ease: "easeInOut" }}
             className='app__hero-profile'>
             <img src={images.selfie_1} alt='mohammad_amin_rashid' />
 
@@ -77,7 +77,7 @@ const Hero = () => {
           <motion.div
             initial={{ y: 80, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.4, delay: 0.7, ease: "easeInOut" }}
+            transition={{ duration: 0.4, delay: 0.4, ease: "easeInOut" }}
             className='app__flex-start app__hero-buttons-parent'>
             <PrimaryButton text='پیشینه‌ی من' btn_icon={MdArrowDownward} href="#jobs" />
             <SecondaryButton text='دانلود رزومه' btn_icon={MdOutlineInsertDriveFile} href="#" />

@@ -21,7 +21,7 @@
   font-display: swap;
 }
 
-@font-face {
+/* @font-face {
   font-family: 'Vazir';
   src: url('fonts/Vazir-Medium-FD-WOL-UI.eot');
   src: url('fonts/Vazir-Medium-FD-WOL-UI.woff') format('woff'),
@@ -29,7 +29,7 @@
   font-weight: 600;
   font-style: normal;
   font-display: swap;
-}
+} */
 
 @font-face {
   font-family: 'Vazir';
@@ -50,12 +50,11 @@ body {
 :root {
   --font-base: "Vazir";
   --font-light: 200;
-  /* --font-semiregular: 400; */
   --font-regular: 400;
   --font-bold: 800;
 
   --primary-darkmode-color: #36ffae;
-  --primary-lightmode-color: #6c64ff;
+  --primary-lightmode-color: #6756ff;
   /* --secondary-color: #ae8cfa; */
   --error-color: #ed618b;
 
@@ -65,10 +64,10 @@ body {
   --grey-color: #3a4157;
   --white-color: #ffffff;
 
-  --bg-darkmode-color: #2a2268;
-  --bg-lightmode-color: #f4f5f8;
+  --bg-darkmode-color: #271e6b;
+  --bg-lightmode-color: #f3f5fa;
 
-  --box-width: 1260px;
+  --box-width: 1270px;
 }
 
 * {

@@ -82,12 +82,7 @@ const Works = () => {
                         <p className='p-text app__container app__flex'><AiOutlineInfoCircle /> &nbsp; برای آشنایی با پروژه‌های زیر روی آنها کلیک کنید.</p>
                         <ul className='app__works-portfolio'>
                             {portfolioItems.map((port_item, index) => (
-                                <motion.li
-                                    initial={{ y: 60 }}
-                                    whileInView={{ y: 0 }}
-                                    viewport={{ once: true, amount: 0.25 }}
-                                    transition={{ duration: 0.4, delay: (index % 2) / 10 }}
-                                    key={`work-${index}`}>
+                                <li key={`work-${index}`}>
                                     <div className='app__cardcover'>
                                         <span className='app__flex'>
                                             <a href={`/works/${port_item['id']}`} target="_blank" rel="noreferrer">
@@ -99,7 +94,7 @@ const Works = () => {
                                         </span>
                                         <img src={port_item['logo']} alt={port_item['title']} />
                                     </div>
-                                </motion.li>
+                                </li>
                             ))}
                         </ul>
                     </>

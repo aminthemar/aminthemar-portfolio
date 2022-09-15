@@ -1,10 +1,10 @@
-import { React, useRef, useState, useEffect } from 'react'
+import { React, useRef, useState, useEffect, lazy, Suspense } from 'react'
 import { motion } from 'framer-motion'
 import { BsFillPlayCircleFill, BsArrowLeft, BsFillPersonFill } from 'react-icons/bs'
 
 import './Unity.scss';
-import { images } from '../../constants';
-import { videos } from '../../constants';
+import { images, videos } from '../../constants';
+const LazyVideo = lazy(() => import('../../components/LazyVideo/LazyVideo'));
 
 const unity_thumbs = [
   [images.unity_1, 'https://www.aparat.com/v/yM30E?playlist=1214480'],
@@ -59,14 +59,9 @@ const Unity = () => {
   return (
     <div className='app__unity-bg'>
 
-      <motion.video
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true, amount: 0.5 }}
-        transition={{ duration: 0.5 }}
-        autoPlay muted loop className='app__unity-video'>
-        <source src={videos.unity_vid} type="video/mp4" />
-      </motion.video>
+      <Suspense fallback={<div></div>}>
+        <LazyVideo video_src={videos.unity_vid} custom_class='app__unity-video' />
+      </Suspense>
 
       <span />
 
