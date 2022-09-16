@@ -87,7 +87,7 @@ const Portfolio = () => {
                             {portfolioItems.map((port_item, index) => (
                                 <li className='app__cardcover' key={`work-${index}`}>
                                     <span className='app__flex'>
-                                        <Link to={`/works/${port_item['id']}`} target="_blank" rel="noopener noreferrer">
+                                        <Link to={`/works/${port_item['id']}`} rel="noopener noreferrer">
                                             <ImEye />
                                             <p className='p-title'>{port_item['title']}</p>
                                             <p className='p-text'>{port_item['company']}</p>
