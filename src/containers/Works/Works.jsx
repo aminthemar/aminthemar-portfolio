@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 
 import { images, works_data } from '../../constants';
 import './Works.scss';
+import { Link } from 'react-router-dom';
 
 const categories = ['بازی', 'وبسایت', 'لوگو', 'پوستر'];
 
@@ -85,12 +86,12 @@ const Works = () => {
                                 <li key={`work-${index}`}>
                                     <div className='app__cardcover'>
                                         <span className='app__flex'>
-                                            <a href={`/works/${port_item['id']}`} target="_blank" rel="noreferrer">
+                                            <Link to={`/works/${port_item['id']}`} target="_blank" rel="noopener noreferrer">
                                                 <ImEye />
                                                 <p className='p-title'>{port_item['title']}</p>
                                                 <p className='p-text'>{port_item['company']}</p>
                                                 <div className='app__portfolio-button p-text p-link'>پروژه‌ی کامل</div>
-                                            </a>
+                                            </Link>
                                         </span>
                                         <img src={port_item['logo']} alt={port_item['title']} />
                                     </div>

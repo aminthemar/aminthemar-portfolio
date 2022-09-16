@@ -1,5 +1,6 @@
 import { React, useRef, useState } from 'react'
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 
 import { BsArrowLeft, BsFillCheckCircleFill } from 'react-icons/bs'
 import { ImEye } from 'react-icons/im'
@@ -65,12 +66,12 @@ const Portfolio = () => {
                                 </li>
                             ))}
                         </ul>
-                        <a href="/works"
-                            rel="next"
+                        <Link to="/works"
+                            rel="noopener noreferrer"
                             className='app__flex-start link_icon link_icon-primary'>
                             <p className='p-text p-link'>مشاهده همه</p>
                             <BsArrowLeft />
-                        </a>
+                        </Link>
                     </div>
 
                     {loading
@@ -86,12 +87,12 @@ const Portfolio = () => {
                             {portfolioItems.map((port_item, index) => (
                                 <li className='app__cardcover' key={`work-${index}`}>
                                     <span className='app__flex'>
-                                        <a href={`/works/${port_item['id']}`} target="_blank" rel="noreferrer">
+                                        <Link to={`/works/${port_item['id']}`} target="_blank" rel="noopener noreferrer">
                                             <ImEye />
                                             <p className='p-title'>{port_item['title']}</p>
                                             <p className='p-text'>{port_item['company']}</p>
                                             <div className='app__portfolio-button p-text p-link'>پروژه‌ی کامل</div>
-                                        </a>
+                                        </Link>
                                     </span>
 
                                     <img src={port_item['logo']} alt={`work-${index}`} />

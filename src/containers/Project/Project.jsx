@@ -6,6 +6,7 @@ import { ImEye } from 'react-icons/im'
 
 import { works_data } from '../../constants';
 import './Project.scss';
+import { Link } from 'react-router-dom';
 
 const Project = () => {
     const { id } = useParams();
@@ -74,15 +75,15 @@ const Project = () => {
                                         </a>
                                     }
 
-                                    <a href="/works"
-                                        rel="next"
+                                    <Link to="/works"
+                                        rel="noopener noreferrer"
                                         className='app__flex'>
                                         <div className='app__flex-start link_icon app__project-back'>
                                             <BsArrowRight />
                                             <p className='p-text p-link'>بازگشت</p>
                                         </div>
                                         <p className='p-text'>{work["date"]}</p>
-                                    </a>
+                                    </Link>
                                 </div>
 
                             </motion.div>
@@ -120,15 +121,15 @@ const Project = () => {
                                         </a>
                                     }
 
-                                    <a href="/works"
-                                        rel="next"
+                                    <Link to="/works"
+                                        rel="noopener noreferrer"
                                         className='app__flex'>
                                         <div className='app__flex-start link_icon app__project-back'>
                                             <BsArrowRight />
                                             <p className='p-text p-link'>بازگشت</p>
                                         </div>
                                         <p className='p-text'>{work["date"]}</p>
-                                    </a>
+                                    </Link>
                                 </div>
 
                             </div>

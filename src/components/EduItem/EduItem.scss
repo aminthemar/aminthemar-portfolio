@@ -118,9 +118,12 @@
 
 .app__edu-card {
     position: relative;
+    overflow: hidden;
+    background-color: var(--bg-lightmode-color);
+    min-height: 9rem;
+    border-radius: 12px;
 
     img {
         width: 100%;
-        border-radius: 12px;
     }
 }

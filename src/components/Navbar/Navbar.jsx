@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 // import { images } from '../../constants';
 import './Navbar.scss';
+import { Link } from 'react-router-dom';
 
 // const variants = {
 //   open: { opacity: 1, x: 0 },
@@ -71,10 +72,10 @@ const Navbar = ({ options = false }) => {
     <div className={'app__navbar-box' + styleClass}>
       <nav className='app__navbar'>
 
-        <a href="/" className='app__navbar-home app__flex-start squishy'>
+        <Link to="/" className='app__navbar-home app__flex-start squishy' rel="noopener noreferrer">
           <MdHome alt="خانه" />
           <p>خانه</p>
-        </a>
+        </Link>
 
         {options &&
           <ul ref={navRef} className='app__flex app__navbar-links'>
@@ -128,10 +129,10 @@ const Navbar = ({ options = false }) => {
                     </ul>
                     : <ul>
                       <li key='link-home'>
-                        <a href='/'>خانه</a>
+                        <Link to='/' rel="noopener noreferrer">خانه</Link>
                       </li>
                       <li key='link-works'>
-                        <a href='/works'>پروژه‌های من</a>
+                        <Link to='/works' rel="noopener noreferrer">پروژه‌های من</Link>
                       </li>
                       <li key='link-fonts'>
                         <a href='https://rastikerdar.github.io/vazirmatn/'>فونت وزیرمتن</a>
