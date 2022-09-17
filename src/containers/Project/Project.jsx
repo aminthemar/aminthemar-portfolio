@@ -69,7 +69,9 @@ const Project = () => {
                                     {(work["websiteurl"].length > 2) &&
                                         <a href={work["websiteurl"]}
                                             rel="external"
-                                            className='app__flex link_icon-primary squishy'>
+                                            target='_blank'
+                                            className='app__flex link_icon-primary squishy'
+                                            style={{ backgroundColor: work["color"] }}>
                                             <p className='p-text p-link'>نسخه‌ی لایو</p>
                                             <ImEye />
                                         </a>
@@ -115,7 +117,9 @@ const Project = () => {
                                     {(work["websiteurl"].length > 2) &&
                                         <a href={work["websiteurl"]}
                                             rel="external"
-                                            className='app__flex link_icon-primary squishy'>
+                                            target='_blank'
+                                            className='app__flex link_icon-primary squishy'
+                                            style={{ backgroundColor: work["color"] }}>
                                             <p className='p-text p-link'>نسخه‌ی لایو</p>
                                             <ImEye />
                                         </a>
