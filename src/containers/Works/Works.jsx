@@ -7,7 +7,7 @@ import { images, works_data } from '../../constants';
 import './Works.scss';
 import { Link } from 'react-router-dom';
 
-const categories = ['بازی', 'وبسایت', 'لوگو', 'پوستر'];
+const categories = ['بازی', 'لوگو', 'وبسایت', 'پوستر'];
 
 const Works = () => {
     const [activeCategory, setActiveCategory] = useState(1);

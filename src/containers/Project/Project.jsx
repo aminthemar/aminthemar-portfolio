@@ -55,12 +55,7 @@ const Project = () => {
                 {(!loading &&
                     <>
                         <section>
-                            <motion.div
-                                initial={{ y: 60 }}
-                                whileInView={{ y: 0 }}
-                                viewport={{ once: true, amount: 0.2 }}
-                                transition={{ duration: 0.4 }}
-                                className='app__project-logo'>
+                            <div className='app__project-logo'>
                                 <img src={work["logo"]} alt='project-logo'
                                     style={{ backgroundColor: work["color"] }}
                                 />
@@ -79,16 +74,16 @@ const Project = () => {
 
                                     <Link to="/works"
                                         rel="noopener noreferrer"
-                                        className='app__flex'>
+                                        className='app__flex squishy'>
                                         <div className='app__flex-start link_icon app__project-back'>
                                             <BsArrowRight />
-                                            <p className='p-text p-link'>بازگشت</p>
+                                            <p className='p-text p-link'>همه پروژه‌ها</p>
                                         </div>
                                         <p className='p-text'>{work["date"]}</p>
                                     </Link>
                                 </div>
 
-                            </motion.div>
+                            </div>
                         </section>
                         <span>
                             <div className='app__flex-start app__project-stats'>
@@ -127,10 +122,10 @@ const Project = () => {
 
                                     <Link to="/works"
                                         rel="noopener noreferrer"
-                                        className='app__flex'>
+                                        className='app__flex squishy'>
                                         <div className='app__flex-start link_icon app__project-back'>
                                             <BsArrowRight />
-                                            <p className='p-text p-link'>بازگشت</p>
+                                            <p className='p-text p-link'>همه پروژه‌ها</p>
                                         </div>
                                         <p className='p-text'>{work["date"]}</p>
                                     </Link>
@@ -138,52 +133,56 @@ const Project = () => {
 
                             </div>
 
-                            <div className='app__project-contentbox'>
-                                <p className='p-title'>توضیحات</p>
-                                <p className='p-text'>{work["description"]}</p>
-                            </div>
-                            <div className='app__project-contentbox'>
-                                <div className='app__flex-start app__project-title-icon'>
-                                    <p className='p-title'>نگارخانه</p>
-                                    <figure className='app__project-scroll-indicator' />
-                                </div>
+                            <div className='app__project-infosection'>
 
-                                <div className='app__project-screenshots'>
-                                    <motion.ul
-                                        drag='x'
-                                        dragConstraints={{
-                                            right: width,
-                                            left: 0,
-                                        }}
-                                        ref={itemRef}
-                                        dragTransition={{ bounceStiffness: 600, bounceDamping: 40 }}
-                                        dragElastic={0.1}
-                                        onDragStart={updateWidth}
-                                        onDrag={() => toggleMoved(true)}
-                                        onMouseDown={() => toggleMoved(false)}
-                                        className='app__flex-start'>
-                                        {work["screenshots"].map((shot_item, index) => (
-                                            <li key={`shot-${index}`} onClick={() => handleImageOpen(shot_item)}>
-                                                <img src={shot_item} alt={`${work["title"]}-shot-${index}`} />
-                                                <BsPlusCircleFill />
-                                            </li>
-                                        ))}
-                                    </motion.ul>
+                                <div className='app__project-contentbox'>
+                                    <p className='p-title'>توضیحات</p>
+                                    <p className='p-text'>{work["description"]}</p>
                                 </div>
-                            </div>
-
-                            {(work["aparatID"].length > 2) &&
                                 <div className='app__project-contentbox'>
                                     <div className='app__flex-start app__project-title-icon'>
-                                        <p className='p-title'>پیش‌نمایش</p>
-                                        <figure><BsCameraVideo /></figure>
+                                        <p className='p-title'>نگارخانه</p>
+                                        <figure className='app__project-scroll-indicator' />
                                     </div>
-                                    <div className="h_iframe-aparat_embed_frame">
-                                        <span />
-                                        <iframe src={`https://www.aparat.com/video/video/embed/videohash/${work["aparatID"]}/vt/frame`} allowFullScreen={true} webkitallowfullscreen="true" mozallowfullscreen="true" />
+
+                                    <div className='app__project-screenshots'>
+                                        <motion.ul
+                                            drag='x'
+                                            dragConstraints={{
+                                                right: width,
+                                                left: 0,
+                                            }}
+                                            ref={itemRef}
+                                            dragTransition={{ bounceStiffness: 600, bounceDamping: 40 }}
+                                            dragElastic={0.1}
+                                            onDragStart={updateWidth}
+                                            onDrag={() => toggleMoved(true)}
+                                            onMouseDown={() => toggleMoved(false)}
+                                            className='app__flex-start'>
+                                            {work["screenshots"].map((shot_item, index) => (
+                                                <li key={`shot-${index}`} onClick={() => handleImageOpen(shot_item)}>
+                                                    <img src={shot_item} alt={`${work["title"]}-shot-${index}`} />
+                                                    <BsPlusCircleFill />
+                                                </li>
+                                            ))}
+                                        </motion.ul>
                                     </div>
                                 </div>
-                            }
+
+                                {(work["aparatID"].length > 2) &&
+                                    <div className='app__project-contentbox'>
+                                        <div className='app__flex-start app__project-title-icon'>
+                                            <p className='p-title'>پیش‌نمایش</p>
+                                            <figure><BsCameraVideo /></figure>
+                                        </div>
+                                        <div className="h_iframe-aparat_embed_frame">
+                                            <span />
+                                            <iframe src={`https://www.aparat.com/video/video/embed/videohash/${work["aparatID"]}/vt/frame`} allowFullScreen={true} webkitallowfullscreen="true" mozallowfullscreen="true" />
+                                        </div>
+                                    </div>
+                                }
+
+                            </div>
                         </span>
                     </>
                 )}

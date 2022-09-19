@@ -18,42 +18,27 @@ const unity_thumbs = [
 
 const Unity = () => {
   const [width, setWidth] = useState(0);
-  const sliderRef = useRef(null);
+  const [moved, setMoved] = useState(false);
+  const itemRef = useRef(null);
 
   useEffect(() => {
-    setWidth(sliderRef.current.scrollWidth - sliderRef.current.offsetWidth - 16);
+    setTimeout(() => {
+      updateWidth()
+    }, 250);
   });
 
-  let moved = false;
-  let moveListener = () => {
-    moved = true;
-  };
-
-  function handleDrag() {
-    setWidth(sliderRef.current.scrollWidth - sliderRef.current.offsetWidth - 16);
-    document.addEventListener('mousemove', moveListener);
-    // console.log("clicked");
+  function updateWidth() {
+    setWidth(itemRef.current.scrollWidth - itemRef.current.offsetWidth - 16);
   }
 
-  function handleSwipe() {
-    setWidth(sliderRef.current.scrollWidth - sliderRef.current.offsetWidth - 16);
-    document.addEventListener('touchmove', moveListener);
-    // console.log("touched");
+  function toggleMoved(toggle) {
+    setMoved(toggle);
   }
 
-  function handleSubmit(url) {
-    document.removeEventListener('mousemove', moveListener);
+  function handleImageOpen(url) {
     if (!moved) {
       window.open(url, '_blank', 'location=yes,height=720,width=1280,scrollbars=yes,status=yes');
     }
-    moved = false;
-    // console.log("click up");
-  }
-
-  function handleSubmitTouch(url) {
-    document.addEventListener('touchmove', moveListener);
-    moved = false;
-    // console.log("touch up");
   }
 
   return (
@@ -101,14 +86,15 @@ const Unity = () => {
             }}
             dragTransition={{ bounceStiffness: 600, bounceDamping: 40 }}
             dragElastic={0.1}
-            ref={sliderRef}
-            onMouseDown={handleDrag}
-            onTouchStart={handleSwipe}
+            ref={itemRef}
+            onDragStart={updateWidth}
+            onDrag={() => toggleMoved(true)}
+            onMouseDown={() => toggleMoved(false)}
             className='app__flex-start app__unity-slider'>
 
             {unity_thumbs.map((item, index) => (
-              <li key={`unity-${index}`}>
-                <section onTouchEnd={() => handleSubmitTouch(item[1])} onMouseUp={() => handleSubmit(item[1])}>
+              <li key={`unity-${index}`} onClick={() => handleImageOpen(item[1])}>
+                <section>
                   <img src={item[0]} alt={`unity-tutorial-${index}`} />
                   <BsFillPlayCircleFill className='app__unity-playbutton' />
                 </section>

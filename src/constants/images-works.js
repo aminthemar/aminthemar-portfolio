@@ -25,6 +25,36 @@ import security_shot_3 from '../assets/works/projects/security-shot-3.jpg'
 import security_shot_4 from '../assets/works/projects/security-shot-4.jpg'
 import security_shot_5 from '../assets/works/projects/security-shot-5.jpg'
 
+import raf_logo from '../assets/works/projects/raf-logo.jpg'
+import raf_shot_1 from '../assets/works/projects/raf-shot-1.jpg'
+import raf_shot_2 from '../assets/works/projects/raf-shot-2.jpg'
+import raf_shot_3 from '../assets/works/projects/raf-shot-3.jpg'
+import raf_shot_4 from '../assets/works/projects/raf-shot-4.jpg'
+
+import barg_logo from '../assets/works/projects/barg-logo.jpg'
+import barg_shot_1 from '../assets/works/projects/barg-shot-1.jpg'
+import barg_shot_2 from '../assets/works/projects/barg-shot-2.jpg'
+import barg_shot_3 from '../assets/works/projects/barg-shot-3.jpg'
+import barg_shot_4 from '../assets/works/projects/barg-shot-4.jpg'
+import barg_shot_5 from '../assets/works/projects/barg-shot-5.jpg'
+
+import axis_logo from '../assets/works/projects/axis-logo.jpg'
+import axis_shot_1 from '../assets/works/projects/axis-shot-1.jpg'
+import axis_shot_2 from '../assets/works/projects/axis-shot-2.jpg'
+import axis_shot_3 from '../assets/works/projects/axis-shot-3.jpg'
+import axis_shot_4 from '../assets/works/projects/axis-shot-4.jpg'
+
+import choobkhat_logo from '../assets/works/projects/choobkhat-logo.jpg'
+import choobkhat_shot_1 from '../assets/works/projects/choobkhat-shot-1.jpg'
+import choobkhat_shot_2 from '../assets/works/projects/choobkhat-shot-2.jpg'
+import choobkhat_shot_3 from '../assets/works/projects/choobkhat-shot-3.jpg'
+import choobkhat_shot_4 from '../assets/works/projects/choobkhat-shot-4.jpg'
+import choobkhat_shot_5 from '../assets/works/projects/choobkhat-shot-5.jpg'
+
+import studiar_logo from '../assets/works/projects/studiar-logo.jpg'
+import studiar_shot_1 from '../assets/works/projects/studiar-shot-1.jpg'
+import studiar_shot_2 from '../assets/works/projects/studiar-shot-2.jpg'
+
 export default {
     balloons_logo,
     balloons_shot_1,
@@ -49,4 +79,29 @@ export default {
     security_shot_3,
     security_shot_4,
     security_shot_5,
+    raf_logo,
+    raf_shot_1,
+    raf_shot_2,
+    raf_shot_3,
+    raf_shot_4,
+    barg_logo,
+    barg_shot_1,
+    barg_shot_2,
+    barg_shot_3,
+    barg_shot_4,
+    barg_shot_5,
+    axis_logo,
+    axis_shot_1,
+    axis_shot_2,
+    axis_shot_3,
+    axis_shot_4,
+    choobkhat_logo,
+    choobkhat_shot_1,
+    choobkhat_shot_2,
+    choobkhat_shot_3,
+    choobkhat_shot_4,
+    choobkhat_shot_5,
+    studiar_logo,
+    studiar_shot_1,
+    studiar_shot_2,
 };
