@@ -163,19 +163,43 @@ const data = {
             "aparatID": "#",
             "color": "#ffc233",
         },
-        "#": {
-            "id": "#",
+        "mn76": {
+            "id": "mn76",
             "title": "طراحی کاراکتر",
             "company": "محمد نظری",
-            "logo": images_works.balloons_logo,
+            "logo": images_works.mn76_logo,
             "category": "پوستر",
-            "description": "",
-            "tags": [],
-            "screenshots": [],
-            "date": "",
-            "websiteurl": "#",
+            "description": "طراحی کاراکتر فرآیندی است که بعد از شخصیت پردازی صورت می‌گیرد و شامل تعریف کاراکتر از طریق ویژگی‌های ظاهری آن می‌باشد. این فرآیند یکی از مهارت‌های مهم در توسعه‌ بازی‌های کامپیوتری است. انگیزه‌ی من برای این کار، آشنایی و تمرین طراحی کاراکتر بود؛ بدین جهت تصمیم گرفتم یکی دوستان صمیمی‌ام را که صورتی درخور کاریکاتور داشت، الگوی کار خودم قرار بدهم. سبک هنری این طراحی از کاراکترهای انیمیشن «اسکوبی دو» قرض گرفته شده است.",
+            "tags": ["Photoshop", "Illustrator"],
+            "screenshots": [
+                images_works.mn76_shot_1,
+                images_works.mn76_shot_2,
+                images_works.mn76_shot_3,
+                images_works.mn76_shot_4,
+                images_works.mn76_shot_5,
+            ],
+            "date": "اسفند 1399",
+            "websiteurl": "https://www.instagram.com/p/B9mb05EnSOa/",
             "aparatID": "#",
-            "color": "#1d92f6",
+            "color": "#1dbbf6",
+        },
+        "dorm": {
+            "id": "dorm",
+            "title": "جشن سراهای دانشجویی",
+            "company": "دانشگاه قم",
+            "logo": images_works.dorm_logo,
+            "category": "پوستر",
+            "description": "در سال 98، دانشگاه قم به مناسبت هفته‌ی سراهای دانشجویی مسابقه‌ای برگزار کرد و برای طراحی بهترین پوستر، یک جایزه‌ی 2 میلیون تومانی گذاشت. این پوستر با وام‌گیری از سبک گرافیکی بازی Monument Valley طراحی شد اما مقام اول را کسب نکرد.",
+            "tags": ["Photoshop", "Illustrator"],
+            "screenshots": [
+                images_works.dorm_shot_1,
+                images_works.dorm_shot_2,
+                images_works.dorm_shot_3,
+            ],
+            "date": "اردیبهشت 1398",
+            "websiteurl": images_works.dorm_live,
+            "aparatID": "#",
+            "color": "#824b69",
         },
     }
 }
@@ -217,4 +241,19 @@ const getWorkbyId = (id) => {
     }));
 }
 
-export default { getWorksbyCategory, getWorkbyId }
+const getWorksStats = () => {
+    return (new Promise((resolve) => {
+        setTimeout(() => {
+            var game_conut = 0;
+            var obj = Object.values(data.content);
+            for (var key in obj) {
+                if (obj[key]['category'] === "بازی") {
+                    game_conut += 1;
+                }
+            }
+            resolve([Object.keys(data.content).length, game_conut]);
+        }, 100);
+    }));
+}
+
+export default { getWorksbyCategory, getWorkbyId, getWorksStats }

@@ -75,12 +75,15 @@ const Works = () => {
                 </div>
             </div>
             <div className='app__container section_pad'>
+                <div className='app__flex app__works-warning'>
+                    <AiOutlineInfoCircle />
+                    <p className='p-text p-link'>برای آشنایی با پروژه‌های زیر روی آنها کلیک کنید.</p>
+                </div>
                 {loading
                     ? <img alt='loading'
                         src={images.loading}
                         className='app__flex app__loading' />
                     : <>
-                        <p className='p-text app__container app__flex'><AiOutlineInfoCircle /> &nbsp; برای آشنایی با پروژه‌های زیر روی آنها کلیک کنید.</p>
                         <ul className='app__works-portfolio'>
                             {portfolioItems.map((port_item, index) => (
                                 <li key={`work-${index}`}>

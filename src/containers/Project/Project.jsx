@@ -2,7 +2,7 @@ import { React, useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { useParams } from 'react-router';
 import { BsArrowRight, BsCameraVideo, BsPlusCircleFill } from 'react-icons/bs'
-import { ImEye } from 'react-icons/im'
+import { ImEye, ImFileText2 } from 'react-icons/im'
 
 import { works_data } from '../../constants';
 import './Project.scss';
@@ -12,7 +12,7 @@ const Project = () => {
     const { id } = useParams();
     const [loading, setLoading] = useState(true);
     const [work, setWork] = useState({});
-    const [width, setWidth] = useState(0);
+    const [width, setWidth] = useState(250);
     const [moved, setMoved] = useState(false);
     const itemRef = useRef(null);
 
@@ -30,8 +30,8 @@ const Project = () => {
     useEffect(() => {
         if (!loading) {
             setTimeout(() => {
-                updateWidth()
-            }, 250);
+                updateWidth();
+            }, 500);
         }
     }, [loading]);
 
@@ -136,7 +136,10 @@ const Project = () => {
                             <div className='app__project-infosection'>
 
                                 <div className='app__project-contentbox'>
-                                    <p className='p-title'>توضیحات</p>
+                                    <div className='app__flex-start app__project-title-icon'>
+                                        <p className='p-title'>توضیحات</p>
+                                        <figure><ImFileText2 /></figure>
+                                    </div>
                                     <p className='p-text'>{work["description"]}</p>
                                 </div>
                                 <div className='app__project-contentbox'>

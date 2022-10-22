@@ -55,6 +55,19 @@ import studiar_logo from '../assets/works/projects/studiar-logo.jpg'
 import studiar_shot_1 from '../assets/works/projects/studiar-shot-1.jpg'
 import studiar_shot_2 from '../assets/works/projects/studiar-shot-2.jpg'
 
+import mn76_logo from '../assets/works/projects/mn76-logo.jpg'
+import mn76_shot_1 from '../assets/works/projects/mn76-shot-1.jpg'
+import mn76_shot_2 from '../assets/works/projects/mn76-shot-2.jpg'
+import mn76_shot_3 from '../assets/works/projects/mn76-shot-3.jpg'
+import mn76_shot_4 from '../assets/works/projects/mn76-shot-4.jpg'
+import mn76_shot_5 from '../assets/works/projects/mn76-shot-5.jpg'
+
+import dorm_logo from '../assets/works/projects/dorm-logo.jpg'
+import dorm_live from '../assets/works/projects/dorm-live.jpg'
+import dorm_shot_1 from '../assets/works/projects/dorm-shot-1.jpg'
+import dorm_shot_2 from '../assets/works/projects/dorm-shot-2.jpg'
+import dorm_shot_3 from '../assets/works/projects/dorm-shot-3.jpg'
+
 export default {
     balloons_logo,
     balloons_shot_1,
@@ -104,4 +117,15 @@ export default {
     studiar_logo,
     studiar_shot_1,
     studiar_shot_2,
+    mn76_logo,
+    mn76_shot_1,
+    mn76_shot_2,
+    mn76_shot_3,
+    mn76_shot_4,
+    mn76_shot_5,
+    dorm_logo,
+    dorm_live,
+    dorm_shot_1,
+    dorm_shot_2,
+    dorm_shot_3,
 };

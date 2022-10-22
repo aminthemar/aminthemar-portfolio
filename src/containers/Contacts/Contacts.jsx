@@ -1,4 +1,4 @@
-import { React, useState } from 'react'
+import { React, useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import emailjs from '@emailjs/browser';
 
@@ -7,6 +7,7 @@ import { MdGames, MdThumbUpAlt, MdAccessTimeFilled } from 'react-icons/md'
 import { HiOutlineCheckCircle, HiOutlineMail } from 'react-icons/hi'
 
 import { AppWrap } from '../../wrapper/'
+import { works_data } from '../../constants';
 import './Contacts.scss'
 
 const Contacts = () => {
@@ -14,6 +15,14 @@ const Contacts = () => {
     const [errors, setErrors] = useState({ emailError: "", messageError: "" })
     const [loading, setLoading] = useState(false);
     const [sent, setSent] = useState(false);
+    const [worksStats, setWorksStats] = useState([0, 0]);
+
+    useEffect(() => {
+        works_data.getWorksStats().then(count => { setWorksStats(count) })
+            .catch(err => {
+                console.error(err);
+            });
+    }, []);
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
@@ -75,9 +84,9 @@ const Contacts = () => {
 
             <div className='app__container section_pad'>
                 <ul className='app__contacts-stats app__flex'>
-                    {[['15', 'پروژه‌ی موفق', <MdThumbUpAlt />],
-                    ['2+', 'سال تجربه‌ی کار', <MdAccessTimeFilled />],
-                    ['3', 'بازی منتشر', <MdGames />],
+                    {[[worksStats[0], 'پروژه‌ی موفق', <MdThumbUpAlt />],
+                    [(new Date().getFullYear() - 2020) + '+', 'سال تجربه‌ی کار', <MdAccessTimeFilled />],
+                    [worksStats[1], 'بازی منتشر', <MdGames />],
                     ].map((stat_item, index) => (
                         <motion.li
                             initial={{ y: 60, opacity: 0.2 }}
