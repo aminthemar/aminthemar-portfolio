@@ -5,8 +5,8 @@ import { IoBalloonSharp } from 'react-icons/io5';
 import { FaHardHat } from 'react-icons/fa';
 
 import { images } from '../../constants';
-import { PrimaryButton, SecondaryButton } from '../../components';
 import { AppWrap } from '../../wrapper';
+import { PrimaryButton, SecondaryButton } from '../../components';
 import './Hero.scss';
 
 const Hero = () => {
