@@ -14,9 +14,9 @@ function App() {
       <Suspense fallback={<></>}>
         <ScrollTop>
           <Routes>
-            <Route path='/' element={<HomePage />}></Route>
-            <Route path='/works' element={<WorksPage />}></Route>
-            <Route path="/works/:id" element={<ProjectPage />} />
+            <Route path='/' element={<HomePage title={document.title} />}></Route>
+            <Route path='/works' element={<WorksPage title={`پروژه‌ها | ${document.title}`} />}></Route>
+            <Route path="/works/:id" element={<ProjectPage title={document.title} />} />
           </Routes>
         </ScrollTop>
       </Suspense>

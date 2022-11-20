@@ -9,7 +9,7 @@
         height: 20.75rem;
         top: 0;
         right: 0;
-        background: linear-gradient(transparent, var(--black-color) 175%), url('../../assets/hero/lines.png') repeat;
+        background: linear-gradient(-90deg, var(--black-color) -10%, transparent), url('../../assets/hero/lines.png') repeat;
         background-color: var(--black-color);
 
         @media screen and (max-width: 799px) {

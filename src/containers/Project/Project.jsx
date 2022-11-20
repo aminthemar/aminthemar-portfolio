@@ -1,6 +1,5 @@
 import { React, useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
-import { useParams } from 'react-router';
 import { BsArrowRight, BsCameraVideo, BsPlusCircleFill } from 'react-icons/bs'
 import { ImEye, ImFileText2 } from 'react-icons/im'
 
@@ -8,8 +7,7 @@ import { works_data } from '../../constants';
 import './Project.scss';
 import { Link } from 'react-router-dom';
 
-const Project = () => {
-    const { id } = useParams();
+const Project = ({ id }) => {
     const [loading, setLoading] = useState(true);
     const [work, setWork] = useState({});
     const [width, setWidth] = useState(250);
@@ -25,7 +23,7 @@ const Project = () => {
             .catch(err => {
                 console.error(err);
             });
-    }, []);
+    }, [id]);
 
     useEffect(() => {
         if (!loading) {
