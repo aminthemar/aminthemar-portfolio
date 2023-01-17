@@ -135,13 +135,6 @@ const Project = ({ id }) => {
 
                                 <div className='app__project-contentbox'>
                                     <div className='app__flex-start app__project-title-icon'>
-                                        <p className='p-title'>توضیحات</p>
-                                        <figure><ImFileText2 /></figure>
-                                    </div>
-                                    <p className='p-text'>{work["description"]}</p>
-                                </div>
-                                <div className='app__project-contentbox'>
-                                    <div className='app__flex-start app__project-title-icon'>
                                         <p className='p-title'>نگارخانه</p>
                                         <figure className='app__project-scroll-indicator' />
                                     </div>
@@ -168,6 +161,14 @@ const Project = ({ id }) => {
                                             ))}
                                         </motion.ul>
                                     </div>
+                                </div>
+
+                                <div className='app__project-contentbox'>
+                                    <div className='app__flex-start app__project-title-icon'>
+                                        <p className='p-title'>توضیحات</p>
+                                        <figure><ImFileText2 /></figure>
+                                    </div>
+                                    <p className='p-text'>{work["description"]}</p>
                                 </div>
 
                                 {(work["aparatID"].length > 2) &&
