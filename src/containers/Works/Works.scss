@@ -145,13 +145,13 @@
     display: grid;
     // grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
     grid-template-columns: repeat(4, 1fr);
-    gap: 1.25rem;
-    margin-top: 1.25rem;
-    padding: 2.25rem 2.5rem;
+    gap: 1rem;
+    padding: 2rem;
 
-    border: solid 1px #ecf0f8;
+    border-top: solid 3px var(--white-color);
+    box-shadow: inset 4px 4px 24px #e7ebf4;
     background-color: var(--bg-lightmode-color);
-    border-radius: 6px;
+    border-radius: 0 0 4px 4px;
 
     &::before {
         content: "";
@@ -200,8 +200,7 @@
 
     @media screen and (max-width: 699px) {
         grid-template-columns: repeat(1, 1fr);
-        padding: 0;
-        border-radius: 15px;
+        padding: 1rem;
 
         :nth-last-child(1):nth-child(odd) {
             grid-column: 1 / span 2;
@@ -212,9 +211,9 @@
 .app__works-warning {
     width: 100%;
     gap: 0.75rem;
-    padding: 1.5rem 1rem;
+    padding: 1.25rem 1rem;
     background-color: var(--bg-lightmode-color);
-    border-radius: 8px;
+    border-radius: 4px 4px 0 0;
     color: var(--gray-color);
 
     svg {
