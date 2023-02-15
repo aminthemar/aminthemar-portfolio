@@ -29,7 +29,7 @@ const EduItem = ({ edu_data }) => {
             <span>
                 <p className='p-title' style={{ marginTop: '-0.4em' }}>{edu_data.title}</p>
                 <div className='app__edu-grade app__flex-start'>
-                    <p className='p-small'>معدل: {edu_data.grade}</p>
+                    <p className='p-small'>نمره: {edu_data.grade}</p>
                     <p className='p-small'>رتبه: {edu_data.rank}</p>
                 </div>
                 <p className='p-text'>{edu_data.description}</p>

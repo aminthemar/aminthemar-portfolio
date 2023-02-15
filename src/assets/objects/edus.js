@@ -4,6 +4,17 @@ const data = {
     name: 'edus',
     content: [
         {
+            "title": "مقاله‌ی ژورنال BERT+Edit-Unsup-TS",
+            "yearstart": "1400",
+            "yearend": "1401",
+            "websiteurl": "https://doi.org/10.1016/j.patrec.2023.01.009",
+            "logo": images.edu_5,
+            "place": "چکیده‌ی پژوهش",
+            "description": "در این مقاله اثبات می‌کنیم که تنظیم دقیق مدل زبانی پوشیده‌ی BERT روی جملات ساده باعث بهبود عملکرد ساده‌سازی بدون نظارت جملات می‌گردد. این پژوهش، با راهنمایی دکتر حسین امیرخانی در ژورنال بین المللی Pattern Recognition Letters (نشر Elsevier) چاپ گردید.",
+            "grade": "چاپ شده",
+            "rank": "Q1",
+        },
+        {
             "title": "کارشناسی ارشد فناوری اطلاعات",
             "yearstart": "1398",
             "yearend": "1401",
@@ -18,12 +29,12 @@ const data = {
             "title": "مقاله‌ی کنفرانسی Masked-EDA",
             "yearstart": "1399",
             "yearend": "1400",
-            "websiteurl": "https://ieeexplore.ieee.org/abstract/document/9420616",
+            "websiteurl": "https://doi.org/10.1109/CSICC52343.2021.9420616",
             "logo": images.edu_4,
             "place": "چکیده‌ی پژوهش",
             "description": "رویکرد Masked-EDA دقت مدل‌های شبکه‌ی عصبی طبقه‌بندی متن را بهبود می‌دهد. این پژوهش، با راهنمایی دکتر حسین امیرخانی در بیست و ششمین کنفرانس بین المللی انجمن کامپیوتر ایران (CSICC 2021) پذیرفته شده و نمایه‌ی IEEE شده است.",
-            "grade": "-",
-            "rank": "پذیرفته شده",
+            "grade": "پذیرفته شده",
+            "rank": "-",
         },
         {
             "title": "کارشناسی مهندسی کامپیوتر",

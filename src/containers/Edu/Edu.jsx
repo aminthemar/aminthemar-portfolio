@@ -79,7 +79,7 @@ const Edu = () => {
               {hide ?
                 <a onClick={toggleItemsShowHide}
                   className='app__flex app__edu-link_icon link_icon link_icon-primary'>
-                  <p className='p-text p-link'>نمایش همه ({edu_items.length - first_items})</p>
+                  <p className='p-text p-link'>نمایش بیشتر ({edu_items.length - first_items})</p>
                   <MdKeyboardArrowDown /></a>
                 : <a onClick={toggleItemsShowHide}
                   className='app__flex app__edu-link_icon link_icon link_icon-primary'>
