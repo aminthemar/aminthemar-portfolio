@@ -4,7 +4,7 @@ const data = {
     name: 'edus',
     content: [
         {
-            "title": "مقاله‌ی ژورنال BERT+Edit-Unsup-TS",
+            "title": "مقاله‌ی ژورنال BERT+Edit-Unsup",
             "yearstart": "1400",
             "yearend": "1401",
             "websiteurl": "https://doi.org/10.1016/j.patrec.2023.01.009",

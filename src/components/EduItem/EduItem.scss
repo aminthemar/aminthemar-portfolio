@@ -5,7 +5,7 @@
     flex-direction: column;
 
     position: relative;
-    padding: 0 1.5rem 4rem 0;
+    padding: 0 1.5rem 3rem 0;
 
     &::before {
         content: '';
@@ -33,7 +33,7 @@
     }
 
     span {
-        margin-bottom: 2em;
+        margin-bottom: 1.5em;
         width: 96%;
     }
 
@@ -44,7 +44,7 @@
 
     @media screen and (min-width: 699px) {
         justify-content: center;
-        padding: 0 0 4rem 0;
+        padding: 0 0 3rem 0;
 
         &::before {
             right: calc(50% - 4px);
@@ -66,11 +66,11 @@
     }
 
     @media screen and (min-width: 769px) {
-        padding-bottom: 5rem;
+        padding-bottom: 4rem;
     }
 
     @media screen and (min-width: 2000px) {
-        padding-bottom: 6rem;
+        // padding-bottom: 5rem;
 
         span {
             margin: 0 1.75rem;
@@ -89,7 +89,7 @@
 .app__edu-external {
     width: fit-content;
     padding: 0.75rem 1rem;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     border-radius: 8px;
     gap: 0.5rem;
 
@@ -113,7 +113,9 @@
 
 .app__edu-grade {
     padding: 0.75rem 0;
+    margin-bottom: 0.5rem;
     gap: 1.5rem;
+    border-bottom: solid 1px var(--border-color);
 }
 
 .app__edu-card {
