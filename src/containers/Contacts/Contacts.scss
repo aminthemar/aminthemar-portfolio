@@ -2,7 +2,7 @@
     position: relative;
     overflow: hidden;
     width: 100%;
-    background: linear-gradient(190deg, transparent, var(--bg-lightmode-color)), url('../../assets/persian-pattern.png') repeat;
+    background: linear-gradient(transparent 25%, var(--bg-lightmode-color) 125%), url('../../assets/persian-pattern.png') repeat;
 }
 
 .app__contacts-persia {

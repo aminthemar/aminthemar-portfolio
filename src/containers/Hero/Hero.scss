@@ -124,6 +124,8 @@
 
     .p-title {
         color: var(--white-color);
+        padding: 0 1rem 0.25rem 0;
+        border-right: solid 3px var(--primary-darkmode-color);
     }
 
     li {

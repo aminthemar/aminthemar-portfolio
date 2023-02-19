@@ -30,16 +30,6 @@
     section {
         position: relative;
         width: calc(20rem + 10%);
-
-        &::before {
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: calc(100% - 14rem);
-            top: 14rem;
-            background: linear-gradient(transparent 95%, var(--white-color)), url('../../assets/works/pattern.png') repeat-y center;
-            background-size: contain;
-        }
     }
 
     span {
@@ -248,8 +238,7 @@
 
 .app__project-scroll-indicator {
     position: relative;
-    line-height: 0;
-    background-color: var(--gray-color);
+    background-color: var(--grey-color);
     border-radius: 500px;
     margin-left: 0 !important;
 
@@ -257,7 +246,7 @@
         content: "";
         position: absolute;
         width: 1.5rem;
-        height: 0.75rem;
+        height: 0.7rem;
         top: 0.375rem;
         left: 0.5rem;
         border-radius: 500px;

@@ -1,7 +1,7 @@
 .app__works {
     width: 100%;
     overflow: hidden;
-    background: linear-gradient(0, transparent, var(--white-color) 75%), url('../../assets/persian-pattern.png') repeat;
+    background: linear-gradient(0, transparent, var(--white-color)), url('../../assets/persian-pattern.png') repeat;
 
     >.section_pad {
         padding-top: 3rem;
@@ -46,7 +46,7 @@
         p {
             position: relative;
 
-            &::after {
+            &::before {
                 content: "";
                 position: absolute;
                 width: 5rem;
@@ -103,7 +103,7 @@
     padding: 0.6rem 1.25rem;
     border-radius: 8px;
 
-    &::after {
+    &::before {
         animation: blobOut 0.15s ease-out forwards;
 
         @keyframes blobOut {
@@ -129,7 +129,7 @@
     padding: 0.5rem 1.25rem;
     border-radius: 8px;
 
-    &::after {
+    &::before {
         animation: blobIn 0.25s ease-in-out forwards;
 
         @keyframes blobIn {
@@ -142,6 +142,7 @@
             }
         }
     }
+
 }
 
 .app__works-portfolio {

@@ -72,7 +72,10 @@
   border: 1px solid var(--border-color);
 
   border-radius: 8px;
-  transition: 0.2s border ease-in-out;
+
+  &:hover {
+    border: 1px solid var(--gray-color);
+  }
 }
 
 input:-webkit-autofill,
@@ -260,7 +263,8 @@ ul {
 }
 
 .app__bg-persian {
-  background: linear-gradient(transparent, var(--white-color) 50%), url('./assets/persian-pattern.png') repeat;
+  background: linear-gradient(transparent, var(--white-color)), url('./assets/persian-pattern.png') repeat;
+  background-position: center;
 }
 
 .button_icon {
