@@ -48,11 +48,11 @@ const Edu = () => {
   }
 
   return (
-    <div className='app__edu-bg'>
+    <div className='app__bg-persian'>
       <div className='app__edu app__container' >
 
-        <span style={{ right: 0, transform: "scaleX(-1)" }}><img src={images.pillarTop} /></span>
-        <span style={{ left: 0 }}><img src={images.pillarTop} /></span>
+        {/* <span style={{ right: 0, transform: "scaleX(-1)" }}><img src={images.pillarTop} /></span>
+        <span style={{ left: 0 }}><img src={images.pillarTop} /></span> */}
 
         <div className='section_pad'>
           <SectionTitle title="تحصیلات و دستاوردهای پژوهشی" />

@@ -259,6 +259,10 @@ ul {
   list-style: none;
 }
 
+.app__bg-persian {
+  background: linear-gradient(transparent, var(--white-color) 50%), url('./assets/persian-pattern.png') repeat;
+}
+
 .button_icon {
   cursor: pointer;
   justify-content: center;
@@ -341,7 +345,7 @@ ul {
   background-image: url('./assets/ir-akbar.png');
   background-color: var(--bg-lightmode-color);
   width: 100%;
-  height: 24px;
+  height: 28px;
   background-size: contain;
   background-position: right;
 }

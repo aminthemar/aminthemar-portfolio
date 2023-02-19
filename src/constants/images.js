@@ -16,7 +16,6 @@ import edu_2 from '../assets/edu/edu-qomuni.jpg'
 import edu_3 from '../assets/edu/edu-qomuni-2.jpg'
 import edu_4 from '../assets/edu/edu-kntu.jpg'
 import edu_5 from '../assets/edu/edu-prl.jpg'
-import pillarTop from '../assets/edu/pillar-top.svg'
 
 import unity_logo from '../assets/unity/unity-logo.png'
 import unity_1 from '../assets/unity/unity-1.png'
@@ -64,7 +63,6 @@ export default {
     edu_3,
     edu_4,
     edu_5,
-    pillarTop,
     unity_logo,
     unity_1,
     unity_2,

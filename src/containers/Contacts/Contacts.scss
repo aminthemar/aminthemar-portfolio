@@ -2,25 +2,7 @@
     position: relative;
     overflow: hidden;
     width: 100%;
-    background-color: var(--bg-lightmode-color);
-
-    // &::before {
-    //     content: "";
-    //     position: absolute;
-    //     top: calc(44% - 2px);
-    //     left: -1%;
-    //     border-right: 50vw solid transparent;
-    //     border-top: 1rem solid var(--black-color);
-    // }
-
-    // &::after {
-    //     content: "";
-    //     position: absolute;
-    //     top: calc(44% - 2px);
-    //     right: -1%;
-    //     border-left: 50vw solid transparent;
-    //     border-top: 1rem solid var(--black-color);
-    // }
+    background: linear-gradient(190deg, transparent, var(--bg-lightmode-color)), url('../../assets/persian-pattern.png') repeat;
 }
 
 .app__contacts-persia {
@@ -31,7 +13,6 @@
     right: 0;
 
     background: var(--black-color) url('../../assets/contacts/persia.jpg');
-    // background: var(--black-color);
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto 140%;
@@ -54,7 +35,7 @@
 .app__contacts-stats {
     gap: 10%;
     padding: 0 0 5rem 0;
-    margin-top: -1rem;
+    // margin-top: -1rem;
 
     li {
         align-items: flex-start;
@@ -89,7 +70,7 @@
     width: 1000px;
     border-radius: 12px;
     background-color: var(--white-color);
-    // box-shadow: 0 8px 24px #330ba008;
+    box-shadow: 0 10px 80px #11307305;
 
     align-items: flex-start;
     padding: calc(2.25rem + 2%);

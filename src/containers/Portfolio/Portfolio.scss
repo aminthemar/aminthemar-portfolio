@@ -7,7 +7,6 @@
         position: relative;
         display: flex;
         justify-content: space-between;
-        text-align: center;
         flex-direction: column;
         z-index: 1;
 
@@ -15,20 +14,20 @@
             padding: 0.75rem 0 2rem 0;
         }
 
-        @media screen and (min-width: 1024px) {
-            &::before {
-                content: "";
-                position: absolute;
-                width: 22rem;
-                height: 50rem;
-                top: -11rem;
-                right: -3.25rem;
+        // @media screen and (min-width: 1024px) {
+        //     &::before {
+        //         content: "";
+        //         position: absolute;
+        //         width: 22rem;
+        //         height: 50rem;
+        //         top: -11rem;
+        //         right: -3.25rem;
 
-                background: url("../../assets/dome.svg") no-repeat;
-                background-size: contain;
-                z-index: -1;
-            }
-        }
+        //         background: url("../../assets/dome.svg") no-repeat;
+        //         background-size: contain;
+        //         z-index: -1;
+        //     }
+        // }
     }
 
     >section {
@@ -223,6 +222,7 @@
     font-weight: var(--font-regular);
     color: var(--primary-lightmode-color);
     box-shadow: inset 0 0 0 2px var(--primary-lightmode-color);
+    background-color: var(--white-color);
 
     svg {
         position: absolute;
