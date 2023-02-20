@@ -2,6 +2,7 @@ import { React, useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { BsArrowRight, BsCameraVideo, BsPlusCircleFill } from 'react-icons/bs'
 import { ImEye, ImFileText2 } from 'react-icons/im'
+import { AiOutlineLink } from 'react-icons/ai'
 
 import { works_data } from '../../constants';
 import './Project.scss';
@@ -177,6 +178,15 @@ const Project = ({ id }) => {
                                             <p className='p-title'>پیش‌نمایش</p>
                                             <figure><BsCameraVideo /></figure>
                                         </div>
+
+                                        {/* <a href={`https://www.aparat.com/v/${work["aparatID"]}`}
+                                            key="aparat-video`" target="_blank" rel="noreferrer"
+                                            className='app__flex-start link_icon link_icon-primary'
+                                            style={{ marginBottom: "1rem" }}>
+                                            <p className='p-text p-link'>مشاهده در آپارات</p>
+                                            <AiOutlineLink />
+                                        </a> */}
+
                                         <div className="h_iframe-aparat_embed_frame">
                                             <span />
                                             <iframe src={`https://www.aparat.com/video/video/embed/videohash/${work["aparatID"]}/vt/frame`} allowFullScreen={true} webkitallowfullscreen="true" mozallowfullscreen="true" />
