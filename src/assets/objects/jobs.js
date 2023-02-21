@@ -8,7 +8,7 @@ const data = {
             "role": "برنامه‌نویس و بازاریاب",
             "websiteurl": "https://www.instagram.com/choobkhatstudio",
             "logo": images.job_icon_1,
-            "months": "20",
+            "months": "22",
             "rating": "10",
         },
         {
@@ -16,7 +16,7 @@ const data = {
             "role": "طراح وبسایت و لوگو",
             "websiteurl": "https://barg.market/",
             "logo": images.job_icon_2,
-            "months": "6",
+            "months": "4",
             "rating": "7",
         },
         {
@@ -32,7 +32,7 @@ const data = {
             "role": "طراح وبسایت و لوگو",
             "websiteurl": "https://www.axis.market/",
             "logo": images.job_icon_3,
-            "months": "6",
+            "months": "3",
             "rating": "6",
         },
     ]
