@@ -56,9 +56,13 @@
 .app__hero-h1 {
     line-height: 145%;
     max-width: 52rem;
-    font-size: 6.4vw;
+    font-size: 6.25vw;
     font-weight: var(--font-bold);
     color: var(--white-color);
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 
     @media screen and (min-width: 599px) {
         font-size: 2.125rem;

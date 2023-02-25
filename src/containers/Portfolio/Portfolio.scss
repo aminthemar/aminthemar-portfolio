@@ -52,18 +52,22 @@
     gap: 0.75rem;
     height: 26.5rem;
 
-    // text-align: center;
     justify-content: center;
     align-items: stretch;
 
     a {
+        position: relative;
         padding: 1.375rem 1.375rem 1.125rem 1.375rem;
         border-radius: 12px;
-        background-color: var(--white-color);
-        box-shadow: 0 8px 64px #11307310;
+        box-shadow: inset 0 0 0 1px var(--border-color);
+        transition: transform 0.2s;
 
         flex-direction: column;
-        transition: all 0.2s;
+
+        &:hover {
+            transform: scale(0.9);
+            background-color: var(--white-color)
+        }
 
         p {
             margin-top: 1rem;
@@ -74,11 +78,6 @@
 
         img {
             width: calc(20% + 2rem);
-        }
-
-        &:hover {
-            background-color: unset;
-            box-shadow: unset;
         }
     }
 
