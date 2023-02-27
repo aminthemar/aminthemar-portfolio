@@ -58,14 +58,14 @@ body {
   /* --secondary-color: #ae8cfa; */
   --error-color: #ec8a5c;
 
-  --black-color: #100d20;
+  --black-color: #0e0b21;
   --border-color: #e8e8eb;
   --gray-color: #b4b4d0;
   --grey-color: #343355;
   --white-color: #ffffff;
 
   --bg-darkmode-color: #271e6b;
-  --bg-lightmode-color: #f5f7fb;
+  --bg-lightmode-color: #f4f5f8;
 
   --box-width: 1240px;
 }

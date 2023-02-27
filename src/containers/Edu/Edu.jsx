@@ -10,7 +10,7 @@ import { images, edus_data } from '../../constants';
 const Edu = () => {
 
   const first_items = 2;
-  const [itemheight, setHeight] = useState("1px");
+  const [itemheight, setHeight] = useState("0px");
   const [hide, setHide] = useState(true);
   const itemRef = useRef(null);
 
@@ -22,7 +22,7 @@ const Edu = () => {
       .then(data => {
         setEdus(data.content);
         setLoading(false);
-        setTimeout(() => calcHeight(first_items), 1000);
+        setTimeout(() => calcHeight(first_items), 700);
       })
       .catch(err => {
         console.error(err);
@@ -31,7 +31,7 @@ const Edu = () => {
   };
 
   function calcHeight(n_items) {
-    let sum_height = 0;
+    let sum_height = -1;
     for (let index = 0; index < n_items; index++) {
       sum_height += itemRef.current.childNodes[index].offsetHeight;
     }
@@ -63,7 +63,7 @@ const Edu = () => {
               onViewportEnter={getLocalData}
               className='app__flex app__loading' />
             : <><motion.ul
-              whileInView={{ y: 0, margin: 1 }}
+              whileInView={{ y: 0 }}
               viewport={{ once: true }}
               // onAnimationStart={initializeItems}
               className='app__edu-timeline'

@@ -80,12 +80,7 @@ const Portfolio = () => {
                             ? <img
                                 src={images.loading}
                                 className='app__flex app__loading' />
-                            : <motion.ul
-                                initial={{ y: 60 }}
-                                whileInView={{ y: 0 }}
-                                viewport={{ once: true, amount: 0.2 }}
-                                transition={{ duration: 0.4 }}
-                                className='app__portfolio-works'>
+                            : <ul className='app__portfolio-works'>
                                 {portfolioItems.map((port_item, index) => (
                                     <li className='app__cardcover' key={`work-${index}`}>
                                         <span className='app__flex'>
@@ -100,7 +95,7 @@ const Portfolio = () => {
                                         <img src={port_item['logo']} alt={`work-${index}`} />
                                     </li>
                                 ))}
-                            </motion.ul>
+                            </ul>
                         }
                     </section>
 

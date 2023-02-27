@@ -7,7 +7,6 @@ import './EduItem.scss';
 const EduItem = ({ edu_data }) => {
 
     const [isActive, setActive] = useState(false);
-    const edu_item = useRef(null);
 
     const onComplete = () => {
         setActive(true);
@@ -18,13 +17,12 @@ const EduItem = ({ edu_data }) => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.7 }}
-            transition={{ duration: 0.3 }}
-            variants={{
-                visible: { y: 0 },
-                hidden: { y: 30 }
-            }}
+            // transition={{ duration: 0.3 }}
+            // variants={{
+            //     visible: { y: 0 },
+            //     hidden: { y: 30 }
+            // }}
             onAnimationComplete={onComplete}
-            ref={edu_item}
             className={`edu__item ${isActive ? "line-draw-down" : ""}`}>
             <span>
                 <p className='p-title' style={{ marginTop: '-0.4em' }}>{edu_data.title}</p>
