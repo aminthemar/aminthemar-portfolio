@@ -2,7 +2,7 @@ import { React, useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { BsArrowRight, BsCameraVideo, BsPlusCircleFill } from 'react-icons/bs'
 import { ImEye, ImFileText2 } from 'react-icons/im'
-import { AiOutlineLink } from 'react-icons/ai'
+// import { AiOutlineLink } from 'react-icons/ai'
 
 import { works_data } from '../../constants';
 import './Project.scss';
@@ -53,6 +53,7 @@ const Project = ({ id }) => {
             <div className='app__project app__flex-start app__container section_pad'>
                 {(!loading &&
                     <>
+                        <meta name="Description" content={`${work["description"]}`} />
                         <section>
                             <div className='app__project-logo'>
                                 <img src={work["logo"]} alt='project-logo'
