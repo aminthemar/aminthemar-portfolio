@@ -5,7 +5,7 @@
     flex-direction: column;
 
     position: relative;
-    padding: 0 1.5rem 4rem 0;
+    padding: 0 1.5rem 3rem 0;
 
     &::before {
         content: '';
@@ -46,7 +46,7 @@
 
     @media screen and (min-width: 699px) {
         justify-content: center;
-        padding: 0 0 4rem 0;
+        padding: 0 0 3rem 0;
 
         &::before {
             right: calc(50% - 4px);
@@ -58,17 +58,17 @@
 
         span {
             margin: 0 1.5rem;
-            width: 29rem;
+            width: 30rem;
         }
 
         section {
             margin: 0.5rem 1.5rem;
-            width: 29rem;
+            width: 30rem;
         }
     }
 
     @media screen and (min-width: 769px) {
-        padding-bottom: 5rem;
+        // padding-bottom: 3rem;
     }
 
     @media screen and (min-width: 2000px) {
