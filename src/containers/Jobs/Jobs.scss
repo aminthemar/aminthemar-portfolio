@@ -1,44 +1,32 @@
 .app__jobs-laurier {
     background: linear-gradient(transparent -60%, var(--black-color) 110%), url('../../assets/hero/lines.png') repeat;
-    background-color: var(--black-color);
     background-position: top center;
     margin-top: -2px;
 }
 
 .app__jobs-mandala {
     position: relative;
-    margin-top: -8rem;
+    margin-top: -10rem;
     width: 100%;
-    height: 20rem;
+    height: 17rem;
 
     &::before {
         content: "";
         position: absolute;
         width: 100%;
         height: 100%;
-        top: 3.5rem;
+        top: 2.85rem;
         right: 0;
 
         background: url('../../assets/job-icons/mandala.svg');
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 30rem;
+        background-size: 26rem;
     }
 
     @media screen and (max-width: 899px) {
         margin-top: -6rem;
     }
-}
-
-.app__jobs-span {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 12px;
-
-    // box-shadow: inset 0 0 0 2px var(--bg-darkmode-color);
-    // opacity: 0.75;
-    background-color: var(--bg-darkmode-color);
 }
 
 .app__jobs {
@@ -53,14 +41,17 @@
         position: relative;
         padding: calc(2.25rem + 8%) 0;
         margin-bottom: 1rem;
-        transition: all 0.2s ease-in-out;
+        border-radius: 12px;
+        background-color: var(--bg-darkmode-color);
+        transition: background-color 0.2s ease-in-out;
 
         img {
             margin-top: 0.25rem;
         }
 
         &:hover {
-            transform: scale(0.95);
+            background-color: unset;
+            box-shadow: inset 0 0 0 2px var(--primary-darkmode-color);
         }
     }
 

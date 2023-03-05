@@ -25,7 +25,7 @@ const EduItem = ({ edu_data }) => {
             onAnimationComplete={onComplete}
             className={`edu__item ${isActive ? "line-draw-down" : ""}`}>
             <span>
-                <p className='p-title' style={{ marginTop: '-0.4em' }}>{edu_data.title}</p>
+                <p className='p-title'>{edu_data.title}</p>
                 <div className='app__edu-grade app__flex-start'>
                     <p className='p-small'>نمره: {edu_data.grade}</p>
                     <p className='p-small'>رتبه: {edu_data.rank}</p>

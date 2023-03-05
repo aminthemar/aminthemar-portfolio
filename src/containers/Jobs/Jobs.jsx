@@ -50,7 +50,7 @@ const Jobs = () => {
                                 <a href={`${job_item.websiteurl}`}
                                     target="_blank" rel="noreferrer">
                                     <span className='app__flex'>
-                                        <div className='app__jobs-span'></div>
+                                        {/* <div className='app__jobs-span'></div> */}
                                         <img src={job_item.logo} alt={`job-${index}`} />
                                         <div className='app__yeartag-dark p-text'>{job_item.months} ماه</div>
                                     </span>

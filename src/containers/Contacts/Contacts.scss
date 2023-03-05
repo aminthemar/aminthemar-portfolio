@@ -2,58 +2,72 @@
     position: relative;
     overflow: hidden;
     width: 100%;
-    background: linear-gradient(transparent 25%, var(--bg-lightmode-color) 125%), url('../../assets/persian-pattern.png') repeat;
+    background: linear-gradient(transparent 40%, var(--bg-lightmode-color) 130%), url('../../assets/persian-pattern.png') repeat;
+    background-color: var(--white-color);
+
+    .section_pad {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
 }
 
 .app__contacts-persia {
     position: absolute;
     width: 100%;
-    height: 45%;
+    height: 50%;
     top: 0;
     right: 0;
 
-    background: var(--black-color) url('../../assets/contacts/persia.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: auto 140%;
+    // background: var(--black-color) url('../../assets/contacts/persia.jpg');
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // background-size: auto 140%;
 
-    @media screen and (max-width: 699px) {
-        background: var(--black-color) url('../../assets/contacts/persia-2.jpg');
-        background-repeat: no-repeat;
-        background-position: top center;
-        background-size: cover;
-    }
+    background: linear-gradient(transparent, var(--black-color) 130%), url('../../assets/hero/lines.png') repeat;
+    background-color: var(--black-color);
+    background-position: bottom center;
+    // background-size: contain, 400px;
 
-    span {
-        position: absolute;
-        background-color: var(--black-color);
-        width: 100%;
-        height: 100%;
-    }
+    // @media screen and (max-width: 699px) {
+    //     background: var(--black-color) url('../../assets/contacts/persia-2.jpg');
+    //     background-repeat: no-repeat;
+    //     background-position: top center;
+    //     background-size: cover;
+    // }
+
+    // span {
+    //     position: absolute;
+    //     background-color: var(--black-color);
+    //     width: 100%;
+    //     height: 100%;
+    // }
 }
 
 .app__contacts-stats {
-    gap: 10%;
-    padding: 0 0 5rem 0;
-    // margin-top: -1rem;
+    padding: 0 1rem 4rem 1rem;
+    justify-content: space-evenly;
 
     li {
         align-items: flex-start;
 
         svg {
+            width: 3.25rem;
+            height: 3.25rem;
+            padding: 0.35rem;
+            margin: 0 0 0 1.25rem;
+            box-shadow: inset 0 0 0 2px var(--primary-darkmode-color);
+            border-radius: 12px;
             color: var(--primary-darkmode-color);
-            height: 3.375rem;
-            width: auto;
-            margin: -0.125rem 0 0 1.5rem;
         }
 
         h1 {
             color: var(--white-color);
-            font-size: 4rem;
-            line-height: 3.5rem;
+            font-size: 3.75rem;
+            line-height: 3rem;
         }
 
         p {
+            white-space: nowrap;
             color: var(--white-color);
         }
     }
@@ -61,8 +75,9 @@
     @media screen and (max-width: 699px) {
         flex-direction: column;
         align-items: flex-start;
-        gap: 6rem;
-        padding: 1rem calc(50% - 5.75rem) 6rem 0;
+        gap: 3rem;
+        // padding: 0 0 4rem 0;
+        padding: 0 calc(50% - 5.5rem) 4rem 0;
     }
 }
 
@@ -70,7 +85,7 @@
     width: 1000px;
     border-radius: 12px;
     background-color: var(--white-color);
-    box-shadow: 0 10px 80px #11307305;
+    box-shadow: 0 10px 90px #00005507;
 
     align-items: flex-start;
     padding: calc(2.25rem + 2%);

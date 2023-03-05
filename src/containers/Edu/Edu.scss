@@ -11,30 +11,8 @@
 
 .app__edu {
     position: relative;
-    padding-top: 1rem;
-    margin-bottom: -1.5rem;
-
-    // >span {
-    //     content: "";
-    //     position: absolute;
-    //     margin: 0 0.5rem;
-    //     background: url("../../assets/edu/pillar.svg");
-    //     background-repeat: repeat-y;
-
-    //     top: calc(17rem + 4vw);
-    //     width: calc(22rem + 4vw);
-    //     height: 95%;
-    //     background-size: contain;
-
-    //     img {
-    //         position: absolute;
-    //         top: calc(-16rem - 4vw);
-    //     }
-
-    //     @media screen and (max-width: 599px) {
-    //         display: none;
-    //     }
-    // }
+    padding-top: 0.5rem;
+    margin-bottom: -2rem;
 }
 
 .app__edu-timeline {

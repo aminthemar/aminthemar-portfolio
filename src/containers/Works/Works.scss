@@ -1,7 +1,8 @@
 .app__works {
     width: 100%;
     overflow: hidden;
-    background: linear-gradient(0, transparent, var(--white-color)), url('../../assets/persian-pattern.png') repeat;
+    background: linear-gradient(0, transparent, var(--white-color) 75%), url('../../assets/persian-pattern.png') repeat;
+    background-color: var(--white-color);
 
     >.section_pad {
         padding-top: 3rem;

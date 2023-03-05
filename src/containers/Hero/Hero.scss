@@ -2,7 +2,6 @@
     position: relative;
     width: 100%;
     z-index: 0;
-    background-color: var(--black-color);
     // background: linear-gradient(-90deg, var(--black-color), var(--bg-darkmode-color));
 
     // @media screen and (max-width: 599px) {
@@ -20,8 +19,9 @@
 
         // border: inset 2px var(--primary-darkmode-color);
         // background: url('../../assets/hero/lines.png') repeat fixed;
-        background: radial-gradient(transparent, var(--black-color) 75%), url('../../assets/hero/lines.png') repeat;
+        background: radial-gradient(transparent, var(--black-color)) no-repeat, url('../../assets/hero/lines.png') repeat;
         background-position: bottom center;
+        background-size: contain, 450px;
     }
 }
 
@@ -34,7 +34,7 @@
         position: absolute;
         z-index: -1;
         top: -26rem;
-        right: 32rem;
+        right: 30rem;
         transform: rotateZ(-4deg) scale(1.14);
 
         // filter: drop-shadow(-0.7rem 0.7rem 0.7rem #000000bb);
