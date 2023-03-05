@@ -73,14 +73,7 @@ const Contacts = () => {
 
     return (
         <div className='app__contacts'>
-            <div className='app__contacts-persia'>
-                <motion.span
-                    initial={{ opacity: 1 }}
-                    whileInView={{ opacity: 0 }}
-                    viewport={{ once: true, amount: 0.4 }}
-                    transition={{ duration: 0.5, ease: 'easeOut' }}
-                />
-            </div>
+            <div className='app__contacts-hero' />
 
             <div className='app__container section_pad'>
                 <ul className='app__contacts-stats app__flex'>
@@ -113,7 +106,6 @@ const Contacts = () => {
                                 <a href="https://wa.me/qr/L4I2UEGCSLS4N1" target="_blank" rel="noreferrer"><RiWhatsappLine /></a>
                                 <a href="https://t.me/aminthemar" target="_blank" rel="noreferrer"><RiTelegramLine /></a>
                             </ul>
-                            {/* <img src={images.cheetah} alt="Iranian Cheetah" /> */}
                             <iframe
                                 title='project-trailer'
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12954.687022097798!2d51.35864307701019!3d35.73429043689173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e073b0e459749%3A0x31816dd54a095378!2sGisha%2C%20District%202%2C%20Tehran%2C%20Tehran%20Province%2C%20Iran!5e0!3m2!1sen!2sfr!4v1660638091029!5m2!1sen!2sfr"

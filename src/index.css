@@ -54,18 +54,18 @@ body {
   --font-bold: 800;
 
   --primary-darkmode-color: #28ffbf;
-  --primary-lightmode-color: #6756ff;
+  --primary-lightmode-color: #7364ff;
   /* --secondary-color: #ae8cfa; */
   --error-color: #ec8a5c;
 
-  --black-color: #151136;
-  --border-color: #e8e8eb;
+  --black-color: #121031;
+  --border-color: #e1e1f3;
   --gray-color: #b4b4d0;
   --grey-color: #3a3965;
-  --white-color: #ffffff;
+  --white-color: #f9f8fd;
 
   --bg-darkmode-color: #352287;
-  --bg-lightmode-color: #f4f5f8;
+  --bg-lightmode-color: #eeeff9;
 
   --box-width: 1240px;
 }

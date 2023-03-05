@@ -18,12 +18,12 @@ const Hero = () => {
       <div className='app__container section_pad'>
         <div className='app__hero'>
 
-          <motion.span
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1, ease: 'easeInOut' }}
-          ><img src={images.parche} alt="persian calligraphy" /></motion.span>
+          <span
+          // initial={{ opacity: 0 }}
+          // whileInView={{ opacity: 1 }}
+          // viewport={{ once: true }}
+          // transition={{ duration: 3, ease: 'easeInOut' }}
+          ><img src={images.parche} alt="persian calligraphy" /></span>
 
           <motion.h1
             initial={{ y: 80, opacity: 0 }}
