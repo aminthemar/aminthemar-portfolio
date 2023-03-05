@@ -2,8 +2,8 @@
     position: relative;
     overflow: hidden;
     width: 100%;
-    background: linear-gradient(transparent 40%, var(--bg-lightmode-color) 140%), url('../../assets/persian-pattern.png') repeat;
-    background-color: var(--white-color);
+    background: url('../../assets/persian-pattern.png') repeat;
+    background-color: var(--bg-lightmode-color);
 
     .section_pad {
         padding-top: 5rem;
