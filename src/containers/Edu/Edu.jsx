@@ -22,7 +22,7 @@ const Edu = () => {
       .then(data => {
         setEdus(data.content);
         setLoading(false);
-        setTimeout(() => calcHeight(first_items), 700);
+        setTimeout(() => calcHeight(first_items), 1200);
       })
       .catch(err => {
         console.error(err);

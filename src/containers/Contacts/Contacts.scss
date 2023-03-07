@@ -2,7 +2,7 @@
     position: relative;
     overflow: hidden;
     width: 100%;
-    background: url('../../assets/persian-pattern.png') repeat;
+    // background: url('../../assets/persian-pattern.png') repeat;
     background-color: var(--bg-lightmode-color);
 
     .section_pad {
@@ -22,6 +22,29 @@
     background: linear-gradient(transparent, var(--black-color) 140%), url('../../assets/hero/lines.png') repeat;
     background-color: var(--black-color);
     background-position: top center;
+
+    @media screen and (min-width: 1080px) {
+        &::before {
+            content: "";
+            position: absolute;
+            width: 9rem;
+            height: 100%;
+            left: calc(50% - 501px - 9rem);
+            bottom: 2px;
+            background: url('../../assets/contacts/mandala-2.svg') center bottom no-repeat;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 9rem;
+            height: 100%;
+            right: calc(50% - 501px - 9rem);
+            bottom: 2px;
+            transform: scaleX(-1);
+            background: url('../../assets/contacts/mandala-2.svg') center bottom no-repeat;
+        }
+    }
 }
 
 .app__contacts-stats {
