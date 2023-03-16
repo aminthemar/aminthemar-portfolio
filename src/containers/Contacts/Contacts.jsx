@@ -101,9 +101,9 @@ const Contacts = () => {
                             <h2 className='p-h2'>راه‌های ارتباطی</h2>
                             <p className='p-text'>می‌توانید درخواست همکاری خود را از طریق این فرم یا شبکه‌های اجتماعی زیر ارسال کنید. پیام شما تا حداکثر دو روز بررسی خواهد شد.</p>
                             <ul className='app__flex-start app__contacts-social'>
-                                <a href="mailto:aminthemar@hotmail.com" target="_blank" rel="noreferrer"><HiOutlineMail /></a>
+                                <a href="mailto:info@aminthemar.ir" target="_blank" rel="noreferrer"><HiOutlineMail /></a>
                                 <a href="https://www.linkedin.com/in/aminthemar" target="_blank" rel="noreferrer"><RiLinkedinBoxLine /></a>
-                                <a href="https://wa.me/qr/L4I2UEGCSLS4N1" target="_blank" rel="noreferrer"><RiWhatsappLine /></a>
+                                <a href="https://eitaa.com/aminthemar" target="_blank" rel="noreferrer"><RiWhatsappLine /></a>
                                 <a href="https://t.me/aminthemar" target="_blank" rel="noreferrer"><RiTelegramLine /></a>
                             </ul>
                             <iframe

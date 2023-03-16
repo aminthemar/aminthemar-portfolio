@@ -140,9 +140,9 @@ const Navbar = ({ options = false }) => {
                     </ul>}
 
                   <div className='app__flex app__navbar-social'>
-                    <a href="mailto:aminthemar@hotmail.com" target="_blank" rel="noreferrer"><RiMailFill /></a>
+                    <a href="mailto:info@aminthemar.ir" target="_blank" rel="noreferrer"><RiMailFill /></a>
                     <a href="https://www.linkedin.com/in/aminthemar" target="_blank" rel="noreferrer"><RiLinkedinBoxFill /></a>
-                    <a href="https://wa.me/qr/L4I2UEGCSLS4N1" target="_blank" rel="noreferrer"><RiWhatsappFill /></a>
+                    <a href="https://eitaa.com/aminthemar" target="_blank" rel="noreferrer"><RiWhatsappFill /></a>
                     <a href="https://t.me/aminthemar" target="_blank" rel="noreferrer"><RiTelegramFill /></a>
                   </div>
                 </motion.section>
