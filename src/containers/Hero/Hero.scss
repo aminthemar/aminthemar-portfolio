@@ -19,7 +19,7 @@
 
         // border: inset 2px var(--primary-darkmode-color);
         // background: url('../../assets/hero/lines.png') repeat fixed;
-        background: radial-gradient(transparent, var(--black-color)) no-repeat, url('../../assets/hero/lines.png') repeat;
+        background: radial-gradient(transparent, var(--black-color) 90%) no-repeat, url('../../assets/hero/lines.png') repeat;
         background-position: bottom center;
         background-size: contain, 450px;
     }
