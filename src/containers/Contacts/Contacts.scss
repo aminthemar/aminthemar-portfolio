@@ -48,17 +48,17 @@
 }
 
 .app__contacts-stats {
-    padding: 0 1rem 4rem 1rem;
+    padding: 0 2rem 4rem 2rem;
     justify-content: space-evenly;
 
     li {
         align-items: flex-start;
 
         svg {
-            width: 3.25rem;
-            height: 3.25rem;
-            padding: 0.35rem;
-            margin: 0 0 0 1.5rem;
+            width: 3rem;
+            height: 3rem;
+            padding: 0.375rem;
+            margin: 0 0 0 1.25rem;
             box-shadow: inset 0 0 0 2px var(--primary-darkmode-color);
             border-radius: 12px;
             color: var(--primary-darkmode-color);
@@ -66,7 +66,7 @@
 
         h1 {
             color: var(--white-color);
-            font-size: 3.75rem;
+            font-size: 4rem;
             line-height: 3rem;
         }
 
@@ -79,9 +79,9 @@
     @media screen and (max-width: 699px) {
         flex-direction: column;
         align-items: flex-start;
-        gap: 3rem;
+        gap: 3.5rem;
         // padding: 0 0 4rem 0;
-        padding: 0 calc(50% - 5.5rem) 4rem 0;
+        padding: 0 calc(50% - 6rem) 4rem 0;
     }
 }
 

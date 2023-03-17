@@ -36,6 +36,7 @@ const Edu = () => {
       sum_height += itemRef.current.childNodes[index].offsetHeight;
     }
     setHeight((sum_height - 2).toString() + "px");
+    // console.log('recalculated', (sum_height - 2).toString() + "px")
   }
 
   function toggleItemsShowHide() {
@@ -46,6 +47,22 @@ const Edu = () => {
     calcHeight(show_items);
     setHide(!hide);
   }
+
+  function resizeEdusWithWindow() {
+    if (edu_items != null) {
+      if (hide) {
+        calcHeight(first_items)
+      } else {
+        calcHeight(edu_items.length)
+      }
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('resize', resizeEdusWithWindow)
+    // console.log('event added')
+    return () => window.removeEventListener('resize', resizeEdusWithWindow);
+  }, [])
 
   return (
     <div className='app__bg-persian'>
