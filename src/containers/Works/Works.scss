@@ -1,7 +1,7 @@
 .app__works {
     width: 100%;
     overflow: hidden;
-    background: linear-gradient(0, transparent, var(--white-color) 50%), url('../../assets/persian-pattern.png') repeat;
+    // background: linear-gradient(0, transparent, var(--white-color) 50%), url('../../assets/persian-pattern.png') repeat;
     background-color: var(--white-color);
 
     >.section_pad {
@@ -169,9 +169,9 @@
     //     transform: rotateZ(-90deg);
     // }
 
-    // :nth-last-child(1):nth-child(odd) {
-    //     grid-column: 2 / span 2;
-    // }
+    :nth-last-child(1):nth-child(odd) {
+        grid-column: 2 / span 2;
+    }
 
     li {
         grid-column: span 2;

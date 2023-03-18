@@ -16,6 +16,7 @@ const Edu = () => {
 
   const [edu_items, setEdus] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [hideLoading, setHideLoading] = useState(false);
 
   const getLocalData = () => {
     edus_data.getEdusData()
@@ -32,7 +33,8 @@ const Edu = () => {
     if (!loading) {
       setTimeout(() => {
         calcHeight(first_items);
-      }, 1500);
+        setHideLoading(true);
+      }, 1100);
     }
   }, [loading])
 
@@ -81,36 +83,35 @@ const Edu = () => {
         <div className='section_pad'>
           <SectionTitle title="تحصیلات و دستاوردهای پژوهشی" />
 
-          {loading
-            ? <motion.img
-              src={images.loading}
+          {!hideLoading &&
+            <motion.img src={images.loading}
               onViewportEnter={getLocalData}
-              className='app__flex app__loading' />
-            : <><motion.ul
-              whileInView={{ y: 0 }}
-              viewport={{ once: true }}
-              // onAnimationStart={initializeItems}
-              className='app__edu-timeline'
+              className='app__flex app__loading' />}
+
+          {!loading
+            &&
+            <ul className='app__edu-timeline'
               ref={itemRef}
               style={{ height: `${itemheight}` }}>
               {edu_items.map((item) => (
                 <EduItem edu_data={item} key={`edu-${item.title}`} />
               ))}
-            </motion.ul>
+            </ul>
+          }
 
-              <div className='link_icon-primary'>
-                {hide ?
-                  <a onClick={toggleItemsShowHide}
-                    className='app__flex app__edu-link_icon link_icon'>
-                    <p className='p-text p-link'>نمایش بیشتر ({edu_items.length - first_items})</p>
-                    <MdKeyboardArrowDown /></a>
-                  : <a onClick={toggleItemsShowHide}
-                    className='app__flex app__edu-link_icon link_icon'>
-                    <p className='p-text p-link'>مخفی کن</p>
-                    <MdKeyboardArrowUp /></a>
-                }
-              </div>
-            </>
+          {hideLoading &&
+            <div className='link_icon-primary'>
+              {hide ?
+                <a onClick={toggleItemsShowHide}
+                  className='app__flex app__edu-link_icon link_icon'>
+                  <p className='p-text p-link'>نمایش بیشتر ({edu_items.length - first_items})</p>
+                  <MdKeyboardArrowDown /></a>
+                : <a onClick={toggleItemsShowHide}
+                  className='app__flex app__edu-link_icon link_icon'>
+                  <p className='p-text p-link'>مخفی کن</p>
+                  <MdKeyboardArrowUp /></a>
+              }
+            </div>
           }
         </div>
       </div>

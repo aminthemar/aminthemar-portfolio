@@ -263,10 +263,16 @@ ul {
 }
 
 .app__bg-persian {
-  background: linear-gradient(transparent, var(--white-color) 50%), url('./assets/persian-pattern.png') repeat;
+  background: linear-gradient(transparent, var(--white-color) 40%), url('./assets/persian-pattern.png') repeat;
   background-color: var(--white-color);
   background-position: top center;
 }
+
+// .app__bg-persian-bottom {
+//   background: linear-gradient(transparent, var(--bg-lightmode-color) 50%), url('./assets/persian-pattern.png') repeat;
+//   background-color: var(--bg-lightmode-color);
+//   background-position: top center;
+// }
 
 .button_icon {
   cursor: pointer;
