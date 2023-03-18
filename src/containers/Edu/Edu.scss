@@ -3,10 +3,30 @@
     padding: 0.25rem 1.25rem 0 0;
     z-index: 2;
 
-    @media screen and (max-width: 699px) {
-        justify-content: flex-start;
-        padding: 0.5rem 0 0 0;
+    &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        margin-top: 5px;
+        height: 1px;
+        width: calc(50% - 4.5rem);
+        border-bottom: solid 1px var(--border-color);
     }
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        margin-top: 5px;
+        height: 1px;
+        width: calc(50% - 5.5rem);
+        border-bottom: solid 1px var(--border-color);
+    }
+
+    // @media screen and (max-width: 950px) {
+    //     justify-content: flex-start;
+    //     padding: 0.5rem 0 0 0;
+    // }
 }
 
 .app__edu {
@@ -19,42 +39,25 @@
     position: relative;
     display: block;
     overflow: hidden;
-    // padding: 0.3rem 0;
 
-    transition: all 0.3s ease-out;
+    transition: all 0.2s ease-out;
 
-    @media screen and (min-width: 699px) {
+    @media screen and (min-width: 899px) {
         :nth-child(odd) {
-            .edu__item {
-                flex-direction: row-reverse;
-
-                // span {
-                // .p-text {
-                //     padding-left: 0.5rem;
-                // }
-                // }
-            }
+            flex-direction: row-reverse;
         }
 
-        :nth-child(even) {
-            .edu__item {
-                flex-direction: row;
+        // :nth-child(even) {
+        // .edu__item {
+        // flex-direction: row;
 
-                // section {
-                //     margin-top: calc(-10% + 4.125rem);
-
-                //     @media screen and (min-width: 2000px) {
-                //         margin-top: 0;
-                //     }
-                // }
-
-                span {
-                    * {
-                        text-align: left;
-                        justify-content: flex-end;
-                    }
-                }
-            }
-        }
+        // span {
+        // * {
+        //     text-align: left;
+        //     justify-content: flex-end;
+        // }
+        // }
+        // }
+        // }
     }
 }

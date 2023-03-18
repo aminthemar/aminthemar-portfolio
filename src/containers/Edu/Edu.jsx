@@ -22,55 +22,62 @@ const Edu = () => {
       .then(data => {
         setEdus(data.content);
         setLoading(false);
-        setTimeout(() => calcHeight(first_items), 1200);
       })
       .catch(err => {
         console.error(err);
-        setLoading(true);
       });
   };
 
-  function calcHeight(n_items) {
-    let sum_height = -1;
-    for (let index = 0; index < n_items; index++) {
-      sum_height += itemRef.current.childNodes[index].offsetHeight;
+  useEffect(() => {
+    if (!loading) {
+      setTimeout(() => {
+        calcHeight(first_items);
+      }, 800);
     }
-    setHeight((sum_height - 2).toString() + "px");
-    // console.log('recalculated', (sum_height - 2).toString() + "px")
-  }
-
-  function toggleItemsShowHide() {
-    let show_items = first_items;
-    if (hide) {
-      show_items = edu_items.length;
-    }
-    calcHeight(show_items);
-    setHide(!hide);
-  }
-
-  function resizeEdusWithWindow() {
-    if (edu_items != null) {
-      if (hide) {
-        calcHeight(first_items)
-      } else {
-        calcHeight(edu_items.length)
-      }
-    }
-  }
+  }, [loading])
 
   useEffect(() => {
-    window.addEventListener('resize', resizeEdusWithWindow)
-    // console.log('event added')
-    return () => window.removeEventListener('resize', resizeEdusWithWindow);
-  }, [])
+    if (!loading) {
+      window.addEventListener('resize', resizeEdusWithWindow)
+      return () => window.removeEventListener('resize', resizeEdusWithWindow);
+    }
+  }, [hide, loading])
+
+  const calcHeight = (n_items) => {
+    let sum_height = -1;
+    for (let index = 0; index < n_items; index++) {
+      sum_height += itemRef.current.childNodes[index].scrollHeight;
+    }
+
+    let first_child = itemRef.current.childNodes[0];
+    if (first_child != null) {
+      sum_height += n_items * parseInt(window.getComputedStyle(first_child).getPropertyValue('margin-bottom'));
+    }
+
+    setHeight((sum_height - 2).toString() + "px");
+  };
+
+  const toggleItemsShowHide = () => {
+    if (hide) {
+      setHide(false);
+      calcHeight(edu_items.length);
+    } else {
+      setHide(true);
+      calcHeight(first_items);
+    }
+  };
+
+  const resizeEdusWithWindow = () => {
+    if (hide) {
+      calcHeight(first_items)
+    } else {
+      calcHeight(edu_items.length)
+    }
+  };
 
   return (
     <div className='app__bg-persian'>
       <div className='app__edu app__container' >
-
-        {/* <span style={{ right: 0, transform: "scaleX(-1)" }}><img src={images.pillarTop} /></span>
-        <span style={{ left: 0 }}><img src={images.pillarTop} /></span> */}
-
         <div className='section_pad'>
           <SectionTitle title="تحصیلات و دستاوردهای پژوهشی" />
 
@@ -87,22 +94,23 @@ const Edu = () => {
               ref={itemRef}
               style={{ height: `${itemheight}` }}>
               {edu_items.map((item) => (
-                <li key={`edu-${item.title}`}>
-                  <EduItem edu_data={item} />
-                </li>
+                <EduItem edu_data={item} key={`edu-${item.title}`} />
               ))}
             </motion.ul>
 
-              {hide ?
-                <a onClick={toggleItemsShowHide}
-                  className='app__flex app__edu-link_icon link_icon link_icon-primary'>
-                  <p className='p-text p-link'>نمایش بیشتر ({edu_items.length - first_items})</p>
-                  <MdKeyboardArrowDown /></a>
-                : <a onClick={toggleItemsShowHide}
-                  className='app__flex app__edu-link_icon link_icon link_icon-primary'>
-                  <p className='p-text p-link'>مخفی کن</p>
-                  <MdKeyboardArrowUp /></a>
-              }</>
+              <div className='link_icon-primary'>
+                {hide ?
+                  <a onClick={toggleItemsShowHide}
+                    className='app__flex app__edu-link_icon link_icon'>
+                    <p className='p-text p-link'>نمایش بیشتر ({edu_items.length - first_items})</p>
+                    <MdKeyboardArrowDown /></a>
+                  : <a onClick={toggleItemsShowHide}
+                    className='app__flex app__edu-link_icon link_icon'>
+                    <p className='p-text p-link'>مخفی کن</p>
+                    <MdKeyboardArrowUp /></a>
+                }
+              </div>
+            </>
           }
         </div>
       </div>

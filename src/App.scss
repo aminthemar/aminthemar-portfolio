@@ -263,7 +263,7 @@ ul {
 }
 
 .app__bg-persian {
-  background: linear-gradient(transparent, var(--white-color) 60%), url('./assets/persian-pattern.png') repeat;
+  background: linear-gradient(transparent, var(--white-color) 50%), url('./assets/persian-pattern.png') repeat;
   background-color: var(--white-color);
   background-position: top center;
 }
@@ -409,7 +409,7 @@ ul {
     opacity: 0;
 
     z-index: -1;
-    border-radius: 12px;
+    border-radius: 14px;
     background-color: var(--black-color);
     transition: all 0.2s ease-in-out;
 

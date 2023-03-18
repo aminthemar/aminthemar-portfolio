@@ -59,13 +59,14 @@ body {
   --error-color: #ec8a5c;
 
   --black-color: #080827;
-  --border-color: #e1e1f3;
+  --border-color: #e5e5f6;
   --gray-color: #b4b4d0;
   --grey-color: #3a3965;
-  --white-color: #f9f8fd;
+  --white-color: #fff;
+  /* --white-color: #f9f8fd; */
 
-  --bg-darkmode-color: #281470;
-  --bg-lightmode-color: #eeeff9;
+  --bg-darkmode-color: #321e78;
+  --bg-lightmode-color: #f5f6fd;
 
   --box-width: 1280px;
 }
