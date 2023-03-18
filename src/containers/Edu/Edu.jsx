@@ -32,7 +32,7 @@ const Edu = () => {
     if (!loading) {
       setTimeout(() => {
         calcHeight(first_items);
-      }, 800);
+      }, 1500);
     }
   }, [loading])
 

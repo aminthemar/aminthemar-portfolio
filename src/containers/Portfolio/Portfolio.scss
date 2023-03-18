@@ -142,6 +142,15 @@
         }
     }
 
+    >figure {
+        position: relative;
+        display: flex;
+        align-items: center;
+        background-color: var(--bg-lightmode-color);
+        border-radius: 14px;
+        grid-area: 1 / 1 / 1 / 7 !important;
+    }
+
     @media screen and (max-width: 899px) {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(6, 1fr);

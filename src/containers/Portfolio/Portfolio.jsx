@@ -6,7 +6,7 @@ import { BsArrowLeft, BsFillCheckCircleFill } from 'react-icons/bs'
 import { ImEye } from 'react-icons/im'
 
 import './Portfolio.scss'
-import { pworks_data, tools_data } from '../../constants'
+import { pworks_data, tools_data, images } from '../../constants'
 import { SectionTitle } from '../../components'
 import { AppWrap } from '../../wrapper'
 
@@ -16,6 +16,7 @@ const Portfolio = () => {
     const [portfolioItems, setPortfolioItems] = useState([]);
     const [toolsItems, setToolsItems] = useState([]);
     const [activeCategory, setActiveCategory] = useState(1);
+    const [loading, setLoading] = useState(true);
     const itemRef = useRef(null);
 
     function ActivateCategory(new_category_idx) {
@@ -28,10 +29,12 @@ const Portfolio = () => {
         if (activeCategory === new_category_idx) return;
 
         ActivateCategory(new_category_idx);
+        setLoading(true);
 
         tools_data.getnToolsbyCategory(6, categories[new_category_idx])
             .then(data => {
                 setToolsItems(data.content);
+                setLoading(false);
             })
             .catch(err => {
                 console.error(err);
@@ -40,6 +43,7 @@ const Portfolio = () => {
         pworks_data.getnPWorksbyCategory(4, categories[new_category_idx])
             .then(data => {
                 setPortfolioItems(data.content);
+                setLoading(false);
             })
             .catch(err => {
                 console.error(err);
@@ -73,21 +77,30 @@ const Portfolio = () => {
                         </div>
 
                         <ul className='app__portfolio-works'>
-                            {portfolioItems.map((port_item, index) => (
-                                <li className='app__cardcover' key={`work-${index}`}>
-                                    <span className='app__flex'>
-                                        <Link to={`/works/${port_item['id']}`} rel="noopener noreferrer">
-                                            <ImEye />
-                                            <p className='p-title'>{port_item['title']}</p>
-                                            <p className='p-text'>{port_item['company']}</p>
-                                            <div className='app__portfolio-button p-text p-link'>پروژه‌ی کامل</div>
-                                        </Link>
-                                    </span>
+                            {loading
+                                ? <figure>
+                                    <img src={images.loading} className='app__flex app__loading' />
+                                </figure>
+                                : portfolioItems.map((port_item, index) => (
+                                    <motion.li
+                                        initial={{ "opacity": 0 }}
+                                        animate={{ "opacity": 1 }}
+                                        className='app__cardcover' key={`work-${index}`}>
+                                        <span className='app__flex'>
+                                            <Link to={`/works/${port_item['id']}`} rel="noopener noreferrer">
+                                                <ImEye />
+                                                <p className='p-title'>{port_item['title']}</p>
+                                                <p className='p-text'>{port_item['company']}</p>
+                                                <div className='app__portfolio-button p-text p-link'>پروژه‌ی کامل</div>
+                                            </Link>
+                                        </span>
 
-                                    <img src={port_item['logo']} alt={`work-${index}`} />
-                                </li>
-                            ))}
+                                        <img src={port_item['logo']} alt={`work-${index}`} />
+                                    </motion.li>
+                                ))
+                            }
                         </ul>
+
                     </section>
 
                     <span>
