@@ -53,7 +53,7 @@ body {
   --font-regular: 400;
   --font-bold: 800;
 
-  --primary-darkmode-color: #28ffbf;
+  --primary-darkmode-color: #15ffc8;
   --primary-lightmode-color: #7364ff;
   /* --secondary-color: #ae8cfa; */
   --error-color: #ec8a5c;
@@ -65,7 +65,7 @@ body {
   --white-color: #fff;
   /* --white-color: #f9f8fd; */
 
-  --bg-darkmode-color: #2f1a7a;
+  --bg-darkmode-color: #351c91;
   --bg-lightmode-color: #f5f6fd;
 
   --box-width: 1300px;

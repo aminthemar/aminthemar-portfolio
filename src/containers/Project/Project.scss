@@ -33,6 +33,19 @@
     section {
         position: relative;
         width: calc(20rem + 10%);
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 80%;
+            height: calc(100% - 14rem);
+            top: 14rem;
+            right: 10%;
+            background: url('../../assets/edu/split.png') repeat-y;
+            background-size: contain;
+            border-bottom: solid 1px var(--bg-lightmode-color);
+            // box-shadow: inset 0 0 0 0.2rem var(--bg-lightmode-color);
+        }
     }
 
     span {
@@ -83,12 +96,14 @@
     top: 1.5rem;
     border-radius: 24px;
 
+    background-color: var(--white-color);
+
     img {
         width: 100%;
         min-height: 9rem;
         border-radius: 14px;
         margin-bottom: 0.75rem;
-        box-shadow: 0 0 0 1px var(--white-color);
+        box-shadow: 0 0 0 2px var(--white-color);
     }
 
     .app__flex-end {
@@ -121,10 +136,6 @@
         position: relative;
         background-color: unset;
         border-radius: 0;
-
-        &::before {
-            display: none;
-        }
     }
 }
 

@@ -130,6 +130,21 @@
         color: var(--white-color);
         padding: 0 1rem 0.25rem 0;
         border-right: solid 3px var(--primary-darkmode-color);
+        background: linear-gradient(90deg, transparent 50%, var(--bg-darkmode-color));
+        animation: gradient 0.75s ease forwards;
+        animation-delay: 0.75s;
+        background-size: 200% 200%;
+
+        @keyframes gradient {
+            from {
+                background-position: 0% 50%;
+            }
+
+            to {
+                background-position: 80% 50%;
+            }
+        }
+
     }
 
     li {
@@ -140,7 +155,7 @@
 
 .app__hero-location {
     margin: 1rem 0;
-    gap: 1rem;
+    gap: 1.5rem;
     flex-wrap: wrap;
 
     // color: var(--grey-color);
