@@ -60,13 +60,13 @@ body {
 
   --black-color: #080827;
   --border-color: #e7e9f6;
-  --gray-color: #cfd0de;
-  --grey-color: #3d3f60;
+  --gray-color: #c7c7db;
+  --grey-color: #26285d;
   --white-color: #fff;
   /* --white-color: #f9f8fd; */
 
   --bg-darkmode-color: #351c91;
-  --bg-lightmode-color: #f5f6fd;
+  --bg-lightmode-color: #f5f7ff;
 
   --box-width: 1300px;
 }

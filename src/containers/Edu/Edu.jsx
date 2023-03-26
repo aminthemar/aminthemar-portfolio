@@ -34,7 +34,7 @@ const Edu = () => {
       setTimeout(() => {
         calcHeight(first_items);
         setHideLoading(true);
-      }, 1100);
+      }, 500);
     }
   }, [loading])
 
