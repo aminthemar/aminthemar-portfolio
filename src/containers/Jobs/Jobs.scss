@@ -1,32 +1,7 @@
 .app__jobs-laurier {
-    background: linear-gradient(transparent -60%, var(--black-color) 110%), url('../../assets/hero/lines.png') repeat;
-    background-position: top center;
+    background: linear-gradient(-135deg, transparent -50%, var(--black-color) 70%);
+    background-color: var(--bg-darkmode-color);
     margin-top: -2px;
-}
-
-.app__jobs-mandala {
-    position: relative;
-    margin-top: -9rem;
-    width: 100%;
-    height: 17rem;
-
-    &::before {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 2.85rem;
-        right: 0;
-
-        background: url('../../assets/job-icons/mandala.svg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 26rem;
-    }
-
-    @media screen and (max-width: 899px) {
-        margin-top: -6rem;
-    }
 }
 
 .app__jobs {
@@ -37,51 +12,52 @@
 
     text-align: center;
 
-    span {
+    li {
         position: relative;
-        padding: calc(2.25rem + 8%) 0;
-        margin-bottom: 1rem;
-        border-radius: 14px;
+        overflow: hidden;
         background-color: var(--bg-darkmode-color);
-        transition: background-color 0.2s ease-in-out;
+        padding: 0.5rem;
 
-        img {
-            margin-top: 0.25rem;
-        }
+        border-radius: 14px;
+        transition: background-color 0.3s;
 
         &:hover {
-            background-color: unset;
-            box-shadow: inset 0 0 0 2px var(--primary-darkmode-color);
+            background-color: var(--grey-color);
         }
+
+        img {
+            display: block;
+            margin: 3rem auto 2.5rem auto;
+            width: 7.5rem;
+            // transition: all 0.2s ease-in-out;
+            // image-rendering: optimizeQuality;
+            // -ms-interpolation-mode: bicubic;
+        }
+
+        section {
+            overflow: hidden;
+            background-color: var(--black-color);
+            border-radius: 8px;
+
+            .p-title {
+                color: var(--white-color);
+            }
+
+            .p-small {
+                padding: 0.5rem 0;
+                color: var(--gray-color);
+            }
+        }
+
     }
 
-    .p-title {
-        color: var(--white-color);
-    }
-
-    .p-text {
-        color: var(--gray-color);
-    }
-
-    img {
-        width: 7rem;
-        z-index: 2;
-        transition: all 0.2s ease-in-out;
-
-        // image-rendering: unset;
-        // image-rendering: unset;
-        // image-rendering: unset;
-        // image-rendering: unset;
-        // -ms-interpolation-mode: unset;
-    }
-
-    @media screen and (max-width: 899px) {
+    @media screen and (max-width: 1024px) {
         grid-template-columns: repeat(2, minmax(0, 1fr));
-        row-gap: 1.75rem;
+        row-gap: 1.5rem;
     }
 
-    @media screen and (max-width: 599px) {
+    @media screen and (max-width: 699px) {
         grid-template-columns: repeat(1, minmax(0, 1fr));
-        gap: 1.75rem;
+        gap: 1.5rem;
     }
 }

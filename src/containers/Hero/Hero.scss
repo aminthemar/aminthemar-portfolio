@@ -2,46 +2,33 @@
     position: relative;
     width: 100%;
     z-index: 0;
-    // background: linear-gradient(-90deg, var(--black-color), var(--bg-darkmode-color));
+    background-color: var(--black-color);
 
-    // @media screen and (max-width: 599px) {
-    //     background: linear-gradient(0, var(--black-color), var(--bg-darkmode-color));
-    // }
-
-    >section {
-        position: absolute;
+    &::before {
         content: "";
-        z-index: -1;
-        top: 0;
-        right: 0;
+        position: absolute;
         width: 100%;
         height: 100%;
-
-        // border: inset 2px var(--primary-darkmode-color);
-        // background: url('../../assets/hero/lines.png') repeat fixed;
-        background: radial-gradient(transparent, var(--black-color) 90%) no-repeat, url('../../assets/hero/lines.png') repeat;
-        background-position: bottom center;
-        // background-size: contain;
+        background: radial-gradient(transparent, var(--black-color) 60%) no-repeat, url('../../assets/hero/lines.png') 180px / 180px repeat;
+        z-index: -1;
     }
 }
 
 .app__hero {
-    padding: 1.25rem 0 0 0;
+    padding: 0.5rem 0 0 0;
     width: fit-content;
     position: relative;
 
     >span {
         position: absolute;
         z-index: -1;
-        top: -26rem;
-        right: 32rem;
-        transform: rotateZ(-4deg) scale(1.1);
-
-        // filter: drop-shadow(-0.7rem 0.7rem 0.7rem #000000bb);
+        top: -22rem;
+        right: 30rem;
     }
 
-    @media screen and (max-width: 599px) {
+    @media screen and (max-width: 499px) {
         width: 100%;
+        padding: 2rem 0 0 0;
 
         >span {
             display: none;
@@ -49,18 +36,18 @@
     }
 
     @media screen and (min-width: 2000px) {
-        padding: 3rem 0 1rem 0;
+        padding: 1rem 0 0 0;
 
         >span {
-            top: -22rem;
+            top: -16rem;
         }
     }
 }
 
 .app__hero-h1 {
-    line-height: 145%;
+    line-height: 150%;
     max-width: 52rem;
-    font-size: 6.4vw;
+    font-size: 6.5vw;
     font-weight: var(--font-bold);
     color: var(--white-color);
 
@@ -68,56 +55,44 @@
     white-space: nowrap;
     overflow: hidden;
 
-    @media screen and (min-width: 599px) {
-        font-size: 2.125rem;
-    }
-
-    @media screen and (min-width: 769px) {
-        font-size: 2.375rem;
+    @media screen and (min-width: 499px) {
+        font-size: 2.25rem;
     }
 
     @media screen and (min-width: 2000px) {
-        font-size: 2.625rem;
+        font-size: 2.5rem;
     }
 }
 
 .app__hero-profile {
     margin: 2rem 0 2.75rem 0;
     display: flex;
-    height: 18em;
+    height: 18rem;
 
     img {
         border-radius: 8px;
         object-fit: cover;
         position: relative;
         margin-left: 1.25em;
-        width: 30%;
-
-        box-shadow: 0 0 48px #00000055;
+        width: 32%;
     }
 
     @media screen and (max-width: 2000px) {
-        height: 15.5em;
+        height: 16rem;
     }
 
-    @media screen and (max-width: 769px) {
-        height: 14em;
-    }
-
-    @media screen and (max-width: 599px) {
-        height: 15.5em;
-    }
-
-    @media screen and (max-width: 429px) {
+    @media screen and (max-width: 499px) {
         flex-wrap: wrap;
+        justify-content: center;
         height: fit-content;
-        margin: 2em 0;
+        text-align: center;
+        margin: 2rem 0;
 
         img {
             border-radius: 8px;
-            margin: 0 0 2em 0;
+            margin: 0 0 2rem 0;
             width: 99%;
-            height: 12em;
+            height: 12.5rem;
         }
     }
 
@@ -132,37 +107,39 @@
 
     .p-title {
         color: var(--white-color);
-        padding: 0.125rem 0.75rem 0.25rem 0;
-        border-right: solid 3px var(--primary-darkmode-color);
-        background: linear-gradient(90deg, transparent 50%, var(--bg-darkmode-color));
-        animation: gradient 0.75s ease forwards;
-        animation-delay: 0.75s;
-        background-size: 200% 200%;
+        background-color: var(--bg-darkmode-color);
+        text-align: center;
 
-        @keyframes gradient {
-            from {
-                background-position: 0% 50%;
-            }
+        padding: 0.25rem 0 0.5rem 0;
+        border-radius: 8px;
+        // border-right: solid 4px var(--primary-lightmode-color);
+        // background: linear-gradient(90deg, transparent 50%, var(--primary-lightmode-color));
+        // animation: gradient 0.3s ease-out forwards;
+        // animation-delay: 1s;
+        // background-size: 200% 200%;
 
-            to {
-                background-position: 80% 50%;
-            }
-        }
+        // @keyframes gradient {
+        //     from {
+        //         background-position: 0% 50%;
+        //     }
+
+        //     to {
+        //         background-position: 30% 50%;
+        //     }
+        // }
 
     }
 
     li {
-        padding-top: 0.75rem;
+        padding-top: 0.5rem;
         color: var(--gray-color);
     }
 }
 
 .app__hero-location {
     margin: 0.75rem 0;
-    gap: 1.5rem;
+    gap: 1rem;
     flex-wrap: wrap;
-
-    // color: var(--grey-color);
 
     * {
         color: var(--gray-color);
@@ -180,7 +157,7 @@
         margin: 0 0 0 1em;
     }
 
-    @media screen and (max-width: 529px) {
+    @media screen and (max-width: 499px) {
         width: 99%;
         flex-wrap: wrap;
 

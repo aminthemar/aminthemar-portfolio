@@ -1,4 +1,4 @@
-import React from 'react';
+import { React, useState } from 'react';
 import { motion } from 'framer-motion';
 import { MdArrowDownward, MdOutlineInsertDriveFile } from 'react-icons/md';
 import { IoBalloonSharp } from 'react-icons/io5';
@@ -10,20 +10,22 @@ import { PrimaryButton, SecondaryButton } from '../../components';
 import './Hero.scss';
 
 const Hero = () => {
+  const [heroLoaded, setHeroLoaded] = useState(false);
+
   return (
     <div className='app__hero-bg app__flex-start'>
-
-      <section />
 
       <div className='app__container section_pad'>
         <div className='app__hero'>
 
-          <span
-          // initial={{ opacity: 0 }}
-          // whileInView={{ opacity: 1 }}
-          // viewport={{ once: true }}
-          // transition={{ duration: 3, ease: 'easeInOut' }}
-          ><img src={images.parche} alt="persian calligraphy" /></span>
+          <motion.span
+            initial={{ opacity: 0 }}
+            animate={{
+              opacity: heroLoaded ? 1 : 0
+            }}
+            transition={{ duration: 3, ease: 'easeOut' }}
+            onLoad={() => setHeroLoaded(true)}
+          ><img src={images.parche} alt="persian calligraphy" /></motion.span>
 
           <motion.h1
             initial={{ y: 80, opacity: 0 }}
@@ -47,7 +49,7 @@ const Hero = () => {
               <div>
                 <div className='p-title'>محمدامین رشید</div>
 
-                <div className='app__flex-start app__hero-location'>
+                <div className='app__flex app__hero-location'>
                   <div className='app__flex-start'>
                     <IoBalloonSharp />
                     <p className='p-text p-link'>خرداد 1376</p>

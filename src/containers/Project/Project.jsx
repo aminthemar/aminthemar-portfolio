@@ -65,7 +65,7 @@ const Project = ({ id }) => {
                                         <a href={work["websiteurl"]}
                                             rel="external"
                                             target='_blank'
-                                            className='app__flex link_icon-primary squishy'
+                                            className='app__flex'
                                             style={{ backgroundColor: work["color"] }}>
                                             <p className='p-text p-link'>نسخه‌ی لایو</p>
                                             <ImEye />
@@ -74,8 +74,8 @@ const Project = ({ id }) => {
 
                                     <Link to="/works"
                                         rel="noopener noreferrer"
-                                        className='app__flex squishy'>
-                                        <div className='app__flex-start link_icon app__project-back'>
+                                        className='app__flex app__project-back'>
+                                        <div className='app__flex-start link_icon'>
                                             <BsArrowRight />
                                             <p className='p-text p-link'>همه پروژه‌ها</p>
                                         </div>
@@ -113,7 +113,7 @@ const Project = ({ id }) => {
                                         <a href={work["websiteurl"]}
                                             rel="external"
                                             target='_blank'
-                                            className='app__flex link_icon-primary squishy'
+                                            className='app__flex'
                                             style={{ backgroundColor: work["color"] }}>
                                             <p className='p-text p-link'>نسخه‌ی لایو</p>
                                             <ImEye />
@@ -122,8 +122,8 @@ const Project = ({ id }) => {
 
                                     <Link to="/works"
                                         rel="noopener noreferrer"
-                                        className='app__flex squishy'>
-                                        <div className='app__flex-start link_icon app__project-back'>
+                                        className='app__flex app__project-back'>
+                                        <div className='app__flex-start link_icon'>
                                             <BsArrowRight />
                                             <p className='p-text p-link'>همه پروژه‌ها</p>
                                         </div>
@@ -179,14 +179,6 @@ const Project = ({ id }) => {
                                             <p className='p-title'>پیش‌نمایش</p>
                                             <figure><BsCameraVideo /></figure>
                                         </div>
-
-                                        {/* <a href={`https://www.aparat.com/v/${work["aparatID"]}`}
-                                            key="aparat-video`" target="_blank" rel="noreferrer"
-                                            className='app__flex-start link_icon link_icon-primary'
-                                            style={{ marginBottom: "1rem" }}>
-                                            <p className='p-text p-link'>مشاهده در آپارات</p>
-                                            <AiOutlineLink />
-                                        </a> */}
 
                                         <div className="h_iframe-aparat_embed_frame">
                                             <span />

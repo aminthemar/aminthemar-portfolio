@@ -1,13 +1,12 @@
 .app__edu-link_icon {
     position: relative;
     padding: 0.25rem 1.25rem 0 0;
-    z-index: 2;
 
     &::after {
         content: "";
         position: absolute;
+        top: calc(50% + 5px);
         right: 0;
-        margin-top: 5px;
         height: 1px;
         width: calc(50% - 4.5rem);
         border-bottom: solid 1px var(--border-color);
@@ -16,48 +15,24 @@
     &::before {
         content: "";
         position: absolute;
+        top: calc(50% + 5px);
         left: 0;
-        margin-top: 5px;
         height: 1px;
         width: calc(50% - 5.5rem);
         border-bottom: solid 1px var(--border-color);
     }
-
-    // @media screen and (max-width: 950px) {
-    //     justify-content: flex-start;
-    //     padding: 0.5rem 0 0 0;
-    // }
-}
-
-.app__edu {
-    position: relative;
-    // padding-top: 0.5rem;
-    margin-bottom: -2rem;
 }
 
 .app__edu-timeline {
-    position: relative;
-    display: block;
-    overflow: hidden;
+    overflow-y: hidden;
 
-    transition: all 0.2s ease-out;
+    .edu_item {
+        flex-grow: 1;
+    }
 
     @media screen and (min-width: 899px) {
         :nth-child(odd) {
             flex-direction: row-reverse;
         }
-
-        // :nth-child(even) {
-        // .edu__item {
-        // flex-direction: row;
-
-        // span {
-        // * {
-        //     text-align: left;
-        //     justify-content: flex-end;
-        // }
-        // }
-        // }
-        // }
     }
 }

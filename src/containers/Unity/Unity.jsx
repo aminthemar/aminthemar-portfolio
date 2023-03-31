@@ -60,7 +60,7 @@ const Unity = () => {
 
                 <a href="https://www.aparat.com/AminTheMar"
                   target="_blank" rel="noreferrer"
-                  className='app__flex-start app__unity-teacher button_icon squishy'>
+                  className='app__flex-start app__unity-teacher button_icon'>
                   <BsFillPersonFill />
                   <p className='p-text p-link'>مدرس . محمدامین رشید</p>
                 </a>
@@ -104,10 +104,11 @@ const Unity = () => {
           </motion.ul>
 
           <a href="https://www.aparat.com/playlist/1214480"
-            target="_blank" rel="next"
-            className='app__flex-start link_icon link_icon-secondary'>
-            <p className='p-text p-link'>مشاهده همه</p>
-            <BsArrowLeft />
+            target="_blank" rel="next">
+            <div className='app__flex link_icon link_icon-darkmode'>
+              <p className='p-text p-link'>مشاهده همه</p>
+              <BsArrowLeft />
+            </div>
           </a>
         </div>
       </div>

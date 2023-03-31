@@ -3,8 +3,8 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 603.2 194.8" style="enable-background:new 0 0 603.2 194.8;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#746CFE;}
-	.st1{fill:#746CFE;}
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#745cff;}
+	.st1{fill:#745cff;}
 	.st2{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_1_);}
 </style>
 <path class="st0" d="M141.1,138.7c5.9,0,10.7,4.8,10.7,10.7s-4.8,10.7-10.7,10.7c-5.9,0-10.7-4.8-10.7-10.7l0,0
@@ -45,7 +45,7 @@
 	C558.3,105.3,555.4,102.4,551.8,102.4z"/>
 <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="316.271" y1="151.4131" x2="414.4823" y2="-18.6991" gradientTransform="matrix(1 0 0 -1 -73.91 161.18)">
 	<stop  offset="0" style="stop-color:#A670FE"/>
-	<stop  offset="1" style="stop-color:#746CFE"/>
+	<stop  offset="1" style="stop-color:#745cff"/>
 </linearGradient>
 <path class="st2" d="M299.9,194.8c-23.1,0-54.6-20.9-54.6-57.3s47.3-52.7,47.3-88.3c0-13.6-2-18.1-8.6-26.4
 	c-5.8-7.1-13.8-9.4-18.4-10.1c0.1,0.6,0.1,1.1,0.1,1.7c0,5.4-4.4,9.8-9.8,9.8c-1.1,0-2.2-0.2-3.2-0.5c-3.6-0.7-7-3.9-7-10.4

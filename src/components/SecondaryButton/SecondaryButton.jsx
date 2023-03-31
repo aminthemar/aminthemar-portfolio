@@ -11,7 +11,7 @@ const SecondaryButton = ({ text, btn_icon, href }) => {
     }, [isRippling]);
 
     return (
-        <a className='app__flex-start button_icon secondary_button squishy'
+        <a className='app__flex-start button_icon secondary_button'
             onClick={() => setIsRippling(false)}
             href={href}
         >

@@ -72,7 +72,7 @@ const Navbar = ({ options = false }) => {
     <div className={'app__navbar-box' + styleClass}>
       <nav className='app__navbar'>
 
-        <Link to="/" className='app__navbar-home app__flex-start squishy' rel="noopener noreferrer">
+        <Link to="/" className='app__navbar-home app__flex-start' rel="noopener noreferrer">
           <MdHome alt="خانه" />
           <p>خانه</p>
         </Link>
@@ -91,7 +91,7 @@ const Navbar = ({ options = false }) => {
         }
 
         <div className='app__navbar-menu'>
-          <span className={'app__navbar-burger app__navbar-burger' + styleClass + ' squishy'}
+          <span className={'app__navbar-burger app__navbar-burger' + styleClass}
             onClick={() => setToggle(true)}><MdMenu /></span>
 
           <AnimatePresence>
@@ -152,7 +152,7 @@ const Navbar = ({ options = false }) => {
 
         </div>
 
-        <a href='#contacts' className={'squishy app__navbar-logo' + styleClass}>
+        <a href='#contacts' className={'app__navbar-logo' + styleClass}>
           {/* <img src={images.irflag} alt="Iran" /> */}
           <p className='p-text p-link'>ثبت همکاری</p>
         </a>

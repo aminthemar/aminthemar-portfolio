@@ -1,17 +1,7 @@
-// import React, { useState, useRef } from 'react';
 import { AiOutlineLink } from 'react-icons/ai';
-
-// import { motion } from 'framer-motion';
 import './EduItem.scss';
-import { images } from '../../constants';
 
 const EduItem = ({ edu_data }) => {
-
-    // const [isActive, setActive] = useState(false);
-
-    // const onComplete = () => {
-    //     setActive(true);
-    // };
 
     return (
         <div className='edu__item'>
@@ -35,7 +25,6 @@ const EduItem = ({ edu_data }) => {
                 <img src={edu_data.logo} alt={edu_data.place} />
                 <p className='p-text app__yeartag'>{edu_data.yearend} - {edu_data.yearstart}</p>
             </section>
-            {/* <img src={images.split} className='app__edu-split' alt='split' /> */}
         </div>
     )
 }

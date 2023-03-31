@@ -53,20 +53,18 @@ body {
   --font-regular: 400;
   --font-bold: 800;
 
-  --primary-darkmode-color: #15ffc8;
-  --primary-lightmode-color: #7364ff;
-  /* --secondary-color: #ae8cfa; */
+  --primary-darkmode-color: #10ffcf;
+  --primary-lightmode-color: #745cff;
   --error-color: #ec8a5c;
 
-  --black-color: #080827;
+  --black-color: #11111e;
   --border-color: #e7e9f6;
-  --gray-color: #c7c7db;
-  --grey-color: #26285d;
+  --gray-color: #d4d4dc;
+  --grey-color: #1d1d36;
   --white-color: #fff;
-  /* --white-color: #f9f8fd; */
 
-  --bg-darkmode-color: #351c91;
-  --bg-lightmode-color: #f5f7ff;
+  --bg-darkmode-color: #171728;
+  --bg-lightmode-color: #f7f8ff;
 
   --box-width: 1300px;
 }

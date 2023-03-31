@@ -70,7 +70,7 @@ const Portfolio = () => {
                             </ul>
                             <Link to="/works"
                                 rel="noopener noreferrer"
-                                className='app__flex-start link_icon link_icon-primary'>
+                                className='app__flex-start link_icon link_icon-lightmode'>
                                 <p className='p-text p-link'>مشاهده همه</p>
                                 <BsArrowLeft />
                             </Link>
@@ -82,21 +82,19 @@ const Portfolio = () => {
                                     <img src={images.loading} className='app__flex app__loading' />
                                 </figure>
                                 : portfolioItems.map((port_item, index) => (
-                                    <motion.li
-                                        initial={{ "opacity": 0 }}
-                                        animate={{ "opacity": 1 }}
-                                        className='app__cardcover' key={`work-${index}`}>
-                                        <span className='app__flex'>
-                                            <Link to={`/works/${port_item['id']}`} rel="noopener noreferrer">
+                                    <li key={`work-${index}`} className='app__cardcover'>
+                                        <figure>
+                                            <Link to={`/works/${port_item['id']}`} className='app__flex' rel="noopener noreferrer">
                                                 <ImEye />
                                                 <p className='p-title'>{port_item['title']}</p>
-                                                <p className='p-text'>{port_item['company']}</p>
-                                                <div className='app__portfolio-button p-text p-link'>پروژه‌ی کامل</div>
+                                                <p className='p-small'>{port_item['company']}</p>
+                                                <section>
+                                                    <p className='p-small p-link'>پروژه‌ی کامل</p>
+                                                </section>
                                             </Link>
-                                        </span>
-
-                                        <img src={port_item['logo']} alt={`work-${index}`} />
-                                    </motion.li>
+                                        </figure>
+                                        <img src={port_item['logo']} alt={port_item['title']} />
+                                    </li>
                                 ))
                             }
                         </ul>

@@ -65,8 +65,6 @@ const Contacts = () => {
                     setSent(true);
                 }, (error) => {
                     console.log(error.text);
-                    // enables button
-                    // setLoading(false);
                 });
         }
     }
@@ -90,7 +88,7 @@ const Contacts = () => {
                             <div>{stat_item[2]}</div>
                             <div>
                                 <h1>{stat_item[0]}</h1>
-                                <p className='p-title'>{stat_item[1]}</p>
+                                <p className='p-text'>{stat_item[1]}</p>
                             </div>
                         </motion.li>
                     ))}
@@ -130,7 +128,7 @@ const Contacts = () => {
                                 <textarea rows="8" className='input' name="message" placeholder="توضیحی کوتاه بنویسید..." onChange={handleInputChange} />
 
                                 {!sent
-                                    ? <button type='button' className='squishy p-title' disabled={loading} onClick={handleSubmit}>{loading ? '...' : 'بفرست'}</button>
+                                    ? <button type='button' className='p-title' disabled={loading} onClick={handleSubmit}>{loading ? '...' : 'بفرست'}</button>
                                     : <div className='app__flex p-link app__contacts-form-success'>
                                         <motion.div
                                             initial={{ opacity: 0, y: 8 }}

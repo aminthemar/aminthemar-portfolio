@@ -30,8 +30,7 @@ const Jobs = () => {
 
                 <SectionTitle title="سابقه‌ی همکاری با ..."
                     decorations={false}
-                    darkmode={true}
-                    subtitle="سلام! در این بخش، نقش من را در برترین سازمان‌هایی که افتخار کار با آنها داشته‌ام، مشاهده می‌کنید. برای آشنایی با نمونه کارها به بازدید خود ادامه دهید." />
+                    darkmode={true} />
 
                 {loading
                     ? <motion.img
@@ -40,33 +39,26 @@ const Jobs = () => {
                         className='app__flex app__loading' />
                     : <ul className='app__jobs'>
                         {job_items.map((job_item, index) => (
-                            <motion.li
-                                initial={{ y: 60 }}
-                                whileInView={{ y: 0 }}
-                                viewport={{ once: true, amount: 0.7 }}
-                                transition={{ duration: 0.3, delay: (index / 10), ease: 'easeOut' }}
-                                key={`job-${index}`}
-                            >
+                            <li key={`job-${index}`}>
                                 <a href={`${job_item.websiteurl}`}
                                     target="_blank" rel="noreferrer">
-                                    <span className='app__flex'>
-                                        {/* <div className='app__jobs-span'></div> */}
-                                        <img src={job_item.logo} alt={`job-${index}`} />
-                                        <div className='app__yeartag-dark p-text'>{job_item.months} ماه</div>
-                                    </span>
-                                    <p className='p-title'>{job_item.company}</p>
-                                    <p className='p-text'>{job_item.role}</p>
+                                    <img src={job_item.logo} alt={`job-${index}`} />
+                                    <div className='app__yeartag-dark p-text'>{job_item.months} ماه</div>
+                                    <motion.section
+                                        initial={{ maxHeight: "0", padding: "0" }}
+                                        whileInView={{ maxHeight: "100px", padding: "1rem" }}
+                                        viewport={{ once: true, amount: 1 }}
+                                        transition={{ duration: 0.3, delay: (index / 10), ease: 'easeOut' }}>
+                                        <p className='p-title'>{job_item.company}</p>
+                                        <p className='p-small'>{job_item.role}</p>
+                                    </motion.section>
                                 </a>
-                            </motion.li>
+                            </li>
                         ))}
                     </ul>
                 }
 
             </div>
-
-            <div className='app__jobs-mandala' />
-            {/* <img src={images.mandala} alt="background-mandala" />
-            </div> */}
         </div>
     )
 }

@@ -9,7 +9,7 @@ import job_icon_1 from '../assets/job-icons/job-1.png'
 import job_icon_2 from '../assets/job-icons/job-2.png'
 import job_icon_3 from '../assets/job-icons/job-3.png'
 import job_icon_4 from '../assets/job-icons/job-4.png'
-import mandala from '../assets/job-icons/mandala.svg'
+// import mandala from '../assets/job-icons/mandala.svg'
 
 import edu_1 from '../assets/edu/edu-8roodi.jpg'
 import edu_2 from '../assets/edu/edu-qomuni.jpg'
@@ -18,7 +18,7 @@ import edu_4 from '../assets/edu/edu-kntu.jpg'
 import edu_5 from '../assets/edu/edu-prl.jpg'
 import edu_6 from '../assets/edu/edu-msrt.jpg'
 
-import unity_logo from '../assets/unity/unity-logo.png'
+import unity_logo from '../assets/unity/unity-logo.svg'
 import unity_1 from '../assets/unity/unity-1.png'
 import unity_2 from '../assets/unity/unity-2.png'
 import unity_3 from '../assets/unity/unity-3.png'
@@ -93,5 +93,5 @@ export default {
     designtool_4,
     designtool_5,
     designtool_6,
-    mandala,
+    // mandala,
 };

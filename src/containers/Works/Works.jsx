@@ -86,18 +86,18 @@ const Works = () => {
                     : <>
                         <ul className='app__works-portfolio'>
                             {portfolioItems.map((port_item, index) => (
-                                <li key={`work-${index}`}>
-                                    <div className='app__cardcover'>
-                                        <span className='app__flex'>
-                                            <Link to={`/works/${port_item['id']}`} rel="noopener noreferrer">
-                                                <ImEye />
-                                                <p className='p-title'>{port_item['title']}</p>
-                                                <p className='p-text'>{port_item['company']}</p>
-                                                <div className='app__portfolio-button p-text p-link'>پروژه‌ی کامل</div>
-                                            </Link>
-                                        </span>
-                                        <img src={port_item['logo']} alt={port_item['title']} />
-                                    </div>
+                                <li key={`work-${index}`} className='app__cardcover'>
+                                    <figure>
+                                        <Link to={`/works/${port_item['id']}`} className='app__flex' rel="noopener noreferrer">
+                                            <ImEye />
+                                            <p className='p-title'>{port_item['title']}</p>
+                                            <p className='p-small'>{port_item['company']}</p>
+                                            <section>
+                                                <p className='p-small p-link'>پروژه‌ی کامل</p>
+                                            </section>
+                                        </Link>
+                                    </figure>
+                                    <img src={port_item['logo']} alt={port_item['title']} />
                                 </li>
                             ))}
                         </ul>
