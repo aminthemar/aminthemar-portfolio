@@ -355,7 +355,7 @@ ul {
   left: 0.75rem;
 
   background-color: var(--white-color);
-  box-shadow: 0 8px 12px #0000aa20;
+  box-shadow: 0 6px 12px #00005512;
 
   width: fit-content;
   padding: 0.125rem 0.75rem;
@@ -435,6 +435,7 @@ ul {
       }
 
       section {
+        width: fit-content;
         border-radius: 8px;
         padding: 0.6rem 1rem 0.7rem;
         margin-top: 1rem;

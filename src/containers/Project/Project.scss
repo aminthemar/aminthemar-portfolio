@@ -182,8 +182,8 @@
 
 .app__project-category {
     color: var(--gray-color);
-    padding: 0.1rem 0.625rem 0.2rem;
-    margin: 0.625rem 1rem 0 0;
+    padding: 0.1rem 0.5rem 0.2rem;
+    margin: 0.5rem 0.75rem 0 0;
     box-shadow: inset 0 0 0 2px var(--gray-color);
     border-radius: 8px;
 }
@@ -194,12 +194,12 @@
     max-width: 30rem;
 
     li {
-        color: var(--white-color);
+        color: var(--gray-color);
         background-color: var(--grey-color);
         padding: 0.5rem 0.75rem;
         line-height: normal;
         border-radius: 8px;
-        text-align: center;
+        font-weight: var(--font-regular);
     }
 }
 
