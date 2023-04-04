@@ -108,7 +108,7 @@ const Contacts = () => {
                                 title='project-trailer'
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12954.687022097798!2d51.35864307701019!3d35.73429043689173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e073b0e459749%3A0x31816dd54a095378!2sGisha%2C%20District%202%2C%20Tehran%2C%20Tehran%20Province%2C%20Iran!5e0!3m2!1sen!2sfr!4v1660638091029!5m2!1sen!2sfr"
                                 width="100%"
-                                height="192"
+                                height="198"
                                 loading="lazy"
                                 style={{ border: "0", borderRadius: "12px" }}
                             ></iframe>
@@ -116,7 +116,7 @@ const Contacts = () => {
                         <section>
                             <form action="/action_page.php">
                                 <div className='app__flex-start app__contacts-error'>
-                                    <label className='p-text p-link' htmlFor="email">آدرس ایمیل</label>
+                                    <label className='p-text p-link' htmlFor="email">ایمیل شما</label>
                                     <p className='p-small'>{errors.emailError}</p>
                                 </div>
                                 <input className='input' name="email" placeholder='example@mail.com' onChange={handleInputChange} />

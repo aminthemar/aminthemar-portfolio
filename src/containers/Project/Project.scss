@@ -10,12 +10,12 @@
         height: 20.75rem;
         top: 0;
         right: 0;
-        background: linear-gradient(-90deg, var(--black-color) -25%, transparent), url('../../assets/hero/lines.png') repeat;
+        background: linear-gradient(-90deg, var(--black-color), transparent), url('../../assets/hero/lines.png') 120px / 120px repeat;
         background-color: var(--black-color);
 
         @media screen and (max-width: 799px) {
             height: 28rem;
-            background: linear-gradient(0, var(--black-color) -25%, transparent), url('../../assets/hero/lines.png') repeat;
+            background: linear-gradient(180deg, var(--black-color), transparent), url('../../assets/hero/lines.png') repeat;
             background-color: var(--black-color);
         }
 
@@ -71,7 +71,7 @@
     }
 
     @media screen and (max-width: 1024px) {
-        padding-top: 7.5rem;
+        padding-top: 7rem;
     }
 }
 

@@ -52,11 +52,11 @@ const Hero = () => {
                 <div className='app__flex app__hero-location'>
                   <div className='app__flex-start'>
                     <IoBalloonSharp />
-                    <p className='p-text p-link'>خرداد 1376</p>
+                    <p className='p-small p-link'>خرداد 1376</p>
                   </div>
                   <div className='app__flex-start'>
                     <FaHardHat />
-                    <p className='p-text p-link'>معافیت تحصیلی</p>
+                    <p className='p-small p-link'>معافیت تحصیلی</p>
                   </div>
                 </div>
 

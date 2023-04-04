@@ -9,7 +9,6 @@ const EduItem = ({ edu_data }) => {
                 <p className='p-title'>{edu_data.title}</p>
                 <div className='app__edu-grade app__flex-start'>
                     <p className='p-small'>نمره: {edu_data.grade}</p>
-                    ·
                     <p className='p-small'>رتبه: {edu_data.rank}</p>
                 </div>
                 <p className='p-text'>{edu_data.description}</p>

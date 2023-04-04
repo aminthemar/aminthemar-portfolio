@@ -46,7 +46,7 @@ const Jobs = () => {
                                     <div className='app__yeartag-dark p-text'>{job_item.months} ماه</div>
                                     <motion.section
                                         initial={{ maxHeight: "0", padding: "0" }}
-                                        whileInView={{ maxHeight: "100px", padding: "1rem" }}
+                                        whileInView={{ maxHeight: "100px", padding: "0.75rem" }}
                                         viewport={{ once: true, amount: 1 }}
                                         transition={{ duration: 0.3, delay: (index / 10), ease: 'easeOut' }}>
                                         <p className='p-title'>{job_item.company}</p>
