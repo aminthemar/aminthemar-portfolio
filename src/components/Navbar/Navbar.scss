@@ -225,6 +225,7 @@
             font-size: calc(100vmax + 5rem);
             font-weight: var(--font-regular);
             color: var(--bg-darkmode-color);
+            filter: drop-shadow(0 32px 32px #00000016);
         }
     }
 

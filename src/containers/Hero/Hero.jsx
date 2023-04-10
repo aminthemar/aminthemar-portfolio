@@ -83,7 +83,8 @@ const Hero = () => {
             className='app__flex-start app__hero-buttons-parent'>
             <PrimaryButton text='پیشینه‌ی من' btn_icon={MdArrowDownward} href="#jobs" />
             <SecondaryButton text='دانلود رزومه' btn_icon={MdOutlineInsertDriveFile}
-              href={require("../../assets/MohammadAminRashidCV.pdf")} />
+              // href={require("../../assets/MohammadAminRashidCV.pdf")} />
+              href="https://cvresume.ir/r/yutB-_Hdtkif4OrenPG_JQ" />
           </motion.div>
 
         </div>

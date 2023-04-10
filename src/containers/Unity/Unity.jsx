@@ -84,12 +84,15 @@ const Unity = () => {
               right: width,
               left: 0,
             }}
-            dragTransition={{ bounceStiffness: 600, bounceDamping: 40 }}
+            dragTransition={{ bounceStiffness: 500, bounceDamping: 50 }}
             dragElastic={0.1}
             ref={itemRef}
             onDragStart={updateWidth}
             onDrag={() => toggleMoved(true)}
             onMouseDown={() => toggleMoved(false)}
+            initial={{ x: -100 }}
+            whileInView={{ x: 0 }}
+            viewport={{ once: true }}
             className='app__flex-start app__unity-slider'>
 
             {unity_thumbs.map((item, index) => (
