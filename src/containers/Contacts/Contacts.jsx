@@ -62,12 +62,7 @@ const Contacts = () => {
       };
 
       emailjs
-        .send(
-          process.env.REACT_APP_EMAILJS_SERVICE_ID,
-          process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-          params,
-          process.env.REACT_APP_EMAILJS_PUBLIC_KEY
-        )
+        .send(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, params, process.env.REACT_APP_EMAILJS_PUBLIC_KEY)
         .then(
           (result) => {
             setSent(true);
@@ -87,7 +82,7 @@ const Contacts = () => {
         <ul className="app__contacts-stats app__flex">
           {[
             [worksStats[0], "پروژه‌ی موفق", <MdThumbUpAlt />],
-            [new Date().getFullYear() - 2021 + "+", "سال تجربه‌ی کار", <MdAccessTimeFilled />],
+            [new Date().getFullYear() - 2022 + "+", "سال تجربه‌ی کار", <MdAccessTimeFilled />],
             [worksStats[1], "بازی منتشر", <MdGames />],
           ].map((stat_item, index) => (
             <motion.li
@@ -111,8 +106,7 @@ const Contacts = () => {
             <span>
               <h2 className="p-h2">راه‌های ارتباطی</h2>
               <p className="p-text">
-                می‌توانید درخواست همکاری خود را از طریق این فرم یا شبکه‌های اجتماعی زیر ارسال کنید. پیام شما تا حداکثر
-                دو روز بررسی خواهد شد.
+                می‌توانید درخواست همکاری خود را از طریق این فرم یا شبکه‌های اجتماعی زیر ارسال کنید. پیام شما تا حداکثر دو روز بررسی خواهد شد.
               </p>
               <ul className="app__flex-start app__contacts-social">
                 <a href="mailto:info@aminthemar.ir" target="_blank" rel="noreferrer">
@@ -153,13 +147,7 @@ const Contacts = () => {
                   </label>
                   <p className="p-small">{errors.messageError}</p>
                 </div>
-                <textarea
-                  rows="8"
-                  className="input"
-                  name="message"
-                  placeholder="توضیحی کوتاه بنویسید..."
-                  onChange={handleInputChange}
-                />
+                <textarea rows="8" className="input" name="message" placeholder="توضیحی کوتاه بنویسید..." onChange={handleInputChange} />
 
                 {!sent ? (
                   <button type="button" className="p-title" disabled={loading} onClick={handleSubmit}>

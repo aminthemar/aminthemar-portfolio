@@ -16,7 +16,7 @@ const Hero = () => {
     <div className="app__hero-bg app__flex-start">
       <div className="app__container section_pad">
         <div className="app__hero">
-          <motion.span
+          {/* <motion.span
             initial={{ opacity: 0 }}
             animate={{
               opacity: heroLoaded ? 1 : 0,
@@ -25,7 +25,7 @@ const Hero = () => {
             onLoad={() => setHeroLoaded(true)}
           >
             <img src={images.parche} alt="persian calligraphy" />
-          </motion.span>
+          </motion.span> */}
 
           <motion.h1
             initial={{ y: 80, opacity: 0 }}
@@ -45,7 +45,8 @@ const Hero = () => {
             transition={{ duration: 0.4, delay: 0.3, ease: "easeInOut" }}
             className="app__hero-profile"
           >
-            <img src={images.selfie_1} alt="mohammad_amin_rashid" />
+            <img src={images.selfie_1} alt="Mohammad Amin Rashid" />
+            <img src={images.selfie_2} alt="محمدامین رشید" />
 
             <div className="app__hero-asl">
               <div>

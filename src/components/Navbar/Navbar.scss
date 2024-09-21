@@ -22,6 +22,7 @@
 
     li {
         color: var(--black-color);
+        white-space: nowrap;
 
         ::after {
             background-color: var(--bg-lightmode-color);
@@ -38,10 +39,11 @@
     z-index: 10;
 
     color: var(--white-color);
-    background: linear-gradient(to right, transparent 50%, var(--bg-darkmode-color) 125%);
+    background: linear-gradient(to right, transparent 40%, var(--bg-darkmode-color) 100%);
 
     li {
         color: var(--white-color);
+        white-space: nowrap;
 
         ::after {
             background-color: var(--grey-color);
