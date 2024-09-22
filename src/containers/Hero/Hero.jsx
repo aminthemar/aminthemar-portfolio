@@ -16,17 +16,6 @@ const Hero = () => {
     <div className="app__hero-bg app__flex-start">
       <div className="app__container section_pad">
         <div className="app__hero">
-          {/* <motion.span
-            initial={{ opacity: 0 }}
-            animate={{
-              opacity: heroLoaded ? 1 : 0,
-            }}
-            transition={{ duration: 3, ease: "easeOut" }}
-            onLoad={() => setHeroLoaded(true)}
-          >
-            <img src={images.parche} alt="persian calligraphy" />
-          </motion.span> */}
-
           <motion.h1
             initial={{ y: 80, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
@@ -36,7 +25,10 @@ const Hero = () => {
             {/* در همه چیزی هنر و عِیب هست <br /> عیب مَبین تا هنر آری به دست */}
             {/* من به صفت چون مَه گردون شوَم<br />نشکنم، اَر بشکنم افزون شوَم */}
             {/* رَقص و جولان بر سرِ میدان کنند <br /> رقص اَندر خون خود، مَردان کنند */}
-            چون جَهَند از دست خود، دَستی زنند <br /> چون رَهند از نقص خود، رقصی کنند
+            {/* چون جَهَند از دست خود، دَستی زنند <br /> چون رَهند از نقص خود، رقصی کنند */}
+            تا کِی چو کِرم پیله، بر گِرد خود تنیدن
+            <br />
+            پروانه شو که باید، از این قفس پَریدن
           </motion.h1>
 
           <motion.div
