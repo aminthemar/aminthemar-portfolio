@@ -4,7 +4,7 @@ const data = {
   name: "edus",
   content: [
     {
-      title: "دکترای شبکه‌های کامپیوتری",
+      title: "دکتری مهندسی کامپیوتر",
       yearstart: "1402",
       yearend: "اکنون",
       websiteurl: "https://www.sharif.ir/",
