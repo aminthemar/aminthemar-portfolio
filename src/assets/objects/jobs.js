@@ -4,20 +4,20 @@ const data = {
   name: "jobs",
   content: [
     {
+      company: "رایان صنعت",
+      role: "طراح و توسعه‌دهنده وب",
+      websiteurl: "https://rayansanaat.ir/",
+      logo: images.job_icon_2,
+      months: "25",
+      rating: "12",
+    },
+    {
       company: "استودیو چوب‌خط",
       role: "برنامه‌نویس یونیتی",
       websiteurl: "https://www.instagram.com/choobkhatstudio",
       logo: images.job_icon_1,
-      months: "21",
+      months: "19",
       rating: "10",
-    },
-    {
-      company: "تیم صنعتی سلمان فارسی",
-      role: "طراح و توسعه‌دهنده وب",
-      websiteurl: "https://salmanfood.com/",
-      logo: images.job_icon_2,
-      months: "6",
-      rating: "7",
     },
     {
       company: "مرکز تخصصی آپا",

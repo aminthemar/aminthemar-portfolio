@@ -61,16 +61,14 @@ const Contacts = () => {
         message: formData.message,
       };
 
-      emailjs
-        .send(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, params, process.env.REACT_APP_EMAILJS_PUBLIC_KEY)
-        .then(
-          (result) => {
-            setSent(true);
-          },
-          (error) => {
-            console.log(error.text);
-          }
-        );
+      emailjs.send(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, params, process.env.REACT_APP_EMAILJS_PUBLIC_KEY).then(
+        (result) => {
+          setSent(true);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
     }
   };
 
@@ -82,7 +80,7 @@ const Contacts = () => {
         <ul className="app__contacts-stats app__flex">
           {[
             [worksStats[0], "پروژه‌ی موفق", <MdThumbUpAlt />],
-            [new Date().getFullYear() - 2022 + "+", "سال تجربه‌ی کار", <MdAccessTimeFilled />],
+            [new Date().getFullYear() - 2022 + "+", "سال سابقه کار", <MdAccessTimeFilled />],
             [worksStats[1], "بازی منتشر", <MdGames />],
           ].map((stat_item, index) => (
             <motion.li
@@ -155,18 +153,10 @@ const Contacts = () => {
                   </button>
                 ) : (
                   <div className="app__flex p-link app__contacts-form-success">
-                    <motion.div
-                      initial={{ opacity: 0, y: 8 }}
-                      animate={{ opacity: 1, y: 4 }}
-                      transition={{ duration: 0.3, delay: 0.2, ease: "backOut" }}
-                    >
+                    <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 4 }} transition={{ duration: 0.3, delay: 0.2, ease: "backOut" }}>
                       <HiOutlineCheckCircle />
                     </motion.div>
-                    <motion.p
-                      initial={{ opacity: 0, y: 8 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.3, delay: 0.3, ease: "backOut" }}
-                    >
+                    <motion.p initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3, delay: 0.3, ease: "backOut" }}>
                       پیام شما دریافت شد.
                     </motion.p>
                   </div>
