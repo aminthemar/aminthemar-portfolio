@@ -16,21 +16,6 @@ const Hero = () => {
     <div className="app__hero-bg app__flex-start">
       <div className="app__container section_pad">
         <div className="app__hero">
-          <motion.h1
-            initial={{ y: 80, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.4, delay: 0.2, ease: "easeInOut" }}
-            className="app__hero-h1"
-          >
-            {/* در همه چیزی هنر و عِیب هست <br /> عیب مَبین تا هنر آری به دست */}
-            {/* من به صفت چون مَه گردون شوَم<br />نشکنم، اَر بشکنم افزون شوَم */}
-            {/* رَقص و جولان بر سرِ میدان کنند <br /> رقص اَندر خون خود، مَردان کنند */}
-            {/* چون جَهَند از دست خود، دَستی زنند <br /> چون رَهند از نقص خود، رقصی کنند */}
-            تا کِی چو کِرم پیله، بر گِرد خود تنیدن
-            <br />
-            پروانه شو که باید، از این قفس پَریدن
-          </motion.h1>
-
           <motion.div
             initial={{ y: 80, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
@@ -42,7 +27,7 @@ const Hero = () => {
 
             <div className="app__hero-asl">
               <div>
-                <div className="p-title">محمدامین رشید</div>
+                <h1 className="p-title">محمدامین رشید</h1>
 
                 <div className="app__flex app__hero-location">
                   <div className="app__flex-start">
@@ -57,7 +42,7 @@ const Hero = () => {
               </div>
 
               <ul>
-                {["دکتری مهندسی کامپیوتر", "برنامه‌نویس یونیتی", "توسعه‌دهنده وب", "طراح برند دیجیتال"].map((item) => (
+                {["دکتری مهندسی کامپیوتر", "توسعه‌دهنده وب", "طراح برند دیجیتال", "برنامه‌نویس یونیتی"].map((item) => (
                   <li className="p-text" key={item}>
                     {item}
                   </li>
