@@ -1,62 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+                      http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <!-- Full SEO-optimized sitemap for aminthemar.ir - Updated 2025-04-19 -->
 
+  <url>
+    <loc>https://www.aminthemar.ir/</loc>
+    <lastmod>2025-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.aminthemar.ir/images/mohammad-amin-rashid-profile.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.aminthemar.ir/images/rashid-profile.jpeg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.aminthemar.ir/images/محمدامین-رشید-profile.jpg</image:loc>
+    </image:image>
+  </url>
 
-<url>
-  <loc>https://www.aminthemar.ir/</loc>
-  <image:image> <image:loc>https://www.aminthemar.ir/images/mohammad-amin-rashid-profile.png</image:loc> </image:image>
-  <image:image> <image:loc>https://www.aminthemar.ir/images/rashid-profile.jpeg</image:loc> </image:image>
-  <image:image> <image:loc>https://www.aminthemar.ir/images/محمدامین-رشید-profile.jpg</image:loc> </image:image>
-</url>
+  <url>
+    <loc>https://www.aminthemar.ir/works</loc>
+    <lastmod>2025-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
 
-<url>
-  <loc>https://www.aminthemar.ir/works</loc>
-</url>
+  <!-- Project Pages -->
+  <url>
+    <loc>https://www.aminthemar.ir/works/security</loc>
+    <lastmod>2025-03-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
-<url>
-  <loc>https://www.aminthemar.ir/works/security</loc>
-</url>
+  <url>
+    <loc>https://www.aminthemar.ir/works/viriya</loc>
+    <lastmod>2025-03-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
-<url>
-  <loc>https://www.aminthemar.ir/works/balloons</loc>
-</url>
+  <url>
+    <loc>https://www.aminthemar.ir/works/balloons</loc>
+    <lastmod>2025-03-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
-<url>
-  <loc>https://www.aminthemar.ir/works/urang</loc>
-</url>
+  <url>
+    <loc>https://www.aminthemar.ir/works/urang</loc>
+    <lastmod>2025-03-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
-<url>
-  <loc>https://www.aminthemar.ir/works/koosh</loc>
-</url>
+  <url>
+    <loc>https://www.aminthemar.ir/works/koosh</loc>
+    <lastmod>2025-03-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
-<url>
-  <loc>https://www.aminthemar.ir/works/choobkhat</loc>
-</url>
+  <url>
+    <loc>https://www.aminthemar.ir/works/choobkhat</loc>
+    <lastmod>2025-03-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
-<url>
-  <loc>https://www.aminthemar.ir/works/barg</loc>
-</url>
+  <url>
+    <loc>https://www.aminthemar.ir/works/barg</loc>
+    <lastmod>2025-03-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
-<url>
-  <loc>https://www.aminthemar.ir/works/raf</loc>
-</url>
+  <url>
+    <loc>https://www.aminthemar.ir/works/raf</loc>
+    <lastmod>2025-03-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
-<url>
-  <loc>https://www.aminthemar.ir/works/axis</loc>
-</url>
+  <url>
+    <loc>https://www.aminthemar.ir/works/axis</loc>
+    <lastmod>2025-03-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
-<url>
-  <loc>https://www.aminthemar.ir/works/mn76</loc>
-</url>
+  <url>
+    <loc>https://www.aminthemar.ir/works/mn76</loc>
+    <lastmod>2025-03-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
-<url>
-  <loc>https://www.aminthemar.ir/works/dorm</loc>
-</url>
+  <url>
+    <loc>https://www.aminthemar.ir/works/dorm</loc>
+    <lastmod>2025-03-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
 </urlset>
