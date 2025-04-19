@@ -27,7 +27,9 @@ const Hero = () => {
 
             <div className="app__hero-asl">
               <div>
-                <h1 className="p-title">محمدامین رشید</h1>
+                <h1 className="p-title" lang="fa">
+                  محمدامین رشید
+                </h1>
 
                 <div className="app__flex app__hero-location">
                   <div className="app__flex-start">
