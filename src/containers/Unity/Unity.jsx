@@ -22,10 +22,21 @@ const Unity = () => {
   const itemRef = useRef(null);
 
   useEffect(() => {
-    setTimeout(() => {
+    function handleResize() {
+      updateWidth();
+    }
+
+    const timeout = setTimeout(() => {
       updateWidth();
     }, 250);
-  });
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      clearTimeout(timeout);
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   function updateWidth() {
     setWidth(itemRef.current.scrollWidth - itemRef.current.offsetWidth - 16);

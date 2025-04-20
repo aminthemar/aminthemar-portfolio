@@ -94,7 +94,7 @@ const getEdusData = () => {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve(data);
-    }, 100);
+    }, 1);
   });
 };
 

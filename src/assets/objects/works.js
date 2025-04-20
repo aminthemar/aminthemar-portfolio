@@ -54,12 +54,7 @@ const data = {
       description:
         "بازی شاهانه‌ی اُر یا اور یک بازی فکری مانند تخته‌نرد بوده که در ویرانه‌های بین‌النهرین یا عراق امروزی پیدا شده است. بازی اورنگ سعی دارد این بازی را با یک تم باستانی و جنگی روی پلتفرم اندروید شبیه‌سازی کند. بازیکنان هر کدام 7 مهره دارند و اولین کسی که بتواند همه‌ی مهره‌هایش را به آخرین خانه‌ی صفحه‌ی شطرنجی برساند، برنده است. این پروژه در نهایت به سرانجام نرسید اما نسخه‌ی اولیه و کانسپ آرت آن روی وبسایت من موجود است.",
       tags: ["Unity", "C-Sharp", "Photoshop", "Spine", "Git"],
-      screenshots: [
-        images_works.urang_shot_1,
-        images_works.urang_shot_2,
-        images_works.urang_shot_3,
-        images_works.urang_shot_4,
-      ],
+      screenshots: [images_works.urang_shot_1, images_works.urang_shot_2, images_works.urang_shot_3, images_works.urang_shot_4],
       date: "خرداد 1400",
       websiteurl: "https://drive.google.com/drive/folders/1ltqYO0_yoX_d2b2wOCJX_NSG3UlnpBAn?usp=sharing",
       aparatID: "3gXkj",
@@ -74,13 +69,7 @@ const data = {
       description:
         "کوش یک بازی دوبعدی اندرویدی در سبک فکری یا پازل است که بازیکن باید اجسام مخفی شده را در نقشه‌ای شلوغ پیدا کند. ایده‌ی این بازی از کتاب خاطره‌انگیز «والی کجاست؟» گرفته شده است.",
       tags: ["Unity", "C-Sharp", "Photoshop", "انیمیشن", "بازاریابی"],
-      screenshots: [
-        images_works.koosh_shot_1,
-        images_works.koosh_shot_2,
-        images_works.koosh_shot_3,
-        images_works.koosh_shot_4,
-        images_works.koosh_shot_5,
-      ],
+      screenshots: [images_works.koosh_shot_1, images_works.koosh_shot_2, images_works.koosh_shot_3, images_works.koosh_shot_4, images_works.koosh_shot_5],
       date: "تیر 1396",
       websiteurl: "https://drive.google.com/drive/folders/1xdQGL9vWCwdeXc4x0c4zL7KZ3uISFVWO",
       aparatID: "#",
@@ -95,12 +84,7 @@ const data = {
       description:
         "اکسیس یک فروشگاه آنلاین قطعات کامپیوتر و لوازم جانبی گیمینگ است که من وظیفه‌ی طراحی لوگو و هویت آنلاین این برند را بر عهده داشتم. این فروشگاه پیشتر با نام برگ مارکت فعالیت می‌کرد.",
       tags: ["Photoshop", "Illustrator"],
-      screenshots: [
-        images_works.axis_shot_1,
-        images_works.axis_shot_2,
-        images_works.axis_shot_3,
-        images_works.axis_shot_4,
-      ],
+      screenshots: [images_works.axis_shot_1, images_works.axis_shot_2, images_works.axis_shot_3, images_works.axis_shot_4],
       date: "خرداد 1401",
       websiteurl: "https://axis.market/",
       aparatID: "#",
@@ -112,16 +96,9 @@ const data = {
       company: "برگ مارکت",
       logo: images_works.barg_logo,
       category: "لوگو",
-      description:
-        "برگ مارکت، یک فروشگاه آنلاین قطعات و لوازم جانبی گیمینگ است که وظیفه‌ی طراحی و پیاده‌سازی وبسایت آن بر عهده‌ی من بوده است.",
+      description: "برگ مارکت، یک فروشگاه آنلاین قطعات و لوازم جانبی گیمینگ است که وظیفه‌ی طراحی و پیاده‌سازی وبسایت آن بر عهده‌ی من بوده است.",
       tags: ["Photoshop", "Illustrator"],
-      screenshots: [
-        images_works.barg_shot_1,
-        images_works.barg_shot_2,
-        images_works.barg_shot_3,
-        images_works.barg_shot_4,
-        images_works.barg_shot_5,
-      ],
+      screenshots: [images_works.barg_shot_1, images_works.barg_shot_2, images_works.barg_shot_3, images_works.barg_shot_4, images_works.barg_shot_5],
       date: "دی 1400",
       websiteurl: "https://barg.market/",
       aparatID: "#",
@@ -187,13 +164,7 @@ const data = {
       description:
         "خرید رایگان بسته و شارژ! شارژ یا بسته اینترنت بخر، سکه جمع کن، با اعتباری که جمع کردی از تمامی اپراتورها شارژ رایگان بگیر. ویریا یک پروژه‌ی استارت‌آپی سبک است که وظیفه‌ی پیاده‌سازی فرانت و طراحی گرافیک آن را بر عهده داشتم.",
       tags: ["ReactJS", "NextJS", "Tailwind", "Redux", "HTML / CSS"],
-      screenshots: [
-        images_works.viriya_shot_1,
-        images_works.viriya_shot_2,
-        images_works.viriya_shot_3,
-        images_works.viriya_shot_4,
-        images_works.viriya_shot_5,
-      ],
+      screenshots: [images_works.viriya_shot_1, images_works.viriya_shot_2, images_works.viriya_shot_3, images_works.viriya_shot_4, images_works.viriya_shot_5],
       date: "مهر 1402",
       websiteurl: "http://viriya.ir/",
       aparatID: "#",
@@ -208,13 +179,7 @@ const data = {
       description:
         "طراحی کاراکتر فرآیندی است که بعد از شخصیت پردازی صورت می‌گیرد و شامل تعریف کاراکتر از طریق ویژگی‌های ظاهری آن می‌باشد. انگیزه‌ی من برای شروع این پروژه، آشنایی و تمرین طراحی کاراکتر بود؛ به همین علت تصمیم گرفتم یکی دوستان صمیمی‌ام را که صورتی درخور کاریکاتور داشت، الگوی کار خود قرار بدهم. سبک هنری این طراحی از کاراکترهای انیمیشن «اسکوبی دو» قرض گرفته شده است.",
       tags: ["Photoshop", "Illustrator"],
-      screenshots: [
-        images_works.mn76_shot_1,
-        images_works.mn76_shot_2,
-        images_works.mn76_shot_3,
-        images_works.mn76_shot_4,
-        images_works.mn76_shot_5,
-      ],
+      screenshots: [images_works.mn76_shot_1, images_works.mn76_shot_2, images_works.mn76_shot_3, images_works.mn76_shot_4, images_works.mn76_shot_5],
       date: "اسفند 1399",
       websiteurl: "https://www.instagram.com/p/B9mb05EnSOa/",
       aparatID: "#",
@@ -258,7 +223,7 @@ const getWorksbyCategory = (category) => {
         }
       }
       resolve(temp_data);
-    }, 100);
+    }, 1);
   });
 };
 
@@ -271,7 +236,7 @@ const getWorkbyId = (id) => {
       };
       temp_data.content = data.content[id];
       resolve(temp_data);
-    }, 100);
+    }, 1);
   });
 };
 
@@ -286,7 +251,7 @@ const getWorksStats = () => {
         }
       }
       resolve([Object.keys(data.content).length, game_conut]);
-    }, 100);
+    }, 1);
   });
 };
 

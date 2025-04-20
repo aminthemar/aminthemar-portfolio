@@ -46,7 +46,7 @@ const getJobsData = (n_jobs) => {
         content: data.content.slice(0, n_jobs),
       };
       resolve(temp_data);
-    }, 100);
+    }, 1);
   });
 };
 

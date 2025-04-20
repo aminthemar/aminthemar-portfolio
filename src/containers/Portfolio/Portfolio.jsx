@@ -1,4 +1,4 @@
-import { React, useRef, useState } from "react";
+import { React, useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
@@ -52,11 +52,15 @@ const Portfolio = () => {
       });
   }
 
+  useEffect(() => {
+    getLocalData(0);
+  }, []);
+
   return (
     <div className="app__bg-persian">
       <div className="app__container section_pad">
         <SectionTitle title="پروژه‌های پیشین و مهارت‌ها" />
-        <motion.div onViewportEnter={() => getLocalData(0)} viewport={{ once: true }} className="app__portfolio">
+        <motion.div className="app__portfolio">
           <section>
             <div className="app__flex app__portfolio-categories">
               <ul className="app__flex-start" ref={itemRef}>
