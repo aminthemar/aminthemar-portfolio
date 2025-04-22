@@ -32,9 +32,11 @@ const Hero = () => {
               <div className="app__hero-asl">
                 <div>
                   <div className="p-title">
-                    <img className="app__hero-h1" src={images.selfie_3} alt="محمدامین رشید - پروفایل" />
+                    <img className="u-photo app__hero-h1" src={images.selfie_3} alt="محمدامین رشید - پروفایل" />
                     <h1 className="p-name" lang="fa">
-                      محمدامین رشید
+                      <a href="https://aminthemar.ir" className="u-url" alt="Mohammad Amin Rashid Portfolio" rel="me">
+                        محمدامین رشید
+                      </a>
                     </h1>
                   </div>
 

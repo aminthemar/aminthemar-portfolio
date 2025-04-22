@@ -7,7 +7,7 @@ import { MdGames, MdThumbUpAlt, MdAccessTimeFilled, MdCastForEducation } from "r
 import { HiOutlineCheckCircle, HiOutlineMail } from "react-icons/hi";
 
 import { AppWrap } from "../../wrapper/";
-import { works_data } from "../../constants";
+import { images, works_data } from "../../constants";
 import "./Contacts.scss";
 
 const Contacts = () => {
@@ -108,41 +108,52 @@ const Contacts = () => {
                   می‌توانید درخواست همکاری خود را از طریق این فرم یا شبکه‌های اجتماعی زیر ارسال کنید. پیام شما تا حداکثر دو روز بررسی خواهد شد.
                 </p>
                 <ul className="h-card app__flex-start app__contacts-social">
-                  <span class="p-name footer-name visually-hidden">Mohammad Amin Rashid</span>
-                  <span class="p-name footer-name visually-hidden">محمدامین رشید</span>
+                  <span className="p-name footer-name visually-hidden">Mohammad Amin Rashid</span>
+                  <span className="p-name footer-name visually-hidden">محمدامین رشید</span>
+                  <img src={images.selfie_3} alt="Mohammad Amin Rashid" className="u-photo visually-hidden" />
+                  <a href="https://aminthemar.ir" className="u-url visually-hidden" rel="me noopener noreferrer">
+                    aminthemar.ir
+                  </a>
                   <a
                     href="https://scholar.google.com/citations?user=5WM8J-kAAAAJ&hl=en"
                     target="_blank"
                     rel="me noopener noreferrer"
                     title="View my Google Scholar profile"
                     aria-label="Google Scholar Profile of Mohammad Amin Rashid"
+                    className="u-url"
                   >
                     <MdCastForEducation />
                   </a>
+
                   <a
                     href="mailto:info@aminthemar.ir"
                     target="_blank"
                     rel="me noopener noreferrer"
-                    title="Send mr and email"
+                    title="Send me an email"
                     aria-label="Email of Mohammad Amin Rashid"
+                    className="u-email"
                   >
                     <HiOutlineMail />
                   </a>
+
                   <a
                     href="https://www.linkedin.com/in/aminthemar"
                     target="_blank"
                     rel="me noopener noreferrer"
                     title="View my LinkedIn profile"
                     aria-label="LinkedIn Profile of Mohammad Amin Rashid"
+                    className="u-url"
                   >
                     <RiLinkedinBoxLine />
                   </a>
+
                   <a
                     href="https://t.me/aminthemar"
                     target="_blank"
                     rel="me noopener noreferrer"
                     title="Message my Telegram"
                     aria-label="Telegram Profile of Mohammad Amin Rashid"
+                    className="u-url"
                   >
                     <RiTelegramLine />
                   </a>
