@@ -79,38 +79,29 @@
 }
 
 .app__hero-h1 {
-    line-height: 150%;
-    max-width: 52rem;
-    font-size: 2.25rem;
-    font-weight: var(--font-bold);
-    color: var(--white-color);
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    z-index: 0;
+}
 
-    // text-overflow: ellipsis;
-    // white-space: nowrap;
-    // overflow: hidden;
-
-    @media screen and (max-width: 2000px) {
-        font-size: 2rem;
-    }
-
-    @media screen and (max-width: 499px) {
-        display: none;
-    }
+.app__profile-images {
+    position: absolute;
+    border-radius: 8px;
+    user-select: none;
+    pointer-events: none;
+    object-fit: cover;
+    margin-left: 1.25em;
+    opacity: 0;
 }
 
 .app__hero-profile {
     margin: 2rem 0 2.75rem 0;
     display: flex;
     height: 18rem;
-
-    img {
-        display: none;
-        border-radius: 8px;
-        object-fit: cover;
-        position: relative;
-        margin-left: 1.25em;
-        width: 32%;
-    }
 
     @media screen and (max-width: 2000px) {
         height: 16rem;
@@ -144,29 +135,19 @@
     flex-direction: column;
 
     .p-title {
-        color: var(--white-color);
-        background-color: var(--primary-lightmode-color);
-        text-align: center;
+        position: relative;
 
-        padding: 0.5rem 0 0.75rem 0;
-        border-radius: 8px;
-        font-size: larger;
-        // border-right: solid 4px var(--primary-lightmode-color);
-        // background: linear-gradient(90deg, transparent 50%, var(--primary-lightmode-color));
-        // animation: gradient 0.3s ease-out forwards;
-        // animation-delay: 1s;
-        // background-size: 200% 200%;
+        >h1 {
+            position: relative;
+            color: var(--white-color);
+            background-color: var(--primary-lightmode-color);
+            text-align: center;
 
-        // @keyframes gradient {
-        //     from {
-        //         background-position: 0% 50%;
-        //     }
-
-        //     to {
-        //         background-position: 30% 50%;
-        //     }
-        // }
-
+            padding: 0.5rem 0 0.75rem 0;
+            border-radius: 8px;
+            font-size: larger;
+            z-index: 2;
+        }
     }
 
     li {

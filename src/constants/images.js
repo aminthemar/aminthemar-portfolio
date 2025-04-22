@@ -4,6 +4,8 @@ import irakbar from "../assets/ir-akbar.png";
 
 import selfie_1 from "../assets/hero/selfie-1.jpg";
 import selfie_2 from "../assets/hero/selfie-2.jpg";
+import selfie_3 from "../assets/hero/mohammad-amin-rashid-profile.png";
+import selfie_4 from "../assets/hero/محمدامین-رشید-profile.jpeg";
 
 import job_icon_1 from "../assets/job-icons/job-1.png";
 import job_icon_2 from "../assets/job-icons/job-2.png";
@@ -56,6 +58,8 @@ export default {
   botejeqe,
   selfie_1,
   selfie_2,
+  selfie_3,
+  selfie_4,
   job_icon_1,
   job_icon_2,
   job_icon_3,

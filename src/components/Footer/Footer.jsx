@@ -12,7 +12,9 @@ const Footer = () => {
           <p className="p-small p-link">فونت فارسی وزیرمتن</p>
         </a>
         <p className="p-small">از شما متشکرم که پیشینه‌ی من را مشاهده کردید.</p>
-        <h1 className="p-small app__Footer-username">Mohammad Amin Rashid</h1>
+        <a className="p-name u-url footer-name p-small app__Footer-username" href="https://aminthemar.ir">
+          Mohammad Amin Rashid
+        </a>
       </section>
     </div>
   );
