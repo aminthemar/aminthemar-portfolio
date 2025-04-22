@@ -9,6 +9,7 @@ import { HiOutlineCheckCircle, HiOutlineMail } from "react-icons/hi";
 import { AppWrap } from "../../wrapper/";
 import { images, works_data } from "../../constants";
 import "./Contacts.scss";
+import { FaGithub, FaGithubSquare } from "react-icons/fa";
 
 const Contacts = () => {
   const [formData, setFormData] = useState({ email: "", message: "" });
@@ -115,6 +116,16 @@ const Contacts = () => {
                     aminthemar.ir
                   </a>
                   <a
+                    href="https://github.com/aminthemar"
+                    target="_blank"
+                    rel="me noopener noreferrer"
+                    title="View my Github profile"
+                    aria-label="Github Profile of Mohammad Amin Rashid"
+                    className="u-url"
+                  >
+                    <FaGithubSquare />
+                  </a>
+                  <a
                     href="https://scholar.google.com/citations?user=5WM8J-kAAAAJ&hl=en"
                     target="_blank"
                     rel="me noopener noreferrer"
@@ -124,18 +135,6 @@ const Contacts = () => {
                   >
                     <MdCastForEducation />
                   </a>
-
-                  <a
-                    href="mailto:info@aminthemar.ir"
-                    target="_blank"
-                    rel="me noopener noreferrer"
-                    title="Send me an email"
-                    aria-label="Email of Mohammad Amin Rashid"
-                    className="u-email"
-                  >
-                    <HiOutlineMail />
-                  </a>
-
                   <a
                     href="https://www.linkedin.com/in/aminthemar"
                     target="_blank"
@@ -146,16 +145,15 @@ const Contacts = () => {
                   >
                     <RiLinkedinBoxLine />
                   </a>
-
                   <a
-                    href="https://t.me/aminthemar"
+                    href="mailto:info@aminthemar.ir"
                     target="_blank"
                     rel="me noopener noreferrer"
-                    title="Message my Telegram"
-                    aria-label="Telegram Profile of Mohammad Amin Rashid"
-                    className="u-url"
+                    title="Send me an email"
+                    aria-label="Email of Mohammad Amin Rashid"
+                    className="u-email"
                   >
-                    <RiTelegramLine />
+                    <HiOutlineMail />
                   </a>
                 </ul>
                 <iframe
