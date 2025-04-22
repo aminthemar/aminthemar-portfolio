@@ -126,7 +126,7 @@ const Contacts = () => {
                     <FaGithubSquare />
                   </a>
                   <a
-                    href="https://scholar.google.com/citations?user=5WM8J-kAAAAJ&hl=en"
+                    href="https://scholar.google.com/citations?user=5WM8J-kAAAAJ"
                     target="_blank"
                     rel="me noopener noreferrer"
                     title="View my Google Scholar profile"
