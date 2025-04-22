@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
 import { RiLinkedinBoxLine, RiTelegramLine, RiWhatsappLine } from "react-icons/ri";
-import { MdGames, MdThumbUpAlt, MdAccessTimeFilled } from "react-icons/md";
+import { MdGames, MdThumbUpAlt, MdAccessTimeFilled, MdCastForEducation } from "react-icons/md";
 import { HiOutlineCheckCircle, HiOutlineMail } from "react-icons/hi";
 
 import { AppWrap } from "../../wrapper/";
@@ -111,6 +111,15 @@ const Contacts = () => {
                   <span class="p-name footer-name visually-hidden">Mohammad Amin Rashid</span>
                   <span class="p-name footer-name visually-hidden">محمدامین رشید</span>
                   <a
+                    href="https://scholar.google.com/citations?user=5WM8J-kAAAAJ&hl=en"
+                    target="_blank"
+                    rel="me noopener noreferrer"
+                    title="View my Google Scholar profile"
+                    aria-label="Google Scholar Profile of Mohammad Amin Rashid"
+                  >
+                    <MdCastForEducation />
+                  </a>
+                  <a
                     href="mailto:info@aminthemar.ir"
                     target="_blank"
                     rel="me noopener noreferrer"
@@ -127,15 +136,6 @@ const Contacts = () => {
                     aria-label="LinkedIn Profile of Mohammad Amin Rashid"
                   >
                     <RiLinkedinBoxLine />
-                  </a>
-                  <a
-                    href="https://scholar.google.com/citations?user=5WM8J-kAAAAJ&hl=en"
-                    target="_blank"
-                    rel="me noopener noreferrer"
-                    title="View my Google Scholar profile"
-                    aria-label="Google Scholar Profile of Mohammad Amin Rashid"
-                  >
-                    <RiWhatsappLine />
                   </a>
                   <a
                     href="https://t.me/aminthemar"
