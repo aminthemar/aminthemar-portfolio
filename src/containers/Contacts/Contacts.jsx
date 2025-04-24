@@ -9,7 +9,7 @@ import { HiOutlineCheckCircle, HiOutlineMail } from "react-icons/hi";
 import { AppWrap } from "../../wrapper/";
 import { images, works_data } from "../../constants";
 import "./Contacts.scss";
-import { FaGithub, FaGithubSquare } from "react-icons/fa";
+import { FaGithub, FaGithubSquare, FaOrcid } from "react-icons/fa";
 
 const Contacts = () => {
   const [formData, setFormData] = useState({ email: "", message: "" });
@@ -116,6 +116,16 @@ const Contacts = () => {
                     aminthemar.ir
                   </a>
                   <a
+                    href="https://orcid.org/0000-0002-1683-7513"
+                    target="_blank"
+                    rel="me noopener noreferrer"
+                    title="View my ORCID profile"
+                    aria-label="ORCID Profile of Mohammad Amin Rashid"
+                    className="u-url"
+                  >
+                    <FaOrcid />
+                  </a>
+                  <a
                     href="https://github.com/aminthemar"
                     target="_blank"
                     rel="me noopener noreferrer"
@@ -145,6 +155,7 @@ const Contacts = () => {
                   >
                     <RiLinkedinBoxLine />
                   </a>
+
                   <a
                     href="mailto:info@aminthemar.ir"
                     target="_blank"
