@@ -81,7 +81,7 @@ const Contacts = () => {
         <ul className="app__contacts-stats app__flex">
           {[
             [worksStats[0], "پروژه‌ی موفق", <MdThumbUpAlt />],
-            [new Date().getFullYear() - 2022 + "+", "سال سابقه کار", <MdAccessTimeFilled />],
+            [Math.ceil(new Date().getFullYear() - 2024.5) + "+", "سال سابقه کار", <MdAccessTimeFilled />],
             [worksStats[1], "بازی منتشر", <MdGames />],
           ].map((stat_item, index) => (
             <motion.li

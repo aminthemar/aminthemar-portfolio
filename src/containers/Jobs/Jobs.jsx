@@ -12,6 +12,18 @@ const Jobs = () => {
   const [job_items, setJobs] = useState([]);
   const [loading, setLoading] = useState(true);
 
+  function getMonthsPassed(startDateString, endDateString) {
+    const startDate = new Date(startDateString);
+    const endDate = endDateString ? new Date(endDateString) : new Date();
+    const yearsDiff = endDate.getFullYear() - startDate.getFullYear();
+    const monthsDiff = endDate.getMonth() - startDate.getMonth();
+    let totalMonths = yearsDiff * 12 + monthsDiff;
+    if (endDate.getDate() < startDate.getDate()) {
+      totalMonths -= 1;
+    }
+    return totalMonths;
+  }
+
   const getLocalData = () => {
     jobs_data
       .getJobsData(job_count)
@@ -42,7 +54,7 @@ const Jobs = () => {
               <li key={`job-${index}`}>
                 <a href={`${job_item.websiteurl}`} target="_blank" rel="noreferrer">
                   <img src={job_item.logo} alt={`job-${index}`} />
-                  <div className="app__yeartag-dark p-text">{job_item.months} ماه</div>
+                  <div className="app__yeartag-dark p-text">{getMonthsPassed(job_item.startDate, job_item.endDate)} ماه</div>
                   <motion.section
                     initial={{ maxHeight: "0", padding: "0" }}
                     whileInView={{ maxHeight: "100px", padding: "0.75rem" }}
