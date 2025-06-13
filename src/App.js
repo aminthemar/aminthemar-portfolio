@@ -21,7 +21,7 @@ function App() {
         </ScrollTop>
       </Suspense>
       <Contacts />
-      <div className="app__flag-margin" />
+      {/* <div className="app__flag-margin" /> */}
       <Footer />
     </div>
   );
